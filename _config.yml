@@ -1,4 +1,5 @@
 safe: true
 permalink: /:year/:title/
 pygments: true
+exclude: ['README.md', 'CNAME', 'scratch']
 
