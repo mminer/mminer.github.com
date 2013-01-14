@@ -1,4 +1,4 @@
 safe: true
+permalink: /:year/:title/
 pygments: true
-permalink: /blog/:title/
 

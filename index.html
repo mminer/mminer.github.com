@@ -1,11 +1,120 @@
----
-layout: default
-title: Matthew Miner
----
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Matthew Miner" />
+	<meta name="description" content="Graduate of Vancouver Film School, computer science nerd at the University of Waterloo. Hacker on Lumos game analytics and hobbyist filmmaker / game developer / dog groomer." />
+	<meta name="keywords" content="Matthew Miner, lumos, methodic, uwaterloo, vfs, unity3d" />
 
-<h1>Blog Posts</h1>
-<ul class="posts">
-	{% for post in site.posts %}
-		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
-</ul>
+	<title>Matthew Miner - Multimedia and Technology Aficionado</title>
+
+	<style type="text/css">
+		@font-face {
+			font-family: 'Blackout';
+			src: url('/fonts/blackout.eot');
+			src: url('/fonts/blackout.eot?#iefix') format('embedded-opentype'),
+			     url('/fonts/blackout.woff') format('woff'),
+			     url('/fonts/blackout.ttf') format('truetype'),
+			     url('/fonts/blackout.svg#Blackout') format('svg');
+			font-style: normal;
+			font-weight: normal;
+		}
+
+		/* Reset */
+		html, body, h1, ul, li, a {
+			border: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background-color: #111;
+			color: white;
+			font-size: 62.5%;
+		}
+
+		#wrapper {
+			margin-top: -13em;
+			position: absolute;
+			top: 50%;
+			width: 100%;
+		}
+
+		h1 {
+			font-family: 'Blackout';
+			font-size: 11em;
+			text-align: center;
+		}
+
+		#links {
+			list-style-type: none;
+			margin: 0 auto;
+			margin-top: 5em;
+			width: 470px;
+		}
+
+		#links li {
+			float: left;
+			margin-left: 10px;
+		}
+
+		#links li:first-child {
+			margin-left: 0;
+		}
+
+		#links li a {
+			border: 3px solid #111;
+			background-image: url('/img/links.svg');
+			display: block;
+			height: 80px;
+			text-indent: -9999px;
+			width: 80px;
+		}
+
+		#links li a:hover {
+			border-color: white;
+		}
+
+		#links .email    a { background-position: 0px 0; }
+		#links .github   a { background-position: -80px 0; }
+		#links .linkedin a { background-position: -160px 0; }
+		#links .twitter  a { background-position: -240px 0; }
+		#links .youtube  a { background-position: -320px 0; }
+	</style>
+
+	<!--[if lte IE 8]>>
+	<style type="text/css">
+		#links li a { background-image: url('/img/links.png'); }
+	</style>
+	<![endif]-->
+</head>
+<body>
+
+	<div id="wrapper">
+		<h1>Matthew Miner</h1>
+
+		<ul id="links">
+			<li class="email">
+				<a href="mailto:matthew@matthewminer.com" title="Send me an email.">Contact</a>
+			</li>
+
+			<li class="github">
+				<a href="https://github.com/mminer" title="Code I&rsquo;ve written and projects I contribute to on GitHub.">GitHub</a>
+			</li>
+
+			<li class="linkedin">
+				<a href="http://ca.linkedin.com/in/matthewminer" title="My work experience and qualifications on LinkedIn.">LinkedIn</a>
+			</li>
+
+			<li class="twitter">
+				<a href="http://twitter.com/matthewminer" title="My attempt at humour on Twitter.">Twitter</a>
+			</li>
+
+			<li class="youtube">
+				<a href="http://www.youtube.com/user/matthewjohnminer" title="Videos I enjoy or have helped make on YouTube.">YouTube</a>
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>
+
