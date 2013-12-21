@@ -59,11 +59,20 @@
             padding: 0;
         }
 
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
         body {
             background-color: black;
+            background-image: url('/img/bg.jpg');
+            background-size: cover;
+            background-position: bottom;
             color: white;
             font-family: 'Blackout';
             font-size: 62.5%;
+            height: 100%;
         }
 
         #wrapper {
@@ -76,6 +85,7 @@
 
         h1 {
             font-size: 11em;
+            text-shadow: 0 0 100px black;
         }
 
         #links {
@@ -102,9 +112,8 @@
         }
 
         #links a:hover {
-            background-color: #AEEE00;
+            background-color: #8E2800;
             color: white;
-
         }
 
         #links .label {
