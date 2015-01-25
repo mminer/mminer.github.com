@@ -1,0 +1,28 @@
+{% if page.class == "home" %}
+    <header id="main-header">
+        <div class="vertical">
+            <h1>{{ site.title }}</h1>
+            <h2>{{ site.description }}</h2>
+        </div>
+    </header>
+{% endif %}
+
+<nav id="main-nav" class="row {% if page.class == "home" %}overlay{% endif %}">
+    <div class="one-half column">
+        {% if page.class == "home" %}
+            &nbsp;
+        {% else %}
+            <a class="button" href="{{ site.baseurl }}/">
+                <span class="fa fa-angle-left"></span>
+                Home
+            </a>
+        {% endif %}
+    </div>
+
+    <div class="one-half column">
+        <a class="button" href="{{ "/feed.xml" | prepend: site.baseurl }}" title="Subscribe to the RSS feed">
+            <span class="fa fa-rss"></span>
+            Subscribe
+        </a>
+    </div>
+</nav>

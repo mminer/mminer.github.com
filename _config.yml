@@ -1,5 +1,18 @@
-safe: true
-permalink: /:year/:title/
-pygments: true
-exclude: ['README.md', 'CNAME', 'scratch']
+# Site settings
+title: Matthew Miner
+author: Matthew Miner
+description: > # this means to ignore newlines until "baseurl:"
+  Software and Multimedia Developer
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://matthewminer.com" # the base hostname & protocol for your site
+
+# Social media links
+email: matthew@matthewminer.com
+github: mminer
+linkedin: matthewminer
+twitter: matthewminer
+youtube: matthewjohnminer
+
+# Build settings
+markdown: redcarpet
 

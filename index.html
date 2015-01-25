@@ -1,178 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="author" content="Matthew Miner (matthew@matthewminer.com)" />
-    <meta name="description" content="CEO of Lumos. Hobbyist filmmaker / game developer / chainsaw juggler. Graduate of Vancouver Film School and the University of Waterloo (computer science)." />
-    <meta name="keywords" content="Matthew Miner, lumos, methodic, uwaterloo, vfs, unity3d, developer" />
+---
+layout: default
+class: home
+---
 
-    <title>Matthew Miner - Software and Multimedia Developer</title>
+{% for post in site.posts %}
+    <div class="post">
+        <header>
+            <h1>
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h1>
+            <small>
+                <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+            </small>
+        </header>
 
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <style>
-        @font-face {
-            font-family: 'Blackout';
-            src: url('/font/blackout.eot');
-            src: url('/font/blackout.eot?#iefix') format('embedded-opentype'),
-                 url('/font/blackout.woff') format('woff'),
-                 url('/font/blackout.ttf') format('truetype'),
-                 url('/font/blackout.svg#Blackout') format('svg');
-            font-style: normal;
-            font-weight: normal;
-        }
+        <article>
+            {{ post.excerpt | }}
+        </article>
 
-        @font-face {
-            font-family: 'Minercon';
-            src: url('/font/icons.eot');
-            src: url('/font/icons.eot?#iefix') format('embedded-opentype'),
-                 url('/font/icons.ttf') format('truetype'),
-                 url('/font/icons.woff') format('woff'),
-                 url('/font/icons.svg#icomoon') format('svg');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        [class^="icon-"], [class*=" icon-"] {
-            font-family: 'Minercon';
-            font-style: normal;
-            font-variant: normal;
-            font-weight: normal;
-            line-height: 1;
-            speak: none;
-            text-transform: none;
-
-            /* Better Font Rendering */
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        .icon-github:before   { content: "\e600"; }
-        .icon-email:before    { content: "\e601"; }
-        .icon-linkedin:before { content: "\e602"; }
-        .icon-twitter:before  { content: "\e603"; }
-        .icon-youtube:before  { content: "\e604"; }
-
-        /* Reset */
-        html, body, h1, ul, li, a {
-            border: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        html, body {
-            height: 100%;
-            width: 100%;
-        }
-
-        body {
-            background-color: black;
-            background-image: url('/img/bg.jpg');
-            background-size: cover;
-            background-position: bottom;
-            background-repeat: no-repeat;
-            color: white;
-            font-family: 'Blackout';
-            font-size: 62.5%;
-            height: 100%;
-        }
-
-        #wrapper {
-            margin-top: -13em;
-            position: absolute;
-            text-align: center;
-            top: 50%;
-            width: 100%;
-        }
-
-        h1 {
-            font-size: 11em;
-            text-shadow: 0 0 100px black;
-        }
-
-        #links {
-            list-style-type: none;
-            margin: 0 auto;
-            margin-top: 5em;
-        }
-
-        #links li {
-            display: inline-block;
-            margin: 0 5px;
-        }
-
-        #links a {
-            background-color: white;
-            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-            color: black;
-            display: block;
-            padding: 20px 0;
-            text-decoration: none;
-            width: 100px;
-
-            transition: box-shadow 0.2s;
-            -webkit-transition: box-shadow 0.2s;
-        }
-
-        #links a:hover {
-            box-shadow: 0 0 16px white;
-        }
-
-        #links .label {
-            display: none;
-        }
-
-        #links .icon {
-            font-size: 50px;
-        }
-    </style>
-</head>
-<body>
-    <div id="wrapper">
-        <h1>Matthew Miner</h1>
-
-        <ul id="links">
-            <li>
-                <a href="mailto:matthew@matthewminer.com" title="Email: contact me.">
-                    <span class="label">Email</span>
-                    <span class="icon icon-email"></span>
-                </a>
-            </li>
-
-            <li>
-                <a href="https://github.com/mminer" title="GitHub: code I write and projects I contribute to.">
-                    <span class="label">GitHub</span>
-                    <span class="icon icon-github"></span>
-                </a>
-            </li>
-
-            <li>
-                <a href="http://ca.linkedin.com/in/matthewminer" title="LinkedIn: my work experience and qualifications.">
-                    <span class="label">LinkedIn</span>
-                    <span class="icon icon-linkedin"></span>
-                </a>
-            </li>
-
-            <li>
-                <a href="http://twitter.com/matthewminer" title="Twitter: my attempt at humour.">
-                    <span class="label">Twitter</span>
-                    <span class="icon icon-twitter"></span>
-                </a>
-            </li>
-
-            <li>
-                <a href="http://www.youtube.com/user/matthewjohnminer" title="YouTube: videos I enjoy or help make.">
-                    <span class="label">YouTube</span>
-                    <span class="icon icon-youtube"></span>
-                </a>
-            </li>
-        </ul>
+        <p class="read-more-link">
+            <a href="{{ post.url | prepend: site.baseurl }}">Read More&hellip;</a>
+        </p>
     </div>
-
-    <script>
-        var _gaq=[['_setAccount','UA-37476589-1'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
-</body>
-</html>
+{% endfor %}

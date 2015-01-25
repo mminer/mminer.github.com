@@ -1,36 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<meta name="author" content="Matthew Miner" />
-	<meta name="robots" content="noindex, nofollow" />
+---
+layout: default
+---
 
-	<title>Matthew Miner - {{ page.title }}</title>
+<div class="post">
+    <header>
+        <h1>{{ page.title }}</h1>
+        <small>
+            <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+        </small>
+    </header>
 
-	<link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic|Source+Code+Pro" />
-	<link rel="stylesheet" href="/css/post.css" />
-</head>
-<body>
-
-	<article>
-		<header>
-			<h1>{{ page.title }}</h1>
-			<p>
-				By <a href="mailto:matthew@matthewminer.com" rel="author">Matthew Miner</a> on
-				<time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time>
-			</p>
-		</header>
-		{{ content }}
-	</article>
-
-	<script>
-		var _gaq=[['_setAccount','UA-37476589-1'],['_trackPageview']];
-		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-		s.parentNode.insertBefore(g,s)}(document,'script'));
-	</script>
-
-</body>
-</html>
-
+    <article>
+        {{ content }}
+    </article>
+</div>
