@@ -5,6 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Software and Multimedia Developer
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://matthewminer.com" # the base hostname & protocol for your site
+ga_token: "UA-37476589-1"
 
 # Social media links
 email: matthew@matthewminer.com
@@ -15,4 +16,3 @@ youtube: matthewjohnminer
 
 # Build settings
 markdown: redcarpet
-
