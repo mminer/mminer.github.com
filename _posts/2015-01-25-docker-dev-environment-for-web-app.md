@@ -18,10 +18,10 @@ Our web app is comprised of five files.
 ```
 .
 ├── Dockerfile
+├── app.py
 ├── fig.yml
 ├── gunicorn.py
-├── requirements.txt
-└── server.py
+└── requirements.txt
 ```
 
 ### requirements.txt
