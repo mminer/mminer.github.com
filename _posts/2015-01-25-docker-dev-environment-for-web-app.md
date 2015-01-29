@@ -151,3 +151,8 @@ Instead of `docker run`, use `fig up` to start your container ([full list of com
 ## Wrapping Up
 
 There you have it, a lightweight, isolated, auto-reloading web server running inside a Docker container, the image of which can be deployed to production with no modification. Keep on rocking in the free world.
+
+
+---
+
+<small>Thanks to [@ppawiggers](https://twitter.com/ppawiggers) for corrections.</small>
