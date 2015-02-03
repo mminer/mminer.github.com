@@ -155,4 +155,8 @@ There you have it, a lightweight, isolated, auto-reloading web server running in
 
 ---
 
-<small>Thanks to [@ppawiggers](https://twitter.com/ppawiggers) for corrections.</small>
+<small>
+    Code snippets in this post viewable in [Gist form](https://gist.github.com/mminer/44e599c35b7bf87ec614).
+    <br>
+    Thanks to [@ppawiggers](https://twitter.com/ppawiggers) for corrections.
+</small>
