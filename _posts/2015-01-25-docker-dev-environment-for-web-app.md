@@ -72,7 +72,7 @@ There's surprisingly little happening in this file. The first line indicates the
 
 #### -onbuild
 
-Several of the official Docker base images have a useful -onbuild variant. [The one we're using](https://github.com/docker-library/python/blob/e236058d5c3601af1d38ba27b4fe217c5d678c02/3.4/onbuild/Dockerfile), in addition to installing Python and Pip in the image, also copies our source code to the */usr/src/app/* directory and installs packages listed in *requirements.txt*. It's a minor convenience, but it saves some boilerplate from our *Dockerfile*. There's `-onbuild` variants for [Node.js](https://registry.hub.docker.com/_/node/), [Ruby](https://registry.hub.docker.com/_/ruby/), and [Go](https://registry.hub.docker.com/_/golang/) also. Highly recommended.
+Several of the official Docker base images have a useful -onbuild variant. [The one we're using](https://github.com/docker-library/python/blob/e236058d5c3601af1d38ba27b4fe217c5d678c02/3.4/onbuild/Dockerfile), in addition to installing Python and Pip in the image, also copies our source code to the */usr/src/app/* directory and installs packages listed in *requirements.txt*. It's a minor convenience, but it saves some boilerplate from our *Dockerfile*. There's -onbuild variants for [Node.js](https://registry.hub.docker.com/_/node/), [Ruby](https://registry.hub.docker.com/_/ruby/), and [Go](https://registry.hub.docker.com/_/golang/) also. Highly recommended.
 
 
 ## Fire It Up
@@ -131,7 +131,7 @@ And voila! Edit the source code on your host machine using your favourite editor
 
 Before we wrap up, allow me to tell you about [Fig](http://www.fig.sh) ([soon to be Docker Compose](https://github.com/docker/fig/issues/861)). The `docker run` command above is a bit gnarly and only worsens as your app grows in complexity. Specifying the command line arguments in a configuration file makes life more pleasant, which is what Fig allows you to do. Sure, you can just chuck the command into a Bash script and call it a day, but as you start working with multiple containers (say, one for your app and another for a database), orchestration becomes painful. Fig makes this headache disappear.
 
-Our configuration files looks like this.
+Our configuration file looks like this.
 
 ```yaml
 # fig.yml
@@ -156,7 +156,7 @@ There you have it, a lightweight, isolated, auto-reloading web server running in
 ---
 
 <small>
-    Code snippets in this post viewable in [Gist form](https://gist.github.com/mminer/44e599c35b7bf87ec614).
+    Code snippets from this post viewable in [Gist form](https://gist.github.com/mminer/44e599c35b7bf87ec614).
     <br>
     Thanks to [@ppawiggers](https://twitter.com/ppawiggers) for corrections.
 </small>
