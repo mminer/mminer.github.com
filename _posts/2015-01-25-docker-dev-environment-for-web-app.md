@@ -65,7 +65,7 @@ And now the file that Docker uses to build an image.
 # Dockerfile
 FROM python:3.4-onbuild
 EXPOSE 80
-CMD gunicorn --config gunicorn.py app:app
+CMD ["gunicorn", "--config=gunicorn.py", "app:app"]
 ```
 
 There's surprisingly little happening in this file. The first line indicates the base image to use, in this case one from the official repositories available at the [Docker Hub Registry](https://registry.hub.docker.com). The next line tells Docker to expose port 80, i.e. the port that Gunicorn runs the server on. The final line specifies the command to run when the container starts.
@@ -156,7 +156,7 @@ There you have it, a lightweight, isolated, auto-reloading web server running in
 ---
 
 <small>
-    Code snippets from this post viewable in [Gist form](https://gist.github.com/mminer/44e599c35b7bf87ec614).
+    Code snippets from this post [viewable on GitHub](https://github.com/mminer/blog-code/tree/master/docker-dev-environment-for-web-app).
     <br>
     Thanks to [@ppawiggers](https://twitter.com/ppawiggers) for corrections.
 </small>
