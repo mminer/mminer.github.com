@@ -142,7 +142,7 @@ myserver:
     environment:
     - MODE=dev
     volumes:
-    - /path/to/app:/usr/src/app:ro
+    - .:/usr/src/app:ro
 ```
 
 Instead of `docker run`, use `fig up` to start your container ([full list of commands here](http://www.fig.sh/cli.html)). Nice.
