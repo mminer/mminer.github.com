@@ -4,7 +4,7 @@ class: home
 ---
 
 {% for post in site.posts %}
-    <div class="post">
+    <article role="article">
         <header>
             <h1>
                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -14,12 +14,10 @@ class: home
             </small>
         </header>
 
-        <article>
-            {{ post.excerpt | }}
-        </article>
+        {{ post.excerpt | }}
 
         <p class="read-more-link">
             <a href="{{ post.url | prepend: site.baseurl }}">Read More&hellip;</a>
         </p>
-    </div>
+    </article>
 {% endfor %}

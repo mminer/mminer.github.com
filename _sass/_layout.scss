@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-#main-header {
+body > header {
     background-color: #222;
     background-image: url("/images/bg.jpg");
     background-position: center center;
@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-#main-nav {
+body > nav {
     padding: 35px $side-padding;
 
     .column:last-child {
@@ -92,11 +92,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-#main {
-    padding: 8rem 0;
+body > main {
+    padding: 8rem 0 !important;
 }
 
-#main-footer {
+body > footer {
     border-top: 1px solid $divider-color;
     padding: 1rem $side-padding;
 
@@ -132,8 +132,29 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+article {
+    h2, h3, h4, h5, h6 {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        letter-spacing: .2rem;
+        font-weight: 600;
+    }
+
+    time {
+        color: #aaa;
+        display: block;
+        font-size: 85%;
+        margin-bottom: 2.5rem;
+        @extend .spaced-text;
+    }
+
+    small {
+        color: #aaa;
+    }
+}
+
 .home {
-    #main-nav .button {
+    > nav .button {
         border-color: #bbb;
         color: #bbb;
 
@@ -144,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     // Draw divider between post excerpts.
-    .post:not(:last-child) {
+    article:not(:last-child) {
         border-bottom: 1px solid $divider-color;
         margin-bottom: 4rem;
         padding-bottom: 4rem;
@@ -165,27 +186,6 @@ h1, h2, h3, h4, h5, h6 {
             position: absolute;
             width: 7px;
         }
-    }
-}
-
-.post {
-    h2, h3, h4, h5, h6 {
-        text-transform: uppercase;
-        font-size: 1.4rem;
-        letter-spacing: .2rem;
-        font-weight: 600;
-    }
-
-    time {
-        color: #aaa;
-        display: block;
-        font-size: 85%;
-        margin-bottom: 2.5rem;
-        @extend .spaced-text;
-    }
-
-    small {
-        color: #aaa;
     }
 }
 
