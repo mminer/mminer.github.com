@@ -9,9 +9,7 @@ class: home
             <h1>
                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h1>
-            <small>
-                <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>
-            </small>
+            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>
         </header>
 
         {{ post.excerpt | }}
