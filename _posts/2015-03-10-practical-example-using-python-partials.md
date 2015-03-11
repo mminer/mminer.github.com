@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Practical Example of Python Partials In Action"
+title:  "A Practical Example of Using Python Partials"
 date:   2015-03-10
 ---
 
@@ -75,5 +75,5 @@ This technique makes `fetch_all_pages` much more reusable. Need to include custo
 
 
 <small>
-    Code from this post [viewable on GitHub](https://github.com/mminer/blog-code/tree/master/practical-example-python-partials-in-action).
+    Code from this post [viewable on GitHub](https://github.com/mminer/blog-code/tree/master/practical-example-using-python-partials).
 </small>
