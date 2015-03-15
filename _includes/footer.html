@@ -7,7 +7,7 @@
     <div class="one-half column">
         <ul>
             <li>
-                <a href="mailto:{{ site.email }}" title="Contact me via email">
+                <a href="mailto:{{ site.author | uri_escape }}<{{ site.email }}>" title="Contact me via email">
                     <span class="fa fa-envelope-square"></span>
                     <span class="sr-only">Email</span>
                 </a>
