@@ -15,6 +15,10 @@ a {
     }
 }
 
+ul, ol {
+    list-style-position: outside;
+}
+
 h1, h2, h3, h4, h5, h6 {
     a {
         text-decoration: none;
@@ -148,8 +152,27 @@ article {
         @extend .spaced-text;
     }
 
+    img {
+        max-width: 100%;
+    }
+
     small {
         color: #aaa;
+    }
+
+    .footnotes {
+        font-size: 80%;
+        padding: 0 2em;
+
+        hr {
+            margin-left: 0;
+            width: 20%;
+        }
+
+        .return:after {
+            content: "\21a9"; // Return arrow
+            margin-left: 0.5em;
+        }
     }
 }
 
