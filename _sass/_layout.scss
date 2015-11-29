@@ -1,275 +1,326 @@
-$divider-color: #E1E1E1;
-$footer-icon-size: 22px;
-$side-padding: 40px;
+// Colours:
 
-html, body {
-    height: 100%;
-    width: 100%;
+$blue: #3498db;
+$gray: #999999;
+$gray-light: #CCCCCC;
+$gray-lighter: #F1F1F1;
+
+// Variables:
+
+$article-width: 960px;
+$body-bg: white;
+$body-color: black;
+$body-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font-weight: 300;
+$body-line-height: 1.6;
+$code-radius: 0.3rem;
+$code-bg: $gray-lighter;
+$code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+$code-font-size: 1.4rem;
+$code-padding-horizontal: 0.4em;
+$code-padding-vertical: 0.2em;
+$divider-color: $gray-light;
+$divider-spacing: 4rem;
+$divider-width: 1px;
+$element-spacing: 2.5rem;
+$header-font-size: 1.2rem;
+$header-font-weight: 500;
+$header-icon-hover-scale: 1.2;
+$header-icon-size: 1.7rem;
+$header-link-size: 2.5rem;
+$header-padding-vertical: 1rem;
+$header-transition-duration: 0.2s;
+$header-underline-height: 0.2rem;
+$header-underline-spacing: 0.2rem;
+$heading-font-size: 3.2rem;
+$heading-font-weight: 300;
+$link-color: $blue;
+$main-padding-horizontal: 4rem;
+$main-padding-vertical: 8rem;
+$small-font-size: 1.3rem;
+$subheading-font-size: 1.4rem;
+$subheading-font-weight: 500;
+$transition-duration: 0.1s;
+
+// Mixins:
+
+// Adapted from http://a11yproject.com/posts/how-to-hide-content/
+@mixin visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@mixin uppercase {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+// Scaffolding:
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  // Sets up font sizes so that 1rem = 10px.
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $body-bg;
+  color: $body-color;
+  font-family: $body-font-family;
+  // Work around Chrome bug misinterpreting rems on body element.
+  font-size: 1.6em;
+  font-weight: $body-font-weight;
+  line-height: $body-line-height;
+}
+
+blockquote,
+dl,
+figure,
+form,
+h1, h2, h3, h4, h5, h6,
+ol,
+p,
+pre,
+table,
+ul {
+  margin: $element-spacing 0;
 }
 
 a {
-    color: #444;
-    transition: color ease 0.3s;
-
-    &:hover {
-        color: #222;
-    }
+  color: $link-color;
+  text-decoration: none;
 }
 
-ul, ol {
-    list-style-position: outside;
+code {
+  background-color: $code-bg;
+  border-radius: $code-radius;
+  font-family: $code-font-family;
+  font-size: $code-font-size;
+  padding: $code-padding-vertical $code-padding-horizontal;
+  white-space: nowrap;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    a {
-        text-decoration: none;
-    }
+hr {
+  border-color: $divider-color;
+  border-style: solid;
+  border-width: $divider-width 0 0 0;
+  margin: $divider-spacing 0;
 }
 
-body > header {
-    background-color: #222;
-    background-image: url("/images/bg.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    display: table;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    width: 100%;
-
-    h1, h2 {
-        font-weight: 500;
-        text-shadow: 0 0 100px white;
-        text-transform: uppercase;
-    }
-
-    h1 {
-        font-size: 6rem;
-        letter-spacing: .5rem;
-    }
-
-    h2 {
-        font-size: 2.8rem;
-        letter-spacing: .4rem;
-        margin: 0;
-    }
-
-    .vertical {
-        display: table-cell;
-        vertical-align: middle;
-    }
-
-    .scroll-down {
-        position: relative;
-        top: 200px;
-    }
+img {
+  max-width: 100%;
 }
 
-body > nav {
-    padding: 35px $side-padding;
-
-    .column:last-child {
-        text-align: right;
-    }
-
-    .button {
-        border-color: transparent;
-        margin-bottom: 0;
-        transition: all ease 0.3s;
-
-        .fa {
-            margin-right: 0.5em;
-        }
-
-        &:hover {
-            border-color: #888;
-        }
-    }
-
-    &.overlay {
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
+pre {
+  > code {
+    display: block;
+    white-space: pre;
+  }
 }
 
-body > main {
-    padding: 8rem 0 !important;
+small {
+  font-size: $small-font-size;
 }
 
-body > footer {
-    border-top: 1px solid $divider-color;
-    padding: 1rem $side-padding;
+ul {
+  list-style-type: square;
+}
 
-	.icon {
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-		display: inline-block;
-		height: $footer-icon-size;
-		position: relative;
-		top: 3px;
-		transition: transform 0.2s;
-        width: $footer-icon-size;
+// Layout:
 
-        // Base 64 encoded SVGs:
+header {
+	@include align-items(center);
+  @include display(flex);
+	border-bottom: $divider-width solid $divider-color;
+  padding: $header-padding-vertical $main-padding-horizontal;
 
-         &.email {
-        	background-image: url('data:image/svg+xml;utf8;base64,PHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMzc2IDEyOHExMTkgMCAyMDMuNSA4NC41dDg0LjUgMjAzLjV2OTYwcTAgMTE5LTg0LjUgMjAzLjV0LTIwMy41IDg0LjVoLTk2MHEtMTE5IDAtMjAzLjUtODQuNXQtODQuNS0yMDMuNXYtOTYwcTAtMTE5IDg0LjUtMjAzLjV0MjAzLjUtODQuNWg5NjB6bTMyIDEwNTZ2LTQzNnEtMzEgMzUtNjQgNTUtMzQgMjItMTMyLjUgODV0LTE1MS41IDk5cS05OCA2OS0xNjQgNjl0LTE2NC02OXEtNDYtMzItMTQxLjUtOTIuNXQtMTQyLjUtOTIuNXEtMTItOC0zMy0yN3QtMzEtMjd2NDM2cTAgNDAgMjggNjh0NjggMjhoODMycTQwIDAgNjgtMjh0MjgtNjh6bTAtNTczcTAtNDEtMjcuNS03MHQtNjguNS0yOWgtODMycS00MCAwLTY4IDI4dC0yOCA2OHEwIDM3IDMwLjUgNzYuNXQ2Ny41IDY0LjVxNDcgMzIgMTM3LjUgODl0MTI5LjUgODNxMyAyIDE3IDExLjV0MjEgMTQgMjEgMTMgMjMuNSAxMyAyMS41IDkuNSAyMi41IDcuNSAyMC41IDIuNSAyMC41LTIuNSAyMi41LTcuNSAyMS41LTkuNSAyMy41LTEzIDIxLTEzIDIxLTE0IDE3LTExLjVsMjY3LTE3NHEzNS0yMyA2Ni41LTYyLjV0MzEuNS03My41eiIgZmlsbD0iIzQ0NCIvPjwvc3ZnPg==');
-        }
-
-        &.github {
-        	background-image: url('data:image/svg+xml;utf8;base64,PHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik01MjIgMTM1MnEtOCA5LTIwLTMtMTMtMTEtNC0xOSA4LTkgMjAgMyAxMiAxMSA0IDE5em0tNDItNjFxOSAxMiAwIDE5LTggNi0xNy03dDAtMThxOS03IDE3IDZ6bS02MS02MHEtNSA3LTEzIDItMTAtNS03LTEyIDMtNSAxMy0yIDEwIDUgNyAxMnptMzEgMzRxLTYgNy0xNi0zLTktMTEtMi0xNiA2LTYgMTYgMyA5IDExIDIgMTZ6bTEyOSAxMTJxLTQgMTItMTkgNi0xNy00LTEzLTE1dDE5LTdxMTYgNSAxMyAxNnptNjMgNXEwIDExLTE2IDExLTE3IDItMTctMTEgMC0xMSAxNi0xMSAxNy0yIDE3IDExem01OC0xMHEyIDEwLTE0IDE0dC0xOC04IDE0LTE1cTE2LTIgMTggOXptOTY0LTk1NnY5NjBxMCAxMTktODQuNSAyMDMuNXQtMjAzLjUgODQuNWgtMjI0cS0xNiAwLTI0LjUtMXQtMTkuNS01LTE2LTE0LjUtNS0yNy41di0yMzlxMC05Ny01Mi0xNDIgNTctNiAxMDIuNS0xOHQ5NC0zOSA4MS02Ni41IDUzLTEwNSAyMC41LTE1MC41cTAtMTIxLTc5LTIwNiAzNy05MS04LTIwNC0yOC05LTgxIDExdC05MiA0NGwtMzggMjRxLTkzLTI2LTE5Mi0yNnQtMTkyIDI2cS0xNi0xMS00Mi41LTI3dC04My41LTM4LjUtODYtMTMuNXEtNDQgMTEzLTcgMjA0LTc5IDg1LTc5IDIwNiAwIDg1IDIwLjUgMTUwdDUyLjUgMTA1IDgwLjUgNjcgOTQgMzkgMTAyLjUgMThxLTQwIDM2LTQ5IDEwMy0yMSAxMC00NSAxNXQtNTcgNS02NS41LTIxLjUtNTUuNS02Mi41cS0xOS0zMi00OC41LTUydC00OS41LTI0bC0yMC0zcS0yMSAwLTI5IDQuNXQtNSAxMS41IDkgMTQgMTMgMTJsNyA1cTIyIDEwIDQzLjUgMzh0MzEuNSA1MWwxMCAyM3ExMyAzOCA0NCA2MS41dDY3IDMwIDY5LjUgNyA1NS41LTMuNWwyMy00cTAgMzggLjUgMTAzdC41IDY4cTAgMjItMTEgMzMuNXQtMjIgMTMtMzMgMS41aC0yMjRxLTExOSAwLTIwMy41LTg0LjV0LTg0LjUtMjAzLjV2LTk2MHEwLTExOSA4NC41LTIwMy41dDIwMy41LTg0LjVoOTYwcTExOSAwIDIwMy41IDg0LjV0ODQuNSAyMDMuNXoiIGZpbGw9IiM0NDQiLz48L3N2Zz4=');
-        }
-
-        &.linkedin {
-        	background-image: url('data:image/svg+xml;utf8;base64,PHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0zNjUgMTQxNGgyMzF2LTY5NGgtMjMxdjY5NHptMjQ2LTkwOHEtMS01Mi0zNi04NnQtOTMtMzQtOTQuNSAzNC0zNi41IDg2cTAgNTEgMzUuNSA4NS41dDkyLjUgMzQuNWgxcTU5IDAgOTUtMzQuNXQzNi04NS41em01ODUgOTA4aDIzMXYtMzk4cTAtMTU0LTczLTIzM3QtMTkzLTc5cS0xMzYgMC0yMDkgMTE3aDJ2LTEwMWgtMjMxcTMgNjYgMCA2OTRoMjMxdi0zODhxMC0zOCA3LTU2IDE1LTM1IDQ1LTU5LjV0NzQtMjQuNXExMTYgMCAxMTYgMTU3djM3MXptNDY4LTk5OHY5NjBxMCAxMTktODQuNSAyMDMuNXQtMjAzLjUgODQuNWgtOTYwcS0xMTkgMC0yMDMuNS04NC41dC04NC41LTIwMy41di05NjBxMC0xMTkgODQuNS0yMDMuNXQyMDMuNS04NC41aDk2MHExMTkgMCAyMDMuNSA4NC41dDg0LjUgMjAzLjV6IiBmaWxsPSIjNDQ0Ii8+PC9zdmc+');
-        }
-
-        &.twitter {
-        	background-image: url('data:image/svg+xml;utf8;base64,PHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNDA4IDYxMHEtNTYgMjUtMTIxIDM0IDY4LTQwIDkzLTExNy02NSAzOC0xMzQgNTEtNjEtNjYtMTUzLTY2LTg3IDAtMTQ4LjUgNjEuNXQtNjEuNSAxNDguNXEwIDI5IDUgNDgtMTI5LTctMjQyLTY1dC0xOTItMTU1cS0yOSA1MC0yOSAxMDYgMCAxMTQgOTEgMTc1LTQ3LTEtMTAwLTI2djJxMCA3NSA1MCAxMzMuNXQxMjMgNzIuNXEtMjkgOC01MSA4LTEzIDAtMzktNCAyMSA2MyA3NC41IDEwNHQxMjEuNSA0MnEtMTE2IDkwLTI2MSA5MC0yNiAwLTUwLTMgMTQ4IDk0IDMyMiA5NCAxMTIgMCAyMTAtMzUuNXQxNjgtOTUgMTIwLjUtMTM3IDc1LTE2MiAyNC41LTE2OC41cTAtMTgtMS0yNyA2My00NSAxMDUtMTA5em0yNTYtMTk0djk2MHEwIDExOS04NC41IDIwMy41dC0yMDMuNSA4NC41aC05NjBxLTExOSAwLTIwMy41LTg0LjV0LTg0LjUtMjAzLjV2LTk2MHEwLTExOSA4NC41LTIwMy41dDIwMy41LTg0LjVoOTYwcTExOSAwIDIwMy41IDg0LjV0ODQuNSAyMDMuNXoiIGZpbGw9IiM0NDQiLz48L3N2Zz4=');
-        }
-
-        &.youtube {
-        	background-image: url('data:image/svg+xml;utf8;base64,PHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMDQ3IDEzMDN2LTE1N3EwLTUwLTI5LTUwLTE3IDAtMzMgMTZ2MjI0cTE2IDE2IDMzIDE2IDI5IDAgMjktNDl6bTE4NC0xMjJoNjZ2LTM0cTAtNTEtMzMtNTF0LTMzIDUxdjM0em0tNTcxLTI2NnY3MGgtODB2NDIzaC03NHYtNDIzaC03OHYtNzBoMjMyem0yMDEgMTI2djM2N2gtNjd2LTQwcS0zOSA0NS03NiA0NS0zMyAwLTQyLTI4LTYtMTYtNi01NHYtMjkwaDY2djI3MHEwIDI0IDEgMjYgMSAxNSAxNSAxNSAyMCAwIDQyLTMxdi0yODBoNjd6bTI1MiAxMTF2MTQ2cTAgNTItNyA3My0xMiA0Mi01MyA0Mi0zNSAwLTY4LTQxdjM2aC02N3YtNDkzaDY3djE2MXEzMi00MCA2OC00MCA0MSAwIDUzIDQyIDcgMjEgNyA3NHptMjUxIDEyOXY5cTAgMjktMiA0My0zIDIyLTE1IDQwLTI3IDQwLTgwIDQwLTUyIDAtODEtMzgtMjEtMjctMjEtODZ2LTEyOXEwLTU5IDIwLTg2IDI5LTM4IDgwLTM4dDc4IDM4cTIxIDI4IDIxIDg2djc2aC0xMzN2NjVxMCA1MSAzNCA1MSAyNCAwIDMwLTI2IDAtMSAuNS03dC41LTE2LjV2LTIxLjVoNjh6bS00NTEtODI0djE1NnEwIDUxLTMyIDUxdC0zMi01MXYtMTU2cTAtNTIgMzItNTJ0MzIgNTJ6bTUzMyA3MTNxMC0xNzctMTktMjYwLTEwLTQ0LTQzLTczLjV0LTc2LTM0LjVxLTEzNi0xNS00MTItMTUtMjc1IDAtNDExIDE1LTQ0IDUtNzYuNSAzNC41dC00Mi41IDczLjVxLTIwIDg3LTIwIDI2MCAwIDE3NiAyMCAyNjAgMTAgNDMgNDIuNSA3M3Q3NS41IDM1cTEzNyAxNSA0MTIgMTV0NDEyLTE1cTQzLTUgNzUuNS0zNXQ0Mi41LTczcTIwLTg0IDIwLTI2MHptLTc1NS02NTFsOTAtMjk2aC03NWwtNTEgMTk1LTUzLTE5NWgtNzhsMjQgNjkgMjMgNjlxMzUgMTAzIDQ2IDE1OHYyMDFoNzR2LTIwMXptMjg5IDgxdi0xMzBxMC01OC0yMS04Ny0yOS0zOC03OC0zOC01MSAwLTc4IDM4LTIxIDI5LTIxIDg3djEzMHEwIDU4IDIxIDg3IDI3IDM4IDc4IDM4IDQ5IDAgNzgtMzggMjEtMjcgMjEtODd6bTE4MSAxMjBoNjd2LTM3MGgtNjd2MjgzcS0yMiAzMS00MiAzMS0xNSAwLTE2LTE2LTEtMi0xLTI2di0yNzJoLTY3djI5M3EwIDM3IDYgNTUgMTEgMjcgNDMgMjcgMzYgMCA3Ny00NXY0MHptNTAzLTMwNHY5NjBxMCAxMTktODQuNSAyMDMuNXQtMjAzLjUgODQuNWgtOTYwcS0xMTkgMC0yMDMuNS04NC41dC04NC41LTIwMy41di05NjBxMC0xMTkgODQuNS0yMDMuNXQyMDMuNS04NC41aDk2MHExMTkgMCAyMDMuNSA4NC41dDg0LjUgMjAzLjV6IiBmaWxsPSIjNDQ0Ii8+PC9zdmc+');
-        }
+	> * {
+	  @include flex-shrink(0);
 	}
 
-    a {
-        text-decoration: none;
+	h1, h2 {
+	  @include uppercase;
+    font-size: $header-font-size;
+    font-weight: $header-font-weight;
+    line-height: 1;
+    margin: 0;
+  }
 
-        &:hover .icon {
-        	transform: scale(1.3);
+  h1 {
+    margin-right: 0.5em;
+    position: relative;
+    /*transition: transform 0.1s;*/
+
+    &::before {
+      @include transition-duration($header-transition-duration);
+      @include transition-property(left, right);
+      @include transition-timing-function(ease-out);
+      background-color: $blue;
+      content: "";
+      height: $header-underline-height;
+      left: 50%;
+      margin-top: $header-underline-spacing;
+      position: absolute;
+      right: 50%;
+      top: 100%;
+      z-index: -1;
+    }
+
+    &:hover::before {
+      left: 0;
+      right: 0;
+    }
+  }
+
+  h2 {
+    color: $gray;
+  }
+
+  ul {
+    @include display(flex);
+    @include flex-grow(1);
+    @include justify-content(flex-end);
+    list-style-type: none;
+    margin: 0;
+
+		a {
+      @include transition(transform $transition-duration);
+			display: block;
+			height: $header-link-size;
+      text-align: center;
+			width: $header-link-size;
+
+			span {
+			  @include visually-hidden;
+			}
+
+			svg {
+			  height: $header-icon-size;
+			  width: $header-icon-size;
+        vertical-align: middle;
+
+			  path {
+          @include transition(fill $transition-duration);
+			    fill: $gray;
+			  }
+      }
+
+      // Make LinkedIn logo appear better vertically centered.
+			&.linkedin svg {
+        position: relative;
+        top: -1px;
+			}
+
+			&:hover {
+ 				@include transform(scale($header-icon-hover-scale));
+
+        svg path {
+          fill: $blue;
         }
-    }
+			}
+		}
+	}
+}
 
-    h1, p {
-        display: inline;
-        font-size: 11px;
-        line-height: $footer-icon-size;
-        margin: 0;
-        @extend .spaced-text;
-    }
-
-    p {
-        color: #aaa;
-    }
-
-    ul {
-        font-size: 20px;
-        list-style: none;
-        margin: 0;
-
-        li {
-            display: inline;
-        }
-    }
-
-    .column:last-child {
-        text-align: right;
-    }
+main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $article-width;
+  padding: $main-padding-vertical $main-padding-horizontal;
 }
 
 article {
-    h2, h3, h4, h5, h6 {
-        text-transform: uppercase;
-        font-size: 1.4rem;
-        letter-spacing: .2rem;
-        font-weight: 500;
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+	  // Use slightly-nicer spaced underline.
+    @include transition(border-color $transition-duration);
+	  border-bottom: 1px solid $link-color;
+
+	  &:hover {
+		  border-color: transparent;
+	  }
+	}
+
+  h1 {
+    font-size: $heading-font-size;
+    font-weight: $heading-font-weight;
+    line-height: 1;
+    margin-top: 0;
+
+    a, a:hover {
+      border-width: 0;
+      color: inherit;
     }
+  }
 
-    time {
-        color: #aaa;
-        display: block;
-        font-size: 85%;
-        margin-bottom: 2.5rem;
-        @extend .spaced-text;
+  h2, h3, h4, h5, h6 {
+    @include uppercase;
+    font-size: $subheading-font-size;
+    font-weight: $subheading-font-weight;
+  }
+
+  small {
+    color: $gray;
+  }
+
+  sup {
+    a {
+      border-width: 0;
     }
+  }
 
-    img {
-        max-width: 100%;
+  time {
+    color: $gray;
+    display: block;
+    font-size: $small-font-size;
+    font-style: italic;
+    margin-bottom: $element-spacing;
+    margin-top: $element-spacing;
+  }
+
+  .footnotes {
+    font-size: $small-font-size;
+
+    // Add extra space to keep list numbers inside article width.
+    padding-left: 2rem;
+
+    .return {
+      margin-left: 0.5em;
+
+      &::after {
+        content: "\21a9"; // Return arrow
+      }
     }
+  }
 
-    small {
-        color: #aaa;
+  .highlight {
+    margin-left: -$main-padding-horizontal;
+    margin-right: -$main-padding-horizontal;
+
+    code {
+      border-radius: 0;
+      margin: 0 auto;
+      max-width: $article-width;
+      padding: $element-spacing $main-padding-horizontal;
     }
+  }
 
-    .footnotes {
-        font-size: 80%;
-        padding: 0 2em;
-
-        hr {
-            margin-left: 0;
-            width: 20%;
-        }
-
-        .return:after {
-            content: "\21a9"; // Return arrow
-            margin-left: 0.5em;
-        }
-    }
-}
-
-.home {
-    > nav .button {
-        border-color: #bbb;
-        color: #bbb;
-
-        &:hover {
-            border-color: white;
-            color: white;
-        }
-    }
-
-    // Draw divider between post excerpts.
-    article:not(:last-child) {
-        border-bottom: 1px solid $divider-color;
-        margin-bottom: 4rem;
-        padding-bottom: 4rem;
-        position: relative;
-
-        // Middle dot; inspired by Ghost's divider.
-        &:after {
-            background: white;
-            border: 1px solid $divider-color;
-            border-radius: 100%;
-            bottom: -5px;
-            box-shadow: #FFF 0 0 0 5px;
-            display: block;
-            content: "";
-            height: 7px;
-            left: 50%;
-            margin-left: -5px;
-            position: absolute;
-            width: 7px;
-        }
-    }
-}
-
-.read-more-link {
+  .read-more-link {
     margin: 0;
     text-align: right;
-}
-
-.spaced-text {
-    font-weight: 500;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
-}
-
-// From Bootstrap.
-// https://github.com/twbs/bootstrap/blob/a92aea5127e805cb44c9d606a71c48fa19ee157b/less/scaffolding.less#L125
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
+  }
 }

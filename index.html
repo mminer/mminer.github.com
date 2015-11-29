@@ -1,21 +1,29 @@
 ---
-layout: default
-class: home
+layout: base
 ---
 
 {% for post in site.posts %}
-    <article role="article">
-        <header>
-            <h1>
-                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h1>
-            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>
-        </header>
+  <article class="excerpt">
+    <h1>
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-        {{ post.excerpt | }}
+    <time datetime="{{ post.date | date: "%Y-%m-%d" }}">
+      {{ post.date | date: "%B %-d, %Y" }}
+    </time>
 
-        <p class="read-more-link">
-            <a href="{{ post.url | prepend: site.baseurl }}">Read More&hellip;</a>
-        </p>
-    </article>
+    {{ post.excerpt | }}
+
+    <p class="read-more-link">
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        Read More&hellip;
+      </a>
+    </p>
+  </article>
+
+  {% if forloop.last != true %}
+    <hr>
+  {% endif %}
 {% endfor %}

@@ -26,7 +26,6 @@ This lead us to think: why not use Photoshop itself? It already played an indisp
 In Unity, a C# script reads the colour values of the pixels and instantiats their corresponding prefabs at runtime <sup><a href="#fn1" id="r1">[1]</a></sup>. [Texture2D.GetPixels](http://docs.unity3d.com/ScriptReference/Texture2D.GetPixels.html) makes this step a cinch.
 
 ```csharp
-
 static Dictionary<Color, Tile> colorMap = new Dictionary<Color, Tile>()
 {
 	{ Color.white, EmptyTile },
@@ -71,6 +70,7 @@ However, even if an editor like the one described is too simplistic for your gam
 Not building a tile-based game? Modern game engines like Unity make building custom editor tools a breeze for the ultimate in level editor construction. It may seem like a chore when more exciting challenges await, but a bit of upfront investment pays huge dividends later in development.
 
 Cool? Cool.
+
 
 ---
 
