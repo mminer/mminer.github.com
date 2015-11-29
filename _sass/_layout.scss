@@ -25,9 +25,10 @@ $divider-width: 1px;
 $element-spacing: 2.5rem;
 $header-font-size: 1.2rem;
 $header-font-weight: 500;
+$header-height: 2.5rem;
 $header-icon-hover-scale: 1.2;
 $header-icon-size: 1.7rem;
-$header-link-size: 2.5rem;
+$header-icon-spacing: 0.8rem;
 $header-padding-vertical: 1rem;
 $header-transition-duration: 0.2s;
 $header-underline-height: 0.2rem;
@@ -35,7 +36,7 @@ $header-underline-spacing: 0.2rem;
 $heading-font-size: 3.2rem;
 $heading-font-weight: 300;
 $link-color: $blue;
-$main-padding-horizontal: 4rem;
+$main-padding-horizontal: 5%;
 $main-padding-vertical: 8rem;
 $small-font-size: 1.3rem;
 $subheading-font-size: 1.4rem;
@@ -140,8 +141,9 @@ ul {
 // Layout:
 
 header {
-	@include align-items(center);
+  @include align-items(center);
   @include display(flex);
+  @include flex-wrap(wrap);
 	border-bottom: $divider-width solid $divider-color;
   padding: $header-padding-vertical $main-padding-horizontal;
 
@@ -153,14 +155,13 @@ header {
 	  @include uppercase;
     font-size: $header-font-size;
     font-weight: $header-font-weight;
-    line-height: 1;
+    line-height: $header-height;
     margin: 0;
+    margin-right: 0.5em;
   }
 
   h1 {
-    margin-right: 0.5em;
     position: relative;
-    /*transition: transform 0.1s;*/
 
     &::before {
       @include transition-duration($header-transition-duration);
@@ -184,22 +185,28 @@ header {
   }
 
   h2 {
+    @include flex-grow(1);
     color: $gray;
   }
 
   ul {
     @include display(flex);
-    @include flex-grow(1);
-    @include justify-content(flex-end);
     list-style-type: none;
     margin: 0;
+    padding: 0;
+
+    li {
+      margin-right: $header-icon-spacing;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
 
 		a {
       @include transition(transform $transition-duration);
 			display: block;
-			height: $header-link-size;
-      text-align: center;
-			width: $header-link-size;
+      height: $header-height;
 
 			span {
 			  @include visually-hidden;
