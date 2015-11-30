@@ -32,7 +32,6 @@ $header-icon-spacing: 0.8rem;
 $header-padding-vertical: 1rem;
 $header-transition-duration: 0.2s;
 $header-underline-height: 0.2rem;
-$header-underline-spacing: 0.2rem;
 $heading-font-size: 3.2rem;
 $heading-font-weight: 300;
 $link-color: $blue;
@@ -171,7 +170,6 @@ header {
       content: "";
       height: $header-underline-height;
       left: 50%;
-      margin-top: $header-underline-spacing;
       position: absolute;
       right: 50%;
       top: 100%;
@@ -265,8 +263,8 @@ article {
   h1 {
     font-size: $heading-font-size;
     font-weight: $heading-font-weight;
-    line-height: 1;
     margin-top: 0;
+    margin-bottom: 1.5rem;
 
     a, a:hover {
       border-width: 0;
@@ -296,7 +294,6 @@ article {
     font-size: $small-font-size;
     font-style: italic;
     margin-bottom: $element-spacing;
-    margin-top: $element-spacing;
   }
 
   .footnotes {
@@ -316,6 +313,7 @@ article {
   }
 
   .highlight {
+    background-color: $code-bg;
     margin-left: -$main-padding-horizontal;
     margin-right: -$main-padding-horizontal;
 
