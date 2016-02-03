@@ -9,7 +9,6 @@ ga_token: "UA-37476589-1"
 email: matthew@matthewminer.com
 
 # Build settings
-markdown: redcarpet
 redcarpet:
   extensions: ["smart"]
 sass:
