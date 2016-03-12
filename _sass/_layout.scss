@@ -23,12 +23,14 @@ $divider-color: $gray-light;
 $divider-spacing: 4rem;
 $divider-width: 1px;
 $element-spacing: 2.5rem;
+$header-bg: black;
 $header-font-size: 1.2rem;
 $header-font-weight: 500;
 $header-height: 2.5rem;
 $header-icon-hover-scale: 1.2;
 $header-icon-size: 1.7rem;
 $header-icon-spacing: 0.8rem;
+$header-link-color: white;
 $header-padding-vertical: 1rem;
 $header-transition-duration: 0.2s;
 $header-underline-height: 0.2rem;
@@ -143,7 +145,7 @@ header {
   @include align-items(center);
   @include display(flex);
   @include flex-wrap(wrap);
-	border-bottom: $divider-width solid $divider-color;
+  background-color: black;
   padding: $header-padding-vertical $main-padding-horizontal;
 
 	> * {
@@ -162,21 +164,25 @@ header {
   h1 {
     position: relative;
 
-    &::before {
+    a {
+      color: $header-link-color;
+    }
+
+    &::after {
       @include transition-duration($header-transition-duration);
       @include transition-property(left, right);
       @include transition-timing-function(ease-out);
-      background-color: $blue;
+      background-color: white;
       content: "";
       height: $header-underline-height;
       left: 50%;
+      margin-top: -($header-underline-height / 2);
       position: absolute;
       right: 50%;
       top: 100%;
-      z-index: -1;
     }
 
-    &:hover::before {
+    &:hover::after {
       left: 0;
       right: 0;
     }
@@ -217,7 +223,7 @@ header {
 
 			  path {
           @include transition(fill $transition-duration);
-			    fill: $gray;
+			    fill: $header-link-color;
 			  }
       }
 
@@ -229,10 +235,6 @@ header {
 
 			&:hover {
  				@include transform(scale($header-icon-hover-scale));
-
-        svg path {
-          fill: $blue;
-        }
 			}
 		}
 	}
