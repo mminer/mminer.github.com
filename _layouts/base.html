@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="{{ site.author }} ({{ site.email }})">
-  <meta name="copyright" content="&copy; {{ site.time | date: "%Y" }} {{ site.author }}">
+  <meta name="author" content="Matthew Miner (matthew@matthewminer.com)">
+  <meta name="copyright" content="&copy; {{ site.time | date: "%Y" }} Matthew Miner">
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,14 +13,14 @@
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="Matthew Miner" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 </head>
 <body>
 
   <header>
     <h1>
-      <a href="{{ site.baseurl }}/" title="Home">
-        {{ site.title }}
+      <a href="/" title="Home">
+        Matthew Miner
       </a>
     </h1>
 
@@ -31,11 +31,10 @@
     <div class="spacer"></div>
 
     <ul>
-      <li>
+      <li class="email">
         <a
-          class="email"
-          href="mailto:{{ site.author | uri_escape }} <{{ site.email }}>"
-          title="Contact me via email">
+          href="mailto:Matthew Miner <matthew@matthewminer.com>"
+          title="Email">
             <span>Email</span>
 
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -44,11 +43,10 @@
         </a>
       </li>
 
-      <li>
+      <li class="github">
           <a
-            class="github"
             href="https://github.com/mminer"
-            title="Code I write and projects I contribute to on GitHub">
+            title="GitHub">
               <span>GitHub</span>
 
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -57,11 +55,10 @@
           </a>
       </li>
 
-      <li>
+      <li class="linkedin">
           <a
-            class="linkedin"
             href="https://www.linkedin.com/in/matthewminer"
-            title="My work experience and qualifications on LinkedIn">
+            title="LinkedIn">
               <span>LinkedIn</span>
 
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -70,11 +67,10 @@
           </a>
       </li>
 
-      <li>
+      <li class="youtube">
           <a
-            class="youtube"
             href="https://www.youtube.com/user/matthewjohnminer"
-            title="Videos I helped make on YouTube">
+            title="YouTube">
               <span>YouTube</span>
 
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -94,7 +90,7 @@
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', '{{ site.ga_token }}', 'auto');
+    ga('create', 'UA-37476589-1', 'auto');
     ga('send', 'pageview');
   </script>
 
