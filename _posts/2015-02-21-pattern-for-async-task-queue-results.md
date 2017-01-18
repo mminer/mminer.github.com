@@ -279,14 +279,14 @@ requests==2.5.1
 
 With these in place our three Dockerfiles (one for each service we built) are minimal.
 
-```docker
+```
 # Dockerfile.server
 FROM python:3.4-onbuild
 EXPOSE 5000
 CMD ["gunicorn", "--bind=0.0.0.0:5000", "server:app"]
 ```
 
-```docker
+```
 # Dockerfile.worker
 FROM python:3.4-onbuild
 
@@ -297,7 +297,7 @@ USER celery
 CMD ["celery", "-A", "worker:app", "worker"]
 ```
 
-```docker
+```
 # Dockerfile.notifier
 FROM node:0.12-onbuild
 EXPOSE 3000

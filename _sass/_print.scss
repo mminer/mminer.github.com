@@ -1,0 +1,51 @@
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  a {
+    border-color: gray;
+    color: gray;
+  }
+
+  code {
+    background-color: lightgray;
+  }
+
+  pre {
+    background-color: lightgray;
+
+    span {
+      color: black !important;
+    }
+  }
+
+  body > header {
+    margin-bottom: 4rem;
+
+    h1, h2 {
+      font-weight: 500;
+    }
+
+    h1 a {
+      color: black;
+    }
+
+    h2 {
+      color: gray;
+    }
+
+    ul {
+      display: none;
+    }
+  }
+
+  main header time {
+    color: gray;
+  }
+
+  .links time {
+    color: black;
+  }
+}

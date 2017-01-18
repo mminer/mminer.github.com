@@ -1,89 +1,31 @@
-// Colours:
+$accent-color: #6991AC;
+$alt-accent-color: darken($accent-color, 45%);
+$dark-color: black;
+$light-color: white;
+$page-width: 940px;
+$side-padding: 20px;
 
-$blue: #3498db;
-$gray: #999999;
-$gray-light: #CCCCCC;
-$gray-lighter: #F1F1F1;
+html {
+  box-sizing: border-box;
 
-// Variables:
-
-$article-width: 960px;
-$body-bg: white;
-$body-color: black;
-$body-font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$body-font-weight: 300;
-$body-line-height: 1.6;
-$code-radius: 0.3rem;
-$code-bg: $gray-lighter;
-$code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-$code-font-size: 1.4rem;
-$code-padding-horizontal: 0.4em;
-$code-padding-vertical: 0.2em;
-$divider-color: $gray-light;
-$divider-spacing: 4rem;
-$divider-width: 1px;
-$element-spacing: 2.5rem;
-$header-bg: black;
-$header-font-size: 1.2rem;
-$header-font-weight: 500;
-$header-height: 2.5rem;
-$header-icon-hover-scale: 1.2;
-$header-icon-size: 1.7rem;
-$header-icon-spacing: 0.8rem;
-$header-link-color: white;
-$header-padding-vertical: 1rem;
-$header-transition-duration: 0.2s;
-$header-underline-height: 0.2rem;
-$heading-font-size: 3.2rem;
-$heading-font-weight: 300;
-$link-color: $blue;
-$main-padding-horizontal: 5%;
-$main-padding-vertical: 8rem;
-$small-font-size: 1.3rem;
-$subheading-font-size: 1.4rem;
-$subheading-font-weight: 500;
-$transition-duration: 0.1s;
-
-// Mixins:
-
-// Adapted from http://a11yproject.com/posts/how-to-hide-content/
-@mixin visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+  // Set up font sizes so that 1rem = 10px.
+  font-size: 62.5%;
 }
-
-@mixin uppercase {
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-// Scaffolding:
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
-
-html {
-  // Sets up font sizes so that 1rem = 10px.
-  font-size: 62.5%;
+  box-sizing: inherit;
 }
 
 body {
-  background-color: $body-bg;
-  color: $body-color;
-  font-family: $body-font-family;
-  // Work around Chrome bug misinterpreting rems on body element.
-  font-size: 1.6em;
-  font-weight: $body-font-weight;
-  line-height: $body-line-height;
+  background-color: $dark-color;
+  color: $light-color;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.6;
+  padding: 2rem 0;
 }
 
 blockquote,
@@ -96,85 +38,103 @@ p,
 pre,
 table,
 ul {
-  margin: $element-spacing 0;
+  margin: 2rem 0;
 }
 
 a {
-  color: $link-color;
+  color: $accent-color;
   text-decoration: none;
+
+  // Use slightly-nicer spaced underline.
+  @include transition(border-color 0.1s);
+  border-bottom: 1px solid $accent-color;
+
+  &:hover {
+    border-color: transparent;
+  }
 }
 
 code {
-  background-color: $code-bg;
-  border-radius: $code-radius;
-  font-family: $code-font-family;
-  font-size: $code-font-size;
-  padding: $code-padding-vertical $code-padding-horizontal;
+  background-color: $alt-accent-color;
+  border-radius: 0.2rem;
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1.4rem;
+  padding: 0.2rem 0.4rem;
   white-space: nowrap;
 }
 
 hr {
-  border-color: $divider-color;
+  border-color: white;
   border-style: solid;
-  border-width: $divider-width 0 0 0;
-  margin: $divider-spacing 0;
+  border-width: 0.2rem 0 0 0;
+  margin: 4rem auto;
 }
 
 img {
   max-width: 100%;
 }
 
-pre > code {
-  display: block;
-  white-space: pre;
+pre {
+  background-color: $alt-accent-color;
+  margin-left: -$side-padding;
+  margin-right: -$side-padding;
+  overflow-x: auto;
+  padding: 2rem $side-padding;
+
+  code {
+    display: block;
+    padding: 0;
+    white-space: pre;
+  }
 }
 
 small {
-  font-size: $small-font-size;
+  font-size: 1.2rem;
+}
+
+sup a {
+  border-width: 0;
 }
 
 ul {
   list-style-type: square;
 }
 
-// Layout:
-
-header {
+body > header {
   @include align-items(center);
   @include display(flex);
   @include flex-wrap(wrap);
-  background-color: black;
-  padding: $header-padding-vertical $main-padding-horizontal;
+  line-height: 1;
+  margin: 0 auto;
+  margin-bottom: 12rem;
+  max-width: $page-width;
+  padding: 0 $side-padding;
 
-	> * {
-	  @include flex-shrink(0);
-	}
-
-	h1, h2 {
-	  @include uppercase;
-    font-size: $header-font-size;
-    font-weight: $header-font-weight;
-    line-height: $header-height;
+  h1, h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
     margin: 0;
-    margin-right: 0.5em;
   }
 
   h1 {
+    margin-right: 0.5em;
     position: relative;
 
     a {
-      color: $header-link-color;
+      border-width: 0;
+      color: $light-color;
     }
 
     &::after {
-      @include transition-duration($header-transition-duration);
+      @include transition-duration(0.2s);
       @include transition-property(left, right);
       @include transition-timing-function(ease-out);
-      background-color: white;
+      background-color: $light-color;
       content: "";
-      height: $header-underline-height;
+      height: 0.2rem;
       left: 50%;
-      margin-top: -($header-underline-height / 2);
+      margin-top: 0.3rem;
       position: absolute;
       right: 50%;
       top: 100%;
@@ -187,139 +147,187 @@ header {
   }
 
   h2 {
-    @include flex-grow(1);
-    color: $gray;
+    color: $accent-color;
+  }
+
+  path {
+    fill: $accent-color;
+  }
+
+  span {
+    // Adapted from http://a11yproject.com/posts/how-to-hide-content/
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  svg {
+    height: 1.7rem;
+    width: 1.7rem;
+    vertical-align: middle;
   }
 
   ul {
     @include display(flex);
+	  @include flex-shrink(0);
     list-style-type: none;
     margin: 0;
-    margin-right: -($header-icon-spacing / 2);
+    margin-left: auto;
     padding: 0;
 
+    // Align last icon to right of page.
+    margin-right: -0.4rem;
+
 		a {
-      @include transition(transform $transition-duration);
-      color: $header-link-color;
+      @include transition(transform 0.1s);
+      border-width: 0;
 			display: block;
-      height: $header-height;
-      padding: 0 ($header-icon-spacing / 2);
+      padding: 0 0.4rem;
 
 			&:hover {
-        @include transform(scale($header-icon-hover-scale));
+        @include transform(scale(1.2));
       }
 		}
-
-    span {
-      @include visually-hidden;
-    }
-
-    svg {
-      height: $header-icon-size;
-      width: $header-icon-size;
-      vertical-align: middle;
-    }
-
-    path {
-      @include transition(fill $transition-duration);
-      fill: $header-link-color;
-    }
-
-    // Make LinkedIn logo appear better vertically centered.
-    .linkedin svg {
-      position: relative;
-      top: -1px;
-    }
-	}
-}
-
-main {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: $article-width;
-  padding: $main-padding-vertical $main-padding-horizontal;
-}
-
-article {
-  > *:last-child {
-    margin-bottom: 0;
   }
 
-  a {
-	  // Use slightly-nicer spaced underline.
-    @include transition(border-color $transition-duration);
-	  border-bottom: 1px solid $link-color;
+  // Make LinkedIn logo appear better vertically centered.
+  .linkedin svg {
+    position: relative;
+    top: -1px;
+  }
+}
 
-	  &:hover {
-		  border-color: transparent;
-	  }
-	}
+article, main {
+  > *:not(header) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $page-width;
+    padding: 0 $side-padding;
+  }
 
   h1 {
-    font-size: $heading-font-size;
-    font-weight: $heading-font-weight;
-    margin-top: 0;
-    margin-bottom: 1.5rem;
+    font-size: 3.6rem;
+    font-weight: 500;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    max-width: $page-width;
+    padding: 0 $side-padding;
 
     a, a:hover {
       border-width: 0;
-      color: inherit;
+      color: $dark-color;
     }
   }
 
   h2, h3, h4, h5, h6 {
-    @include uppercase;
-    font-size: $subheading-font-size;
-    font-weight: $subheading-font-weight;
+    background-color: $light-color;
+    color: $dark-color;
+    font-size: inherit;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    padding: 1rem $side-padding;
   }
 
-  small {
-    color: $gray;
+  header {
+    background-color: $light-color;
+    line-height: 1;
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+
+    time {
+      color: $accent-color;
+      display: block;
+      font-weight: 500;
+      line-height: 1;
+      margin: 0 auto;
+      max-width: $page-width;
+      padding: 0 $side-padding;
+    }
   }
 
-  sup a {
-    border-width: 0;
+  hr {
+    padding: 0;
+  }
+
+  ol, ul {
+    padding-left: 6rem;
+  }
+}
+
+.footnotes {
+  font-size: 1.2rem;
+
+  // Add extra space to keep list numbers inside article width.
+  padding-left: 2rem;
+}
+
+.links {
+  list-style-type: none;
+  padding-left: 2rem;
+
+  // Set color of text to same as links so that overflow ellipsis matches.
+  color: $accent-color;
+
+  li {
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   time {
-    color: $gray;
-    display: block;
-    font-size: $small-font-size;
-    font-style: italic;
-    margin-bottom: $element-spacing;
+    color: $light-color;
+    font-size: 1.4rem;
+    letter-spacing: -0.1rem;
+    margin-right: 0.5rem;
+
+    // Enable tabular (monospaced) numbers so that they align.
+    font-feature-settings: "tnum"; //
+  }
+}
+
+.return {
+  border-width: 0;
+  margin-left: 0.5em;
+
+  &::after {
+    content: "\21a9"; // Return arrow
+  }
+}
+
+@media (max-height: 700px) {
+  body {
+    padding-bottom: 0;
   }
 
-  .footnotes {
-    font-size: $small-font-size;
+  body > header {
+    margin-bottom: 2rem;
+  }
 
-    // Add extra space to keep list numbers inside article width.
-    padding-left: 2rem;
+  main {
+    header {
+      margin-bottom: 2rem;
+    }
 
-    .return {
-      border-width: 0;
-      margin-left: 0.5em;
-
-      &::after {
-        content: "\21a9"; // Return arrow
-      }
+    h2, h3, h4, h5, h6 {
+      margin-top: 2rem;
     }
   }
 
-  .highlight {
-    background-color: $code-bg;
-    margin-left: -$main-padding-horizontal;
-    margin-right: -$main-padding-horizontal;
-
-    code {
-      border-radius: 0;
-      margin: 0 auto;
-      max-width: $article-width;
-      padding: $element-spacing $main-padding-horizontal;
-    }
+  hr {
+    margin: 2rem auto;
   }
+}
 
-  .read-more-link {
-    margin: 0;
-    text-align: right;
+@media (max-width: 530px) {
+  body > header h2 {
+    display: none;
   }
 }
