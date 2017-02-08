@@ -4,6 +4,9 @@ baseurl: "" # Subpath, e.g. /blog/
 url: "http://matthewminer.com" # Base hostname and protocol
 
 # Build settings
+compress_html:
+  clippings: all
+  comments: ["/*! ", " */"]
 redcarpet:
   extensions: ["smart"]
 sass:
