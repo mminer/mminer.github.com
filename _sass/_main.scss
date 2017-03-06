@@ -86,6 +86,7 @@ img {
 
 pre {
   background-color: $light-accent-color;
+  border-radius: 0.2rem;
   margin-left: -$side-padding;
   margin-right: -$side-padding;
   overflow-x: auto;
@@ -249,6 +250,7 @@ article, main {
 
   h2, h3, h4, h5, h6 {
     background-color: $dark-color;
+    border-radius: 0.2rem;
     font-size: inherit;
     line-height: 1;
     margin-bottom: 2rem;
@@ -280,6 +282,27 @@ article, main {
 
   ol, ul {
     padding-left: 6rem;
+  }
+}
+
+.about {
+  @include align-items(center);
+  @include display(flex);
+  @include justify-content(center);
+
+  img {
+    border-radius: 50%;
+  }
+
+  li {
+    line-height: 1.3;
+    margin: 0.9rem 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 4rem;
   }
 }
 
@@ -330,7 +353,7 @@ article, main {
   }
 
   body > header {
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
   }
 
   article, main {
@@ -348,8 +371,28 @@ article, main {
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 550px) {
   body > header h2 {
     display: none;
+  }
+
+  .about {
+    @include flex-direction(column);
+
+    img {
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: $page-width) {
+  h2, h3, h4, h5, h6,
+  pre {
+    border-radius: 0;
   }
 }
