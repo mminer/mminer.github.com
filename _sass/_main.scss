@@ -46,7 +46,7 @@ a {
   text-decoration: none;
 
   // Use slightly-nicer spaced underline.
-  @include transition(border-color 0.1s);
+  @include transition(all 0.1s);
   border-bottom: 1px solid $accent-color;
 
   &:hover {
@@ -122,6 +122,10 @@ body > header {
   max-width: $page-width;
   padding: 0 $side-padding;
 
+  a {
+    border-width: 0;
+  }
+
   h1, h2 {
     font-size: 1.8rem;
     font-weight: 600;
@@ -133,7 +137,6 @@ body > header {
     position: relative;
 
     a {
-      border-width: 0;
       color: $dark-color;
 
       &:hover {
@@ -201,7 +204,6 @@ body > header {
 
 		a {
       @include transition(transform 0.1s);
-      border-width: 0;
 			display: block;
       padding: 0 0.4rem;
 
@@ -289,6 +291,7 @@ article, main {
   @include align-items(center);
   @include display(flex);
   @include justify-content(center);
+  margin-bottom: 12rem;
 
   img {
     border-radius: 50%;
@@ -368,6 +371,10 @@ article, main {
 
   hr {
     margin: 2rem auto;
+  }
+
+  .about {
+    margin-bottom: 6rem;
   }
 }
 
