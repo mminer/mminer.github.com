@@ -41,6 +41,12 @@ ul {
   margin: 2rem 0;
 }
 
+code,
+kbd {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1.5rem;
+}
+
 a {
   color: $accent-color;
   text-decoration: none;
@@ -57,9 +63,7 @@ a {
 
 code {
   background-color: $light-accent-color;
-  border-radius: 0.2rem;
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 1.5rem;
+  border-radius: 0.3rem;
   padding: 0.2rem 0.4rem;
   white-space: nowrap;
 }
@@ -84,9 +88,21 @@ img {
   max-width: 100%;
 }
 
+kbd {
+  background-color: #fafbfc;
+  border: solid 1px #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 0.3rem;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  line-height: 1.6rem;
+  padding: 0.3rem 0.5rem;
+}
+
 pre {
   background-color: $light-accent-color;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
   margin-left: -$side-padding;
   margin-right: -$side-padding;
   overflow-x: auto;
@@ -252,7 +268,7 @@ article, main {
 
   h2, h3, h4, h5, h6 {
     background-color: $dark-color;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
     font-size: inherit;
     line-height: 1;
     margin-bottom: 2rem;

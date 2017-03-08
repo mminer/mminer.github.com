@@ -23,7 +23,7 @@ This lead us to think: why not use Photoshop itself? It already played an indisp
 
 <img src="/images/orbert_level.png" alt="Orbert Level">
 
-In Unity, a C# script reads the colour values of the pixels and instantiats their corresponding prefabs at runtime <sup><a href="#fn1" id="r1">[1]</a></sup>. [Texture2D.GetPixels](http://docs.unity3d.com/ScriptReference/Texture2D.GetPixels.html) makes this step a cinch.
+In Unity, a C# script reads the colour values of the pixels and instantiats their corresponding prefabs at runtime <sup><a href="#fn1" id="r1">[1]</a></sup>. [`Texture2D.GetPixels`](http://docs.unity3d.com/ScriptReference/Texture2D.GetPixels.html) makes this step a cinch.
 
 ```csharp
 static Dictionary<Color, Tile> colorMap = new Dictionary<Color, Tile>()
