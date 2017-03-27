@@ -10,11 +10,12 @@
   }
 
   code {
-    background-color: lightgray;
+    background-color: transparent;
   }
 
   pre {
-    background-color: lightgray;
+    background-color: transparent;
+    border: 1px solid lightgray;
 
     span {
       color: black !important;
@@ -23,10 +24,6 @@
 
   body > header {
     margin-bottom: 4rem;
-
-    h1, h2 {
-      font-weight: 500;
-    }
 
     h1 a {
       color: black;
@@ -41,8 +38,19 @@
     }
   }
 
-  main header time {
-    color: gray;
+  article, main {
+    header {
+      background-color: transparent;
+
+      time {
+        color: gray;
+      }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      background-color: transparent;
+      color: black;
+    }
   }
 
   .links time {
