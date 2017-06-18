@@ -320,6 +320,10 @@ article, main {
 
   // Add extra space to keep list numbers inside article width.
   padding-left: 2rem;
+
+  code {
+    font-size: 1.2rem;
+  }
 }
 
 .links {
