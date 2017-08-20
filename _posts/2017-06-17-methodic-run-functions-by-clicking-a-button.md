@@ -30,7 +30,7 @@ No extra code necessary. Even groovier, if your function takes arguments, you ca
 
 <img src="/images/methodic_arguments.png" alt="Methodic Window With Arguments">
 
-Public, private, static, or instance function, Methodic runs them all. You can even execute functions while Unity's in edit mode<sup><a href="#fn1" id="r1">[1]</a></sup>. Still yawning? Perhaps a video sells it better.
+Public, private, static, or instance function, Methodic runs them all. You can even execute functions while Unity's in edit mode.<sup><a href="#fn1" id="r1">[1]</a></sup> Still yawning? Perhaps a video sells it better.
 
 <iframe width="700" height="371" src="https://www.youtube.com/embed/x9x80XV-8G8?color=white" frameborder="0" allowfullscreen></iframe>
 
