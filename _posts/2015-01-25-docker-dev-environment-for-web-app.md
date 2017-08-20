@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Docker Dev Environment for Web App"
-date:   2015-01-25
 ---
+
+# Docker Dev Environment for Web App
 
 The scenario: you're building a web app and want to hop on the Docker train (mixing metaphors like a champ), but fitting this hot new container tech into your development workflow has you flummoxed. Your dev environment should mirror production's as closely as possible, so running your app from a Docker container in both is a smart choice. Unfortunately, at least at first glance, this sacrifices the convenience of running the app from your local file system.
 

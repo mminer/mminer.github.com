@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Hexahedral"
-date:   2016-12-21
 ---
+
+# Hexahedral
 
 In the spirit of better-late-than-never, let me show you a game I built this past January during the Global Game Jam.
 

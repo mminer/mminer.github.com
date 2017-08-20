@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Methodic: Run Functions by Clicking a Button"
-date:   2017-06-17
 ---
+
+# Methodic: Run Functions by Clicking a Button
 
 Ages ago I built a small Unity editor extension that makes its way into every project I fire up. In a nutshell, it allows you to run functions in a game object's components through a GUI. I recognize how excruciatingly dull that sentence is, so let me convince you that this is something you need with an example.
 

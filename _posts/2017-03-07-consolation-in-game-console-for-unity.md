@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Consolation: In-Game Console for Unity"
-date:   2017-03-07
 ---
+
+# Consolation: In-Game Console for Unity
 
 After creating a fresh Unity project, the first script I add is [Consolation](https://github.com/mminer/consolation), a helpful tool I built that displays an in-game debug console. It uses a tremendously handy but seemingly little-known feature of Unity called --- I hope you're sitting down for this --- [`Application.logMessageReceived`](https://docs.unity3d.com/ScriptReference/Application-logMessageReceived.html). Attach a delegate to this event, call `Debug.Log`, and do whatever you please with the incoming messages. In Consolation's case it collects them in a window for your enthusiastic perusal.
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Level Editing off the Beaten Path"
-date:   2015-05-11
 ---
+
+# Level Editing off the Beaten Path
 
 First a quick story. Most game jams I participate in, despite best intentions, result in a confusing mess of a game on the verge of unplayability. Even the more successful efforts only offer a few minutes of play. Granted, going from nothing to a playable game in one or two days is nontrivial, so expecting anything meatier than a quick mechanics demo is unrealistic.
 

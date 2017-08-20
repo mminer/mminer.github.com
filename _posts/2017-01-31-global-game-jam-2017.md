@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Global Game Jam 2017"
-date:   2017-01-31
 ---
+
+# Global Game Jam 2017
 
 Here's a game I made for this year's Global Game Jam. For no particularly good reason I christened it Irisa. Use your arrow keys to get your purple circle to the green pentagon while avoiding the spooky spiky things.
 
