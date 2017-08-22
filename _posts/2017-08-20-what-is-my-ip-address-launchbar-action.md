@@ -1,8 +1,7 @@
 ---
 layout: post
+title: "What Is My IP Address LaunchBar Action"
 ---
-
-# What Is My IP Address LaunchBar Action
 
 Often I need to find my external IP address, warranting a trip to whatismyip.com. To speed this up I created a [LaunchBar](https://obdev.at/products/launchbar/index.html) action that fetches the info for me. It's a simple wrapper around a one-liner that requests and parses the IP address reported by Dyn.
 

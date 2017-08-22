@@ -1,8 +1,7 @@
 ---
 layout: post
+title: "A Pattern for Async Task Queue Results"
 ---
-
-# A Pattern for Async Task Queue Results
 
 Suppose we have a web app in which the user triggers some slow, expensive task, like transcoding a video or generating a report. We've wisely chosen to offload the job to a background worker, leaving the web server free to handle other requests (and if not, get started with [this helpful overview of the pattern](https://devcenter.heroku.com/articles/background-jobs-queueing) by our comrades at Heroku). Our app scales effortlessly but now we have a new problem: how do we notify the user when the task finishes?
 

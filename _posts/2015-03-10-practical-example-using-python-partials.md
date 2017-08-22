@@ -1,8 +1,7 @@
 ---
 layout: post
+title: "A Practical Example of Using Python Partials"
 ---
-
-# A Practical Example of Using Python Partials
 
 Python's [partials](https://docs.python.org/3/library/functools.html#partial-objects) are one of those features you're unlikely to encounter during everyday development but which are tremendously useful in the right scenario. Here's one of them.
 
