@@ -1,7 +1,11 @@
-title: Matthew Miner
-description: Software + Media Developer
+author: Matthew Miner
 baseurl: "" # Subpath, e.g. /blog/
+description: Software + Media Developer
+title: Matthew Miner
 url: "http://matthewminer.com" # Base hostname and protocol
+
+gems:
+  - jekyll-feed
 
 # Build settings
 compress_html:
