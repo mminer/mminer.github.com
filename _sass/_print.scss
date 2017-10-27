@@ -22,19 +22,11 @@
     }
   }
 
-  body > header {
+  header[role="banner"] {
     margin-bottom: 4rem;
 
-    h1 a {
+    a {
       color: black;
-    }
-
-    h2 {
-      color: gray;
-    }
-
-    ul {
-      display: none;
     }
   }
 
@@ -53,7 +45,7 @@
     }
   }
 
-  .links time {
+  main time {
     color: black;
   }
 }
