@@ -83,7 +83,7 @@ At the core of *Dream Daddy* is a heartwarming story about a father's relationsh
 
 ## Kelly Wallick: Indie Around the World and Beyond
 
-I've lived in both Toronto and Vancouver where game development companies large and small are plentiful, so it was interesting learning about cities like Johannesburg and Tokyo where the indie game scene is only now starting to flourish.  The latter is especially surprising given that it's home to heavyweights like Nintendo and Square. With programs like the *[Indie Megabooth](http://indiemegabooth.com)* that Kelly helps run, it sounds like it's a good time to be an indie developer regardless of your location.
+I've lived in both Toronto and Vancouver where game development companies large and small are plentiful, so it was interesting learning about cities like Johannesburg and Tokyo where the indie game scene is only now starting to flourish.  The latter is especially surprising given that it's home to heavyweights like Nintendo and Square. With programs like the [Indie Megabooth](http://indiemegabooth.com) that Kelly helps run, it sounds like it's a good time to be an indie developer regardless of your location.
 
 
 ## Summary

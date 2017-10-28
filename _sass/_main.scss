@@ -1,33 +1,14 @@
-$black: #222222;
+$black-light: #333333;
 $blue: #0074D9;
 $blue-dark: darken($blue, 10%);
-$gray: #939393;
+$gray: #999999;
 $gray-light: #eeeeee;
 $side-padding: 20px;
-
-html {
-  box-sizing: border-box;
-
-  // Set up font sizes so that 1rem = 10px.
-  font-size: 62.5%;
-}
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
-
-body {
-  background-color: white;
-  color: $black;
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1.5;
-  margin: 0 auto;
-  max-width: 700px;
-  padding: 4rem $side-padding;
 }
 
 blockquote,
@@ -41,12 +22,6 @@ pre,
 table,
 ul {
   margin: 2rem 0;
-}
-
-code,
-kbd {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 1.5rem;
 }
 
 a {
@@ -63,77 +38,63 @@ a {
   }
 }
 
-article header {
-  margin-bottom: 4rem;
+article {
+  margin-top: 12rem;
 
-  a, a:hover {
-    border-width: 0;
-    color: inherit;
+  header {
+    margin-bottom: 4rem;
+
+    a, a:hover {
+      border-width: 0;
+      color: inherit;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      margin-bottom: 1rem;
+    }
+
+    time {
+      color: $gray;
+      font-size: 1.6rem;
+    }
   }
+}
 
-  h1 {
-    font-size: 3.2rem;
-    margin-bottom: 1rem;
-
-  }
-
-  time {
-    color: $gray;
-    font-size: 1.6rem;
-  }
+body {
+  background-color: white;
+  color: $black-light;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 4rem $side-padding;
 }
 
 code {
   background-color: $gray-light;
-  border-radius: 0.3rem;
+  border-radius: 0.2rem;
   padding: 0.2rem 0.4rem;
   white-space: nowrap;
 }
 
+code,
+kbd {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1.5rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
+  color: black;
   font-weight: 700;
   line-height: 1.1;
 }
 
 h2, h3, h4, h5, h6 {
   font-size: 2rem;
-  margin-bottom: 2rem;
   margin-top: 4rem;
-}
-
-header[role="banner"] {
-  margin-bottom: 12rem;
-
-  a, a:hover {
-    border-width: 0;
-    color: inherit;
-  }
-
-  h1 {
-    display: inline-block;
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin: 0;
-    position: relative;
-    text-transform: uppercase;
-
-    &::after {
-      @include transition(all 0.1s);
-      background-color: $black;
-      content: "";
-      height: 0.2rem;
-      left: 0;
-      margin-top: 0.2rem;
-      pointer-events: none;
-      position: absolute;
-      top: 100%;
-      width: 100%;
-    }
-
-    &:hover::after {
-      background-color: transparent;
-    }
-  }
 }
 
 hr {
@@ -142,6 +103,13 @@ hr {
   border-width: 0.2rem 0 0 0;
   margin: 4rem auto;
   padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+
+  // Set up font sizes so that 1rem = 10px.
+  font-size: 62.5%;
 }
 
 iframe {
@@ -164,62 +132,6 @@ kbd {
   padding: 0.3rem 0.5rem;
 }
 
-main {
-  margin-top: -5rem;
-
-  img {
-    border-radius: 0.6rem;
-    display: block;
-  }
-
-  h2 {
-    margin-top: 6rem;
-  }
-
-  li {
-    margin-bottom: 0.5rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  path {
-    fill: inherit;
-  }
-
-  svg {
-    height: 2rem;
-    margin-right: 0.5rem;
-    position: relative;
-    width: 2rem;
-    vertical-align: text-bottom;
-  }
-
-  time {
-    color: $black;
-    font-size: 1.6rem;
-    margin-right: 0.5rem;
-
-    // Enable tabular (monospaced) numbers so that they align.
-    font-feature-settings: "tnum"; //
-  }
-
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-
-  .blog-links {
-    // Set color of text to same as links so that overflow ellipsis matches.
-    color: $blue;
-  }
-
-  .email    svg { top: -1px; }
-  .github   svg { top: -2px; }
-  .linkedin svg { top: -2px; }
-  .youtube  svg { top: -1px; }
-}
-
 pre {
   background-color: $gray-light;
   margin-left: -$side-padding;
@@ -231,6 +143,19 @@ pre {
     display: block;
     padding: 0;
     white-space: pre;
+  }
+}
+
+section {
+  margin-top: 8rem;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
   }
 }
 
@@ -250,6 +175,84 @@ ul {
   list-style-type: square;
 }
 
+[role="banner"] {
+  a {
+    border-bottom: 2px solid black;
+    color: inherit;
+    display: block;
+    padding-bottom: 2px;
+
+    &:hover {
+      border-color: transparent;
+      color: inherit;
+    }
+  }
+
+  h1 {
+    @include transition(all 0.1s);
+    display: inline-block;
+    font-size: 1.8rem;
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+
+#about {
+  @include align-items(center);
+  @include display(flex);
+  @include justify-content(center);
+
+  img {
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+  }
+
+  ul {
+    margin: 0;
+  }
+}
+
+#blog {
+  li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  time {
+    color: $black-light;
+    font-size: 1.6rem;
+    margin-right: 0.5rem;
+
+    // Enable tabular (monospaced) numbers so that they align.
+    font-feature-settings: "tnum"; //
+  }
+
+  ul {
+    // Set color of text to same as links so that overflow ellipsis matches.
+    color: $blue;
+  }
+}
+
+#social {
+  path {
+    fill: $black-light;
+  }
+
+  svg {
+    height: 2rem;
+    margin-right: 0.5rem;
+    position: relative;
+    width: 2rem;
+    vertical-align: text-bottom;
+  }
+
+  .email    svg { top: -1px; }
+  .github   svg { top: -2px; }
+  .linkedin svg { top: -2px; }
+  .youtube  svg { top: -1px; }
+}
+
 .footnotes {
   font-size: 1.4rem;
 
@@ -267,5 +270,47 @@ ul {
 
   &::after {
     content: "\21a9"; // Return arrow
+  }
+}
+
+// Make videos scale to fit mobile.
+// https://stackoverflow.com/a/15844571
+.video {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%; // 16/9
+  position: relative;
+
+  iframe {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+@media (max-height: 700px) {
+  article {
+    margin-top: 6rem;
+  }
+
+  body {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+  section {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 550px) {
+  #about {
+    @include align-items(start);
+    @include flex-direction(column);
+
+    img {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
   }
 }
