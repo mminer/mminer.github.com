@@ -29,7 +29,6 @@ a {
   text-decoration: none;
 
   // Use slightly-nicer spaced underline.
-  @include transition(all 0.1s);
   border-bottom: 1px solid $blue;
 
   &:hover {
@@ -189,7 +188,6 @@ ul {
   }
 
   h1 {
-    @include transition(all 0.1s);
     display: inline-block;
     font-size: 1.8rem;
     margin: 0;
