@@ -63,9 +63,8 @@ reducer passed to the class' initializer to update the state.
 
 ```swift
 class Store<StateType, ActionType> {
-    var state: StateType
-
     let reducer: Reducer<StateType, ActionType>
+    var state: StateType
 
     init(reducer: @escaping Reducer<StateType, ActionType>, state: StateType) {
         self.reducer = reducer
@@ -97,10 +96,9 @@ We're halfway there. What we're missing is a mechanism to notify interested part
 import RxSwift
 
 class Store<StateType, ActionType> {
-    var state: StateType
-
     let reducer: Reducer<StateType, ActionType>
     let subject: BehaviorSubject<StateType>
+    var state: StateType
 
     init(reducer: @escaping Reducer<StateType, ActionType>, state: StateType) {
         self.reducer = reducer
