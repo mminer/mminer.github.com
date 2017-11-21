@@ -163,7 +163,7 @@ struct State {
     let email: String
 
     var isSignedIn: Bool {
-        return name.isEmpty && email.isEmpty
+        return !name.isEmpty && !email.isEmpty
     }
 }
 
