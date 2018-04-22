@@ -11,7 +11,7 @@ curl --silent http://checkip.dyndns.org/ | grep --extended-regexp --only-matchin
 
 This is useful on its own as a shell command, but when available as part of your LaunchBar workflow it becomes even handier.<sup><a href="#fn1" id="r1">[1]</a></sup>
 
-<img src="/images/what_is_my_ip_address.gif" alt="What Is My IP Address? LaunchBar Action">
+<img src="/images/what-is-my-ip-address.gif" alt="What Is My IP Address? LaunchBar Action">
 
 Download a signed version of the action [here](https://github.com/mminer/launchbar/raw/master/Signed/What%20Is%20My%20IP%20Address%3F.lbaction). Money back guaranteed.
 
