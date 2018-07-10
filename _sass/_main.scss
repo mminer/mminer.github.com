@@ -1,8 +1,10 @@
 $black-light: #333333;
-$blue: #0074D9;
+$blue: #2980b9;
 $blue-dark: darken($blue, 10%);
 $gray: #999999;
 $gray-light: #eeeeee;
+$purple: #8e44ad;
+$purple-light: darken($purple, 10%);
 $side-padding: 20px;
 
 *,
@@ -34,6 +36,15 @@ a {
   &:hover {
     border-color: transparent;
     color: $blue-dark;
+  }
+
+  &:visited {
+    border-color: $purple;
+    color: $purple;
+
+    &:hover {
+      color: $purple-light;
+    }
   }
 }
 
