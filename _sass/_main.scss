@@ -54,7 +54,7 @@ article {
   header {
     margin-bottom: 4rem;
 
-    a, a:hover {
+    a, a:hover, a:visited, a:visited:hover {
       border-width: 0;
       color: inherit;
     }
