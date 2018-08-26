@@ -1,0 +1,96 @@
+---
+layout: post
+title: "Creating an XPC Service in Swift"
+---
+
+Say you want to add an [XPC Service](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingXPCServices.html#//apple_ref/doc/uid/10000172i-SW6-SW1) to your Swift app. Fine idea, but notice that Xcode spits out Objective-C when you add an XPC Service target.<sup><a href="#fn1" id="r1">[1]</a></sup> Nobody has time for that. Fortunately converting Xcode's starter code to Swift is mostly straightforward. Let's twiddle some knobs and twist a few dials and get you rolling.
+
+After creating an XPC Service target, in our case named "MyService", we have four files: *main.m*, *MyService.h*, *MyService.m*, and *MyServiceProtocol.h*. Rename these to *main.swift*, *MyService.swift*, *MyServiceDelegate.swift*, and *MyServiceProtocol.swift*. Next, add them to the target's "Compile Sources" build phase.
+
+<img alt="Xcode Build Phases" srcset="/images/xpc-build-phases.png 1x, /images/xpc-build-phases@2x.png 2x" src="/images/xpc-build-phases.png">
+
+Now replace the Objective-C code in each file with its Swift translation.
+
+```swift
+// main.swift
+import Foundation
+
+let delegate = MyServiceDelegate()
+let listener = NSXPCListener.service()
+listener.delegate = delegate
+listener.resume()
+```
+
+```swift
+// MyService.swift
+import Foundation
+
+class MyService: NSObject, MyServiceProtocol {
+    func upperCaseString(_ string: String, withReply reply: (String) -> Void) {
+        let response = string.uppercased()
+        reply(response)
+    }
+}
+```
+
+```swift
+// MyServiceDelegate.swift
+import Foundation
+
+class MyServiceDelegate: NSObject, NSXPCListenerDelegate {
+    func listener(_ listener: NSXPCListener, shouldAcceptNewConnection newConnection: NSXPCConnection) -> Bool {
+        let exportedObject = MyService()
+        newConnection.exportedInterface = NSXPCInterface(with: MyServiceProtocol.self)
+        newConnection.exportedObject = exportedObject
+        newConnection.resume()
+        return true
+    }
+}
+```
+
+```swift
+// MyServiceProtocol.swift
+import Foundation
+
+@objc public protocol MyServiceProtocol {
+    func upperCaseString(_ string: String, withReply reply: (String) -> Void)
+}
+```
+
+Before compiling this code we need to tweak some build settings. In particular:
+
+- **Install Objective-C Compatibility Header**: NO
+- **Objective-C Generated Interface Header Name**: ""
+- **Runtime Search Paths**: @loader_path/../../../../Frameworks
+- **Swift Language Version**: whatever version of Swift you use
+
+<img alt="Xcode Build Settings" srcset="/images/xpc-build-settings.png 1x, /images/xpc-build-settings@2x.png 2x" src="/images/xpc-build-settings.png">
+
+With any luck we can now build. In our main application we delegate a task to our service by creating an [`NSXPCConnection`](https://developer.apple.com/documentation/foundation/nsxpcconnection) with the name of the target's bundle identifier then calling the functions defined in `MyService`.
+
+```swift
+import MyService
+
+...
+
+let connection = NSXPCConnection(serviceName: "com.matthewminer.MyService")
+connection.remoteObjectInterface = NSXPCInterface(with: MyServiceProtocol.self)
+connection.resume()
+
+let service = connection.remoteObjectProxyWithErrorHandler { error in
+    print("Received error:", error)
+} as? MyServiceProtocol
+
+service?.upperCaseString("hello XPC") { response in
+    print("Response from XPC service:", response)
+}
+```
+
+That's it! For reference you can find the above code snippets in [this Gist](https://gist.github.com/mminer/be55bcdf7c4ff004ecafba6a664addc5). Boy howdy.
+
+
+---
+
+<ol class="footnotes">
+    <li id="fn1">As of Xcode 9, at least. Hopefully Apple changes this in future versions and this bone dry article can be tossed into the World Wide Web's trash bin.<a href="#r1" class="return"></a></li>
+</ol>
