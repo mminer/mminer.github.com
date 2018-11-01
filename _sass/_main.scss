@@ -1,10 +1,13 @@
-$black-light: #333333;
+$black: #000;
+$black-light: #333;
 $blue: #2980b9;
 $blue-dark: darken($blue, 10%);
-$gray: #999999;
-$gray-light: #eeeeee;
+$gray: #999;
+$gray-light: #eee;
 $purple: #8e44ad;
-$purple-light: darken($purple, 10%);
+$purple-dark: darken($purple, 10%);
+$white: #fff;
+
 $side-padding: 20px;
 
 *,
@@ -43,7 +46,7 @@ a {
     color: $purple;
 
     &:hover {
-      color: $purple-light;
+      color: $purple-dark;
     }
   }
 }
@@ -72,7 +75,7 @@ article {
 }
 
 body {
-  background-color: white;
+  background-color: $white;
   color: $black-light;
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   font-size: 1.8rem;
@@ -97,7 +100,7 @@ kbd {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: black;
+  color: $black;
   font-weight: 700;
   line-height: 1.1;
 }
@@ -191,7 +194,7 @@ video {
 
 [role="banner"] {
   a {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid $black;
     color: inherit;
     display: block;
     padding-bottom: 2px;
@@ -333,5 +336,52 @@ video {
       margin-right: 0;
       margin-bottom: 2rem;
     }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  article time {
+    color: invert($gray);
+  }
+
+  body {
+    background-color: $black;
+    color: invert($black-light);
+  }
+
+  code {
+    background-color: invert($gray-light);
+  }
+
+  h1, h2, h3, h4, h5 {
+    color: invert($black);
+  }
+
+  hr {
+    border-color: invert($gray-light);
+  }
+
+  kbd {
+    background-color: invert(#fafbfc);
+    border-color: invert(#c6cbd1);
+    border-bottom-color: invert(#959da5);
+    box-shadow: inset 0 -1px 0 invert(#959da5);
+    color: invert(#444d56);
+  }
+
+  pre {
+    background-color: invert($gray-light);
+  }
+
+  [role="banner"] a {
+    border-bottom-color: invert($black);
+  }
+
+  #blog time {
+    color: invert($black-light);
+  }
+
+  #social path {
+    fill: invert($black-light);
   }
 }
