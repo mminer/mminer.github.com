@@ -5,8 +5,8 @@ title: "Global Game Jam 2017"
 
 Here's a game I made for this year's Global Game Jam. For no particularly good reason I christened it Irisa. Use your arrow keys to get your purple circle to the green pentagon while avoiding the spooky spiky things.
 
-<iframe src="http://matthewminer.com/irisa/" style="width: 100%; height: 478px; border: none;" scrolling="no">
-  <a href="http://matthewminer.com/irisa/">Play Irisa</a>
+<iframe scrolling="no" src="https://matthewminer.com/irisa/" style="width: 100%; height: 478px;">
+    <a href="https://matthewminer.com/irisa/">Play Irisa</a>
 </iframe>
 
 My goals were mostly the same as [last year](/2016/12/21/hexahedral.html): keep the scope manageable, prioritize polish, make it fun. Sleep. Eat something green.

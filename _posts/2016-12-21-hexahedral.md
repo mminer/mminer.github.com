@@ -5,8 +5,8 @@ title: "Hexahedral"
 
 In the spirit of better-late-than-never, let me show you a game I built this past January during the Global Game Jam.
 
-<iframe src="http://matthewminer.com/hexahedral/" style="width: 100%; height: 478px; border: none;" scrolling="no">
-  <a href="http://matthewminer.com/hexahedral/">Play Hexahedral</a>
+<iframe scrolling="no" src="https://matthewminer.com/hexahedral/" style="width: 100%; height: 478px;">
+    <a href="https://matthewminer.com/hexahedral/">Play Hexahedral</a>
 </iframe>
 
 To keep the scope manageable while flying solo I self-imposed some limitations:
