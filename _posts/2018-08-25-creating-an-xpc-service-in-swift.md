@@ -26,7 +26,7 @@ listener.resume()
 import Foundation
 
 class MyService: NSObject, MyServiceProtocol {
-    func upperCaseString(_ string: String, withReply reply: (String) -> Void) {
+    func upperCaseString(_ string: String, withReply reply: @escaping (String) -> Void) {
         let response = string.uppercased()
         reply(response)
     }
@@ -53,7 +53,7 @@ class MyServiceDelegate: NSObject, NSXPCListenerDelegate {
 import Foundation
 
 @objc public protocol MyServiceProtocol {
-    func upperCaseString(_ string: String, withReply reply: (String) -> Void)
+    func upperCaseString(_ string: String, withReply reply: @escaping (String) -> Void)
 }
 ```
 
@@ -87,6 +87,8 @@ service?.upperCaseString("hello XPC") { response in
 ```
 
 That's it! For reference you can find the above code snippets in [this Gist](https://gist.github.com/mminer/be55bcdf7c4ff004ecafba6a664addc5). Boy howdy.
+
+*Thanks to GitHub user <a href="https://github.com/adur1990">adur1990</a> for Swift 4 compatibility fixes.*
 
 
 ---
