@@ -51,6 +51,11 @@ a {
   }
 }
 
+abbr,
+abbr[title] {
+  text-decoration: none;
+}
+
 article {
   margin-top: 12rem;
 
