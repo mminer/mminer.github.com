@@ -36,6 +36,10 @@ a {
   // Use slightly-nicer spaced underline.
   border-bottom: 1px solid $blue;
 
+  &.image-link {
+    border-bottom-width: 0;
+  }
+
   &:hover {
     border-color: transparent;
     color: $blue-dark;
