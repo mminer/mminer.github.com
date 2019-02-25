@@ -83,6 +83,12 @@ Back at the chalet there's a sleigh ride. Think you're too old for sleigh rides?
     <img alt="Selfie at the peak" srcset="https://s3.amazonaws.com/matthewminer/grouse-mountain/peak-selfie-thumbnail.jpg 1x, https://s3.amazonaws.com/matthewminer/grouse-mountain/peak-selfie-thumbnail@2x.jpg 2x" src="https://s3.amazonaws.com/matthewminer/grouse-mountain/peak-selfie-thumbnail.jpg">
 </a>
 
+**Update 2019-02-24:** Here's the peak on a different day. What a difference a bit of sunshine makes.
+
+<a class="image-link" href="https://s3.amazonaws.com/matthewminer/grouse-mountain/sunny-day.jpg" target="_blank">
+    <img alt="Peak on a sunny day" srcset="https://s3.amazonaws.com/matthewminer/grouse-mountain/sunny-day.jpg 1x, https://s3.amazonaws.com/matthewminer/grouse-mountain/sunny-day-thumbnail@2x.jpg 2x" src="https://s3.amazonaws.com/matthewminer/grouse-mountain/sunny-day-thumbnail.jpg">
+</a>
+
 
 ---
 
