@@ -233,6 +233,10 @@ video {
     margin-right: 2rem;
   }
 
+  li:last-child {
+    margin-bottom: 0;
+  }
+
   ul {
     margin: 0;
   }

@@ -49,5 +49,5 @@ If this looks like something your game development environment pines for (or if 
 </ol>
 
 <small>
-    Assets for my Breakout clone from [Kenney’s Puzzle Pack 2](http://www.kenney.nl/assets/puzzle-pack-2). Thanks Kenney!
+    Assets for my Breakout clone from [Kenney's Puzzle Pack 2](http://www.kenney.nl/assets/puzzle-pack-2). Thanks Kenney!
 </small>
