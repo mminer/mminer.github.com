@@ -39,7 +39,7 @@ Public, private, static, or instance function, Methodic runs them all. You can e
     </iframe>
 </div>
 
-If this looks like something your game development environment pines for (or if you simply want to make me a wealthy man), you can [purchase Methodic](https://www.assetstore.unity3d.com/en/#!/content/954) for $10 on the Unity Asset Store. I can't promise that you'll make better games with it, but you *might*, and is that an opportunity you can ignore? Not in this economy.
+If this looks like something your game development environment pines for (or if you simply want to make me a wealthy man), you can [purchase Methodic](https://assetstore.unity.com/packages/tools/utilities/methodic-954) for $10 on the Unity Asset Store. I can't promise that you'll make better games with it, but you *might*, and is that an opportunity you can ignore? Not in this economy.
 
 
 ---
