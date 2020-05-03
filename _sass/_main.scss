@@ -247,10 +247,31 @@ video {
 }
 
 #blog {
+  h2 a {
+    border-bottom-width: 0;
+    margin-left: 0.2rem;
+
+    &:hover path {
+      fill: $blue-dark;
+    }
+  }
+
   li {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+
+  path {
+    fill: $blue;
+  }
+
+  svg {
+    height: 2.1rem;
+    position: relative;
+    top: 1px;
+    width: 2.1rem;
+    vertical-align: text-bottom;
   }
 
   time {
