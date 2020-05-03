@@ -4,7 +4,7 @@ description: Software Engineer and Game Developer
 title: Matthew Miner
 url: "https://matthewminer.com" # Base hostname and protocol
 
-gems:
+plugins:
   - jekyll-feed
 
 # Build settings
