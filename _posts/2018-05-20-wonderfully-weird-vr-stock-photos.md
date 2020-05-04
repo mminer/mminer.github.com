@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Wonderfully Weird VR Stock Photos"
 ---
 

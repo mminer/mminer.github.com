@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Announcing Lumos Game Analytics"
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Redux-esque Store in Swift"
 ---
 

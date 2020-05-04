@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Full Indie Summit 2017"
 ---
 

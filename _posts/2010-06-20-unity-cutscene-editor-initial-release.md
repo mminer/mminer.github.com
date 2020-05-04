@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Unity Cutscene Editor Initial Release"
 ---
 

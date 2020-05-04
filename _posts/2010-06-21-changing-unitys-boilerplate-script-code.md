@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Changing Unity's Boilerplate Script Code"
 ---
 

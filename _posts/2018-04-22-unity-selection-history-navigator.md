@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Unity Selection History Navigator"
 ---
 

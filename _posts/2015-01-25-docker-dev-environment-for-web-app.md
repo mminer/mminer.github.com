@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Docker Dev Environment for Web App"
 ---
 

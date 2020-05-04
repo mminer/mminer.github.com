@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "High Performance Web Sites and Even Faster Web Sites"
 ---
 

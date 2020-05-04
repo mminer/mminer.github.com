@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Global Game Jam 2017"
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Summer of Code: A Week and a Half In"
 ---
 

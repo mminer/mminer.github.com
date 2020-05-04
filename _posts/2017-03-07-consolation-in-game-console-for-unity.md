@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Consolation: In-Game Console for Unity"
 ---
 

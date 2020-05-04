@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Event.Use() and Scroll Views"
 ---
 

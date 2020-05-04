@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Trajectory Wins Great Canadian Appathon's \"Wild Card\" Category"
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Level Editing off the Beaten Path"
 ---
 

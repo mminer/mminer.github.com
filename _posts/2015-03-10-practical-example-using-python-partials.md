@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "A Practical Example of Using Python Partials"
 ---
 

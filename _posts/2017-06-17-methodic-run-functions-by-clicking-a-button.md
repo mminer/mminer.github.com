@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Methodic: Run Functions by Clicking a Button"
 ---
 

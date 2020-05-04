@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Summer of Code: Progress Report on Unity3D Blog"
 ---
 

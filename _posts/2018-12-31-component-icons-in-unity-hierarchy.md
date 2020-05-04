@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Component Icons in Unity Hierarchy"
 ---
 

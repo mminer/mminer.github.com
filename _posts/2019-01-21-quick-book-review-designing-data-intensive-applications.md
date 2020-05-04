@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Quick Book Review: Designing Data-Intensive Applications"
 ---
 

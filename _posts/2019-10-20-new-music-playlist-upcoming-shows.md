@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "New Music Playlist: Upcoming Shows"
 ---
 

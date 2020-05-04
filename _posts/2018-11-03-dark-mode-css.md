@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Dark Mode CSS"
 ---
 

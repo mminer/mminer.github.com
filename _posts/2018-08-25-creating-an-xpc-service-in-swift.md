@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Creating an XPC Service in Swift"
 ---
 

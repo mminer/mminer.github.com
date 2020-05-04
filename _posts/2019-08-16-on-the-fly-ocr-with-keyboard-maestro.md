@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "OCR on the Fly with Keyboard Maestro"
 ---
 

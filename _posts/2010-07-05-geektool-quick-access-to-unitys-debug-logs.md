@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "GeekTool: Quick Access to Unity's Debug Logs"
 ---
 

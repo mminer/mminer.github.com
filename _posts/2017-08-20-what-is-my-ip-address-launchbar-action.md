@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "What Is My IP Address LaunchBar Action"
 ---
 
