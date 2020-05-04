@@ -1,14 +1,24 @@
-$black: #000;
-$black-light: #333;
-$blue: #2980b9;
-$blue-dark: darken($blue, 10%);
-$gray: #999;
-$gray-light: #eee;
-$purple: #8e44ad;
-$purple-dark: darken($purple, 10%);
-$white: #fff;
+:root {
+  /* Colours */
+  --body-background-color: #fff;
+  --body-color: #333;
+  --code-background-color: #eee;
+  --headings-color: #000;
+  --hr-border-color: #eee;
+  --kbd-background-color: #fafbfc;
+  --kbd-border-bottom-color: #959da5;
+  --kbd-border-color: #c6cbd1;
+  --kbd-box-shadow-color: #959da5;
+  --kbd-color: #444d56;
+  --link-color: #2980b9;
+  --link-hover-color: darken(#2980b9, 10%);
+  --link-visited-color: #8e44ad;
+  --link-visited-hover-color: darken(#8e44ad, 10%);
+  --time-color: #999;
 
-$side-padding: 20px;
+  /* Layout */
+  --side-padding: 20px;
+}
 
 *,
 *::before,
@@ -30,11 +40,11 @@ ul {
 }
 
 a {
-  color: $blue;
+  color: var(--link-color);
   text-decoration: none;
 
-  // Use slightly-nicer spaced underline.
-  border-bottom: 1px solid $blue;
+  /* Use slightly-nicer spaced underline. */
+  border-bottom: 1px solid var(--link-color);
 
   &.image-link {
     border-bottom-width: 0;
@@ -42,15 +52,15 @@ a {
 
   &:hover {
     border-color: transparent;
-    color: $blue-dark;
+    color: var(--link-hover-color);
   }
 
   &:visited {
-    border-color: $purple;
-    color: $purple;
+    border-color: var(--link-visited-color);
+    color: var(--link-visited-color);
 
     &:hover {
-      color: $purple-dark;
+      color: var(--link-visited-hover-color);
     }
   }
 }
@@ -77,7 +87,7 @@ article {
     }
 
     time {
-      color: $gray;
+      color: var(--time-color);
       font-size: 1.6rem;
     }
   }
@@ -88,19 +98,19 @@ article {
 }
 
 body {
-  background-color: $white;
-  color: $black-light;
+  background-color: var(--body-background-color);
+  color: var(--body-color);
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.5;
   margin: 0 auto;
   max-width: 700px;
-  padding: 4rem $side-padding;
+  padding: 4rem var(--side-padding);
 }
 
 code {
-  background-color: $gray-light;
+  background-color: var(--code-background-color);
   border-radius: 0.2rem;
   padding: 0.2rem 0.4rem;
   white-space: nowrap;
@@ -113,7 +123,7 @@ kbd {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $black;
+  color: var(--headings-color);
   font-weight: 700;
   line-height: 1.1;
 }
@@ -124,7 +134,7 @@ h2, h3, h4, h5, h6 {
 }
 
 hr {
-  border-color: $gray-light;
+  border-color: var(--hr-border-color);
   border-style: solid;
   border-width: 0.2rem 0 0 0;
   margin: 4rem auto;
@@ -134,7 +144,7 @@ hr {
 html {
   box-sizing: border-box;
 
-  // Set up font sizes so that 1rem = 10px.
+  /* Set up font sizes so that 1rem = 10px. */
   font-size: 62.5%;
 }
 
@@ -148,23 +158,23 @@ img {
 }
 
 kbd {
-  background-color: #fafbfc;
-  border: solid 1px #c6cbd1;
-  border-bottom-color: #959da5;
+  background-color: var(--kbd-background-color);
+  border: solid 1px var(--kbd-border-color);
+  border-bottom-color: var(--kbd-border-bottom-color);
   border-radius: 0.3rem;
-  box-shadow: inset 0 -1px 0 #959da5;
-  color: #444d56;
+  box-shadow: inset 0 -1px 0 var(--kbd-box-shadow-color);
+  color: var(--kbd-color);
   display: inline-block;
   line-height: 1.6rem;
   padding: 0.3rem 0.5rem;
 }
 
 pre {
-  background-color: $gray-light;
-  margin-left: -$side-padding;
-  margin-right: -$side-padding;
+  background-color: var(--code-background-color);
+  margin-left: calc(-1 * var(--side-padding));
+  margin-right: calc(-1 * var(--side-padding));
   overflow-x: auto;
-  padding: 2rem $side-padding;
+  padding: 2rem var(--side-padding);
 
   code {
     display: block;
@@ -208,7 +218,7 @@ video {
 
 [role="banner"] {
   a {
-    border-bottom: 2px solid $black;
+    border-bottom: 2px solid var(--headings-color);
     color: inherit;
     display: block;
     padding-bottom: 2px;
@@ -252,7 +262,7 @@ video {
     margin-left: 0.2rem;
 
     &:hover path {
-      fill: $blue-dark;
+      fill: var(--link-hover-color);
     }
   }
 
@@ -263,7 +273,7 @@ video {
   }
 
   path {
-    fill: $blue;
+    fill: var(--link-color);
   }
 
   svg {
@@ -275,23 +285,23 @@ video {
   }
 
   time {
-    color: $black-light;
+    color: var(--body-color);
     font-size: 1.6rem;
     margin-right: 0.5rem;
 
-    // Enable tabular (monospaced) numbers so that they align.
-    font-feature-settings: "tnum"; //
+    /* Enable tabular (monospaced) numbers so that they align. */
+    font-feature-settings: "tnum";
   }
 
   ul {
-    // Set color of text to same as links so that overflow ellipsis matches.
-    color: $blue;
+    /* Set color of text to same as links so that overflow ellipsis matches. */
+    color: var(--link-color);
   }
 }
 
 #social {
   path {
-    fill: $black-light;
+    fill: var(--body-color);
   }
 
   svg {
@@ -311,7 +321,7 @@ video {
 .footnotes {
   font-size: 1.4rem;
 
-  // Add extra space to keep list numbers inside article width.
+  /* Add extra space to keep list numbers inside article width. */
   padding-left: 2rem;
 
   code {
@@ -332,16 +342,17 @@ video {
   margin-left: 0.5em;
 
   &::after {
-    content: "\21a9"; // Return arrow
+    content: "\21a9"; /* Return arrow */
   }
 }
 
-// Make videos scale to fit mobile.
-// https://stackoverflow.com/a/15844571
+/* Make videos scale to fit mobile.
+ * https://stackoverflow.com/a/15844571
+ */
 .video {
   height: 0;
   overflow: hidden;
-  padding-bottom: 56.25%; // 16/9
+  padding-bottom: 56.25%; /* 16/9 */
   position: relative;
 
   iframe {
@@ -379,48 +390,16 @@ video {
 }
 
 @media (prefers-color-scheme: dark) {
-  article time {
-    color: invert($gray);
-  }
-
-  body {
-    background-color: $black;
-    color: invert($black-light);
-  }
-
-  code {
-    background-color: invert($gray-light);
-  }
-
-  h1, h2, h3, h4, h5 {
-    color: invert($black);
-  }
-
-  hr {
-    border-color: invert($gray-light);
-  }
-
-  kbd {
-    background-color: invert(#fafbfc);
-    border-color: invert(#c6cbd1);
-    border-bottom-color: invert(#959da5);
-    box-shadow: inset 0 -1px 0 invert(#959da5);
-    color: invert(#444d56);
-  }
-
-  pre {
-    background-color: invert($gray-light);
-  }
-
-  [role="banner"] a {
-    border-bottom-color: invert($black);
-  }
-
-  #blog time {
-    color: invert($black-light);
-  }
-
-  #social path {
-    fill: invert($black-light);
+  :root {
+    --body-background-color: #000;
+    --body-color: #ccc;
+    --code-background-color: #111;
+    --headings-color: #fff;
+    --hr-border-color: #111;
+    --kbd-background-color: invert(#fafbfc);
+    --kbd-border-bottom-color: invert(#959da5);
+    --kbd-border-color: invert(#c6cbd1);
+    --kbd-box-shadow-color: invert(#959da5);
+    --kbd-color: invert(#444d56);
   }
 }
