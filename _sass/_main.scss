@@ -11,9 +11,9 @@
   --kbd-box-shadow-color: #959da5;
   --kbd-color: #444d56;
   --link-color: #2980b9;
-  --link-hover-color: darken(#2980b9, 10%);
+  --link-hover-color: #20638f;
   --link-visited-color: #8e44ad;
-  --link-visited-hover-color: darken(#8e44ad, 10%);
+  --link-visited-hover-color: #703688;
   --time-color: #999;
 
   /* Layout */
@@ -396,10 +396,10 @@ video {
     --code-background-color: #111;
     --headings-color: #fff;
     --hr-border-color: #111;
-    --kbd-background-color: invert(#fafbfc);
-    --kbd-border-bottom-color: invert(#959da5);
-    --kbd-border-color: invert(#c6cbd1);
-    --kbd-box-shadow-color: invert(#959da5);
-    --kbd-color: invert(#444d56);
+    --kbd-background-color: #050403;
+    --kbd-border-bottom-color: #6a625a;
+    --kbd-border-color: #39342e;
+    --kbd-box-shadow-color: #6a625a;
+    --kbd-color: #bbb2a9;
   }
 }
