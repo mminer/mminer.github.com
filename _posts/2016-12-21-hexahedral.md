@@ -25,7 +25,7 @@ Progress bars and slow load times are the pits. Originally I restricted myself t
 
 ## Cross Platform
 
-At a previous jam I built [a game](https://github.com/mminer/bursting-with-colour) that you can only play using Xbox 360 controllers connected to a PC or a Mac with third-party drivers installed. *I'm* not even sure how to play it any more. This time I was determined to release something playable on any device, from the junkiest smartphone to the latest quad-SLI-magma-powered-quintillion-MHz beast of a machine. Web tech was a natural fit -- if you have a browser, you can play Hexahedral.
+At a previous jam I built [a game](https://github.com/mminer/bursting-with-colour) that you can only play using Xbox 360 controllers connected to a PC or a Mac with third-party drivers installed. *I'm* not even sure how to play it any more. This time I was determined to release something playable on any device, from the junkiest smartphone to the latest quad-SLI-magma-powered-quintillion-MHz beast of a machine. Web tech was a natural fit -- if you have a browser, you can play *Hexahedral*.
 
 
 ## Attractive
