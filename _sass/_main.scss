@@ -376,18 +376,3 @@ video {
     }
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --body-background-color: #000;
-    --body-color: #ccc;
-    --code-background-color: #111;
-    --headings-color: #fff;
-    --hr-border-color: #111;
-    --kbd-background-color: #050403;
-    --kbd-border-bottom-color: #6a625a;
-    --kbd-border-color: #39342e;
-    --kbd-box-shadow-color: #6a625a;
-    --kbd-color: #bbb2a9;
-  }
-}
