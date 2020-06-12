@@ -2,7 +2,7 @@
 title: "Unity Scene View Bookmarks"
 ---
 
-Unreal Engine has a [handy feature](https://www.youtube.com/watch?v=_i-d5OZmhWI) that allows you to bookmark the viewport camera's current position then return to it later. Press <kbd>control</kbd> and a number from 0-9 to create a bookmark, then later press the number you chose to move the viewport camera back to its previous position. It gets you no closer to releasing that MMORPG you overscoped, but it sure is useful.
+Unreal Engine has a [handy feature](https://www.youtube.com/watch?v=_i-d5OZmhWI) that allows you to bookmark the viewport camera's current position then return to it later. Press <kbd>control</kbd> and a number from 0 to 9 to create a bookmark, then later press the number you chose to move the viewport camera back to its previous position. It gets you no closer to releasing that MMORPG you overscoped, but it sure is useful.
 
 Unity lacks this convenience, but it's straightforward to extend the editor and implement the feature ourselves. Rev up your code editor (or skip to [the finished script](https://github.com/mminer/scene-view-bookmarks/blob/master/SceneViewBookmarker.cs) if you just want the goods).
 
@@ -79,6 +79,6 @@ Let's add some polish to make this groovy new feature really shine. Ideally our 
 - Offers ability to return to scene view prior to recalling bookmark (i.e. an undo of sorts)
 - Validates menu item to prevent recalling bookmark that doesn't exist
 
-Actually let's take the easy route and just [download the finished script](https://github.com/mminer/scene-view-bookmarks/blob/master/SceneViewBookmarker.cs) instead. Drop it into your Unity project and you're set. Press <kbd>option / alt</kbd> and a number from 1-9 to bookmark the current scene view. When you want to return to the scene view that you bookmarked, press <kbd>shift</kbd> and the number you chose. After recalling a bookmark, return to the former scene view by pressing <kbd>shift</kbd> <kbd>0</kbd>.
+Actually let's take the easy route and just [download the finished script](https://github.com/mminer/scene-view-bookmarks/blob/master/SceneViewBookmarker.cs) instead. Drop it into your Unity project and you're set. Press <kbd>option / alt</kbd> and a number from 1 to 9 to bookmark the current scene view. When you want to return to the scene view that you bookmarked, press <kbd>shift</kbd> and the number you chose. After recalling a bookmark, return to the former scene view by pressing <kbd>shift</kbd> <kbd>0</kbd>.
 
 Then get back to working on that MMORPG. It's not going to release itself.

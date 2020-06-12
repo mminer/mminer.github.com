@@ -26,7 +26,7 @@ Other rules like using the `Expires` header effectively are good reminders of tw
 
 This one has aged less well than *<abbr title="High Performance Web Sites">HPWS</abbr>*. Several chapters delve into hacks to work around browser quirks, many of which (the quirks) have long since been remedied. You can safely skip a few chapters entirely unless you're some poor schmuck still supporting Internet Explorer 6 (my condolences if that's you).
 
-The overview of different Comet approaches, for example, isn't terribly useful unless WebSockets are off the table for some reason. Likewise, the chapter about domain sharding is less relevant now that browsers have raised their connections-per-domain limit. Other techniques like flushing the document head early so that scripts can load while the server computes the body will (hopefully soon) be made obsolete by widespread support for HTTP/2 and its fancy schmancy server push functionality.
+The overview of different Comet approaches, for example, isn't terribly useful unless WebSockets are off the table for some reason. Likewise, the chapter about domain sharding is less relevant now that browsers have raised their connections-per-domain limit. Other techniques like flushing the document head early so that scripts can load while the server computes the body will (soon, I hope) be made obsolete by widespread support for HTTP/2 and its fancy schmancy server push functionality.
 
 The most eye opening chapter is the one on writing efficient JavaScript. Scary stuff. One idea to speed up long `if` / `else if` chains is to split it into a binary search tree of sorts, turning an O(*n*) operation into O(log *n*).
 

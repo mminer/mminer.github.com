@@ -122,7 +122,7 @@ Specify the directory to share by providing `docker run` with a `--volume` argum
 docker run -it --publish=8080:80 --env="MODE=dev" --volume=/path/to/app:/usr/src/app:ro mminer/myserver
 ```
 
-And voila! Edit the source code on your host machine using your favourite editor and the server detects the changes and reloads itself. If you save syntax errors and the server shuts down when it can't decipher your typos, simply re-run the above command to be back in action lickety-split.
+And voilà! Edit the source code on your host machine using your favourite editor and the server detects the changes and reloads itself. If you save syntax errors and the server shuts down when it can't decipher your typos, simply re-run the above command to be back in action lickety-split.
 
 
 ## Fig

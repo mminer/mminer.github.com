@@ -2,7 +2,7 @@
 title: "Methodic: Run Functions by Clicking a Button"
 ---
 
-Ages ago I built a small Unity editor extension that makes its way into every project I fire up. In a nutshell, it allows you to run functions in a game object's components through a GUI. I recognize how excruciatingly dull that sentence is, so let me convince you that this is something you need with an example.
+Ages ago I built a small Unity editor extension that makes its way into every project I fire up. It allows you to run functions in a game object's components through a GUI. I recognize how excruciatingly dull that sentence is, so let me convince you that this is something you need with an example.
 
 Suppose you're developing a Breakout clone. Each brick gets a component with an `Explode` function that, well, makes it explode.
 
@@ -20,7 +20,7 @@ class Brick : MonoBehaviour
 }
 ```
 
-Nice job. Now let's test your handiwork. There are plenty of ways to run the function, but Methodic provides the easiest. Click the brick game object, open *Window > Methodic*, hit "Invoke", and voila: your brick detonates in a fiery blast.
+Nice job. Now let's test your handiwork. There are plenty of ways to run the function, but Methodic provides the easiest. Click the brick game object, open *Window > Methodic*, hit "Invoke", and voilà: your brick detonates in a fiery blast.
 
 <img alt="Methodic Window" srcset="/images/methodic.png 1x, /images/methodic@2x.png 2x" src="/images/methodic.png">
 

@@ -49,7 +49,7 @@ I have yet to publish a game on Steam, but I get the impression that it can be a
 
 Matthew's talk covered a lot of the same ground as Em Halberstadt's earlier in the day, demonstrating the constant experimentation and failure inherent in sound design. Interestingly, he also favours the human voice where you might normally use a recording of the actual thing being represented, with there being something far more compelling about the quality of the human voice. In *[Don't Starve](https://www.klei.com/games/dont-starve)*, he initially used recorded clips of a turkey for a character but found that his own impression of one was far superior (and after a live demonstration, I have to agree).
 
-Matthew also touched on voiceovers in games. His general advice is to avoid voiceover if possible, with bad V.O. worse than none at all. Your friends willing to do it for free are free for a reason.
+Matthew also touched on voiceovers in games. His general advice is to avoid voiceover if possible, with bad V.O. worse than none at all. Your friends willing to do it free are free for a reason.
 
 
 ## Tanya X. Short: Collaborating with Algorithms
@@ -61,28 +61,26 @@ Tanya also briefly discussed the problem of "sameness" that often plagues proced
 
 ## Jerry Belich: Alternative Controllers
 
-I've always been drawn to microcontrollers and custom interfaces to computers. With his custom-made bowtie clicker and infectious enthusiasm, Jerry made the case that it's not just a fun hobby, but can be an effective marketing gimmick to make your game stand out at trade shows like GDC. One example he gave was *[Butt Sniffin Pugs](https://www.kickstarter.com/projects/spacebeagles/butt-sniffin-pugs)* which has
-perhaps the most... *unique* input method I've seen.
+I've always been drawn to microcontrollers and custom interfaces to computers. With his custom-made bowtie clicker and infectious enthusiasm, Jerry made the case that it's not just a fun hobby, but can be an effective marketing gimmick to make your game stand out at trade shows like GDC. One example he gave was *[Butt Sniffin Pugs](https://www.kickstarter.com/projects/spacebeagles/butt-sniffin-pugs)* which has perhaps the most... *unique* input method I've seen.
 
 Making the jump to hardware is intimidating if you've never dove into it before, but Jerry's [getting started guide](https://jerrytron.github.io/alt-ctrl/) looks like a fine place to start for beginners.
 
 
 ## Tommy Refenes: The Marriage of Controls and Level Design
 
-Making a *Super Meat Boy* game for mobile seems like an impossible task but
-that's exactly what Tommy and Team Meat are doing with *[Super Meat Boy: Forever](http://supermeatboy.com)*.  In the original they first perfected the controls before designing any levels, essentially employing a waterfall model for the game's development. They're taking the same approach with the sequel, and from what Tommy previewed it looks like they successfully whittled the controls down to their bare essence without losing what made the original so fun. I look forward to losing badly at this game once it's release (seriously, I don't think I'm cut out for the likes of *Super Meat Boy*).
+Making a *Super Meat Boy* game for mobile seems like an impossible task but that's exactly what Tommy and Team Meat are doing with *[Super Meat Boy: Forever](http://supermeatboy.com)*. In the original they first perfected the controls before designing any levels, essentially employing a waterfall model for the game's development. They're taking the same approach with the sequel, and from what Tommy previewed it looks like they successfully whittled the controls down to their bare essence without losing what made the original so fun. I look forward to losing badly at this game once it's release (seriously, I don't think I'm cut out for the likes of *Super Meat Boy*).
 
 
 ## Leighton Gray: How to Write Games for the Internet Without Embarrassing Yourself
 
 I expected a lighthearted and silly talk from the creator of *[Dream Daddy: A Dad Dating Simulator](http://store.steampowered.com/app/654880/Dream_Daddy_A_Dad_Dating_Simulator/)* but instead we got a serious trip through art history in perhaps the most informative twenty minutes of the day. Leighton defined her game as metamodernist, a cultural movement which can be summarized as "ironic detachment + sincere engagement." Whether that's the best way to describe our current meme-crazed Internet society is up for debate, but it sounds about right to me.
 
-At the core of *Dream Daddy* is a heartwarming story about a father's relationship with his daughter. Being so starved of positivity in the world at large, Leighton explained, players crave wholesome, uplifting material. Despite this, the game had to be steeped in a layer of cynicism to make it palatable.  This seems like a bit of a shame --- what's wrong with wearing your heart on your sleeve? --- but if it gets players through the door then rock and roll.
+At the core of *Dream Daddy* is a heartwarming story about a father's relationship with his daughter. Being so starved of positivity in the world at large, Leighton explained, players crave wholesome, uplifting material. Despite this, the game had to be steeped in a layer of cynicism to make it palatable. This seems like a bit of a shame --- what's wrong with wearing your heart on your sleeve? --- but if it gets players through the door then rock and roll.
 
 
 ## Kelly Wallick: Indie Around the World and Beyond
 
-I've lived in both Toronto and Vancouver where game development companies large and small are plentiful, so it was interesting learning about cities like Johannesburg and Tokyo where the indie game scene is only now starting to flourish.  The latter is especially surprising given that it's home to heavyweights like Nintendo and Square. With programs like the [Indie Megabooth](http://indiemegabooth.com) that Kelly helps run, it sounds like it's a good time to be an indie developer regardless of your location.
+I've lived in both Toronto and Vancouver where game development companies large and small are plentiful, so it was interesting learning about cities like Johannesburg and Tokyo where the indie game scene is only now starting to flourish. The latter is especially surprising given that it's home to heavyweights like Nintendo and Square. With programs like the [Indie Megabooth](http://indiemegabooth.com) that Kelly helps run, it sounds like it's a good time to be an indie developer regardless of your location.
 
 
 ## Summary

@@ -30,7 +30,7 @@ The minimalism of C is refreshing compared to complex monstrosities like C++. No
 
 <img alt="A Tour of C++ book cover" src="/images/tour-of-cpp.png">
 
-This one's a perfect balance between beginner-focused "this is a `for` loop" introductions and the giant tomes that explain every facet of a language. The author (also the author of C++ itself) makes a convincing case that modern C++ is very different than and far superior to its earlier incarnations. Some of the new C++20 features like modules and concepts promise to make writing certain kinds of software a helluva lot easier. It's going to be a long time before codebases rock the latest and greatest --- most C++ I’ve touched recently has yet to adopt C++11 --- but the language's future looks bright.
+This one's a perfect balance between beginner-focused "this is a `for` loop" introductions and the giant tomes that explain every facet of a language. The author (also the author of C++ itself) makes a convincing case that modern C++ is different than and far superior to its earlier incarnations. Some of the new C++20 features like modules and concepts promise to make writing certain kinds of software a helluva lot easier. It's going to be a long time before codebases rock the latest and greatest --- most C++ I’ve touched recently has yet to adopt C++11 --- but the language's future looks bright.
 
 I would love to see this sort of whirlwind tour for other languages.
 

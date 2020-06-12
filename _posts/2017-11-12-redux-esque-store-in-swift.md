@@ -176,6 +176,6 @@ Whenever we dispatch an action the computed property is recalculated, but `disti
 
 ## Wrapping Up
 
-This architecture works very well in practice. Unidirectional data flow makes debugging a joy (or as close to joy as debugging gets) and reactive programming is a powerful paradigm to have in your toolbox. Use both in concert and you're unstoppable.
+This architecture works well in practice. Unidirectional data flow makes debugging a joy (or as close to joy as debugging gets) and reactive programming is a powerful paradigm to have in your toolbox. Use both in concert and you're unstoppable.
 
 The code above is just a sketch --- I omitted features you may want in larger projects, e.g. middleware --- but I hope it provides an idea of how you can manage your app's state and propagate changes to observers. For a more fleshed out `Store` class that handles array properties plus a more realistic reducer composed of sub-reducers, see [this gist](https://gist.github.com/mminer/410e9c57918cee0b191511ed3d5e8343). And don't forget to floss.

@@ -6,7 +6,9 @@ A feature that appeared briefly in a beta release of Unity 3.0, but which has si
 
 Macros are little snippets of code that help speed up repetitive tasks in the editor. The same functionality can be achieved by writing an editor script, but for simple tasks --- particularly ones that you only intend to run once --- doing so can be a chore greater than the action itself. Perhaps you want to duplicate the selected game object a thousand times, or you want to perform a batch rename. For such tasks, and even for more complex ones, a few lines of code will often suffice.
 
-I've written a [simple editor window script](https://gist.github.com/mminer/975335) (also available at the [Unify Community Wiki](http://wiki.unity3d.com/index.php/Macros)) that allows you to input any code and execute it. Place the file in the /Assets/Editor directory and navigate to the *Window → Macros* menu. To get the ball rolling, here's a few basic examples of how it might use be used. Note that the `MacroEvaluator.Eval` method only accepts JavaScript and not C#.
+I've written a [simple editor window script](https://gist.github.com/mminer/975335) (also available at the [Unify Community Wiki](http://wiki.unity3d.com/index.php/Macros)) that allows you to input any code and execute it. Place the file in the /Assets/Editor directory and navigate to the *Window → Macros* menu.
+
+Here's a few basic examples of how it might use be used. Note that the `MacroEvaluator.Eval` method only accepts JavaScript and not C#.
 
 ```csharp
 // Duplicate the selected game object 100 times
