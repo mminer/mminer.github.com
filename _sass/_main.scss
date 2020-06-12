@@ -238,21 +238,12 @@ video {
 }
 
 #about {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-
   img {
     border-radius: 0.5rem;
+    display: block;
+    float: left;
+    margin-bottom: 2rem;
     margin-right: 2rem;
-  }
-
-  li:last-child {
-    margin-bottom: 0;
-  }
-
-  ul {
-    margin: 0;
   }
 }
 
@@ -379,12 +370,9 @@ video {
 
 @media (max-width: 550px) {
   #about {
-    align-items: start;
-    flex-direction: column;
-
     img {
+      float: none;
       margin-right: 0;
-      margin-bottom: 2rem;
     }
   }
 }
