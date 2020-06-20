@@ -20,5 +20,5 @@ Nature, you so crazy.
 ---
 
 <ol class="footnotes">
-    <li id="fn1">Back when off-sites were a thing you could do instead of cowering in your bedroom begging for the coronavirus to just give it up already.</li>
+    <li id="fn1">Back when off-sites were a thing you could do instead of cowering in your bedroom begging for the coronavirus to just give it up already.<a href="#r1" class="return"></a></li>
 </ol>
