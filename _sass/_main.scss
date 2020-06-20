@@ -337,22 +337,6 @@ video {
   }
 }
 
-/* Make videos scale to fit mobile.
- * https://stackoverflow.com/a/15844571
- */
-.video {
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 56.25%; /* 16/9 */
-  position: relative;
-
-  iframe {
-    height: 100%;
-    position: absolute;
-    width: 100%;
-  }
-}
-
 @media (max-height: 700px) {
   article {
     margin-top: 6rem;
