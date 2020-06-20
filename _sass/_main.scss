@@ -1,25 +1,3 @@
-:root {
-  /* Colours */
-  --body-background-color: #fff;
-  --body-color: #333;
-  --code-background-color: #eee;
-  --headings-color: #000;
-  --hr-border-color: #eee;
-  --kbd-background-color: #fafbfc;
-  --kbd-border-bottom-color: #959da5;
-  --kbd-border-color: #c6cbd1;
-  --kbd-box-shadow-color: #959da5;
-  --kbd-color: #444d56;
-  --link-color: #2980b9;
-  --link-hover-color: #20638f;
-  --link-visited-color: #8e44ad;
-  --link-visited-hover-color: #703688;
-  --time-color: #999;
-
-  /* Layout */
-  --side-padding: 20px;
-}
-
 *,
 *::before,
 *::after {
@@ -40,11 +18,11 @@ ul {
 }
 
 a {
-  color: var(--link-color);
+  color: #2980b9;
   text-decoration: none;
 
   /* Use slightly-nicer spaced underline. */
-  border-bottom: 1px solid var(--link-color);
+  border-bottom: 1px solid #2980b9;
 
   &.image-link {
     border-bottom-width: 0;
@@ -52,15 +30,15 @@ a {
 
   &:hover {
     border-color: transparent;
-    color: var(--link-hover-color);
+    color: #20638f;
   }
 
   &:visited {
-    border-color: var(--link-visited-color);
-    color: var(--link-visited-color);
+    border-color: #8e44ad;
+    color: #8e44ad;
 
     &:hover {
-      color: var(--link-visited-hover-color);
+      color: #703688;
     }
   }
 }
@@ -87,7 +65,7 @@ article {
     }
 
     time {
-      color: var(--time-color);
+      color: #999;
       font-size: 1.6rem;
     }
   }
@@ -98,19 +76,19 @@ article {
 }
 
 body {
-  background-color: var(--body-background-color);
-  color: var(--body-color);
+  background-color: #fff;
+  color: #333;
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.5;
   margin: 0 auto;
   max-width: 700px;
-  padding: 4rem var(--side-padding);
+  padding: 4rem 20px;
 }
 
 code {
-  background-color: var(--code-background-color);
+  background-color: #eee;
   border-radius: 0.2rem;
   padding: 0.2rem 0.4rem;
   white-space: nowrap;
@@ -123,7 +101,7 @@ kbd {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--headings-color);
+  color: #000;
   font-weight: 700;
   line-height: 1.1;
 }
@@ -134,7 +112,7 @@ h2, h3, h4, h5, h6 {
 }
 
 hr {
-  border-color: var(--hr-border-color);
+  border-color: #eee;
   border-style: solid;
   border-width: 0.2rem 0 0 0;
   margin: 4rem auto;
@@ -158,23 +136,23 @@ img {
 }
 
 kbd {
-  background-color: var(--kbd-background-color);
-  border: solid 1px var(--kbd-border-color);
-  border-bottom-color: var(--kbd-border-bottom-color);
+  background-color: #fafbfc;
+  border: solid 1px #c6cbd1;
+  border-bottom-color: #959da5;
   border-radius: 0.3rem;
-  box-shadow: inset 0 -1px 0 var(--kbd-box-shadow-color);
-  color: var(--kbd-color);
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
   display: inline-block;
   line-height: 1.6rem;
   padding: 0.3rem 0.5rem;
 }
 
 pre {
-  background-color: var(--code-background-color);
-  margin-left: calc(-1 * var(--side-padding));
-  margin-right: calc(-1 * var(--side-padding));
+  background-color: #eee;
+  margin-left: -20px;
+  margin-right: -20px;
   overflow-x: auto;
-  padding: 2rem var(--side-padding);
+  padding: 2rem 20px;
 
   code {
     display: block;
@@ -253,7 +231,7 @@ video {
     margin-left: 0.2rem;
 
     &:hover path {
-      fill: var(--link-hover-color);
+      fill: #20638f;
     }
   }
 
@@ -264,7 +242,7 @@ video {
   }
 
   path {
-    fill: var(--link-color);
+    fill: #2980b9;
   }
 
   svg {
@@ -276,7 +254,7 @@ video {
   }
 
   time {
-    color: var(--body-color);
+    color: #333;
     font-size: 1.6rem;
     margin-right: 0.5rem;
 
@@ -286,13 +264,13 @@ video {
 
   ul {
     /* Set color of text to same as links so that overflow ellipsis matches. */
-    color: var(--link-color);
+    color: #2980b9;
   }
 }
 
 #social {
   path {
-    fill: var(--body-color);
+    fill: #333;
   }
 
   svg {
