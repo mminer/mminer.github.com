@@ -310,12 +310,11 @@ video {
   border-width: 0;
   font-size: 75%;
   margin-left: 0.5em;
-  position: relative;
-  top: -0.5em;
-  vertical-align: top;
 
   &::after {
-    content: "\2b90"; /* Return arrow */
+    /* Return arrow, plus the Unicode variation selector to force rendering as
+     * text instead of emoji (https://stackoverflow.com/a/38452396). */
+    content: "\21a9\fe0e";
   }
 }
 
