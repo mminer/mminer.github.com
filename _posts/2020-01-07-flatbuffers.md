@@ -4,7 +4,7 @@ title: "FlatBuffers"
 
 *This is a summary of a talk I gave at the [React Vancouver](https://reactvancouver.com) meetup in September 2019.*
 
-[Streak](https://www.streak.com) (where I currently work) is a <abbr title="Customer Relationship Management">CRM</abbr> platform for Gmail, and as such deals with a lot of data. Like, way more than I expected. All this data --- much of which gets loaded into the browser all at once --- leads to slow network requests, slow deserialization, and high memory usage. In other words, a crummy user experience. To make matters worse, the hardest hit are our most valuable customers with the largest datasets.
+[Streak](https://www.streak.com) (where I work) is a <abbr title="Customer Relationship Management">CRM</abbr> platform for Gmail, and as such deals with a lot of data. Like, way more than I expected. All this data --- much of which gets loaded into the browser all at once --- leads to slow network requests, slow deserialization, and high memory usage. In other words, a crummy user experience. To make matters worse, the hardest hit are our most valuable customers with the largest datasets.
 
 
 ## FlatBuffers To The Rescue
@@ -89,7 +89,7 @@ Not too bad right? Only a few lines more than hitting an ordinary JSON API.
 
 ## Worthwhile?
 
-FlatBuffers work well for Streak. The performance gains vastly improve the user experience. But it's only one performance optimization, not the whole solution, and there are numerous downsides.
+FlatBuffers work well for Streak. The performance gains vastly improve the user experience. But it's only one performance optimization, not the whole solution, and there are many downsides.
 
 It's unfamiliar technology for one. Prior to joining Streak I had used Thrift and Protocol Buffers, but FlatBuffers hadn't crossed my radar. Binary formats of any kind add developer friction and FlatBuffers are no exception. Inspect a binary response in Chrome DevTools and you'll see something that looks like this:
 

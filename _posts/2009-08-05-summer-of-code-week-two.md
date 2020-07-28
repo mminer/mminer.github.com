@@ -30,5 +30,5 @@ A new requirement for the Summer of Code is to give weekly progress reports deta
 - Add ability to add actors
 - Clip editing: drag clips to a new position on timeline
 - Manage overlapping elements
-- Make a zoomable timeline (currently it's at a fixed zoom level)
+- Make a zoomable timeline (it's now at a fixed zoom level)
 - Razor tool

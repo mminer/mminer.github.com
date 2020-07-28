@@ -15,7 +15,7 @@ With that said, the officially [supported](https://docs.unrealengine.com/en-US/E
 Unreal supports capture cards from Blackmagic Design and AJA, but the cheapest one on their list with HDMI support is the DeckLink 4K Extreme 12G which costs a cool USD $895. That's a lot of Benjamins.
 
 I opted instead for the BMD [DeckLink Mini
-Recorder](https://www.blackmagicdesign.com/products/decklink/techspecs/W-DLK-06). It's not officially supported, so it was a bit of a gamble.
+Recorder](https://www.blackmagicdesign.com/products/decklink/techspecs/W-DLK-06). It's not officially supported, so it was a gamble.
 
 <img alt="DeckLink Mini Recorder box" srcset="/images/decklink-mini-recorder-box.jpg 1x, /images/decklink-mini-recorder-box@2x.jpg 2x" src="/images/decklink-mini-recorder-box.jpg">
 

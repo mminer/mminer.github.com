@@ -127,7 +127,7 @@ And voilà! Edit the source code on your host machine using your favourite edito
 
 ## Fig
 
-Before we wrap up, allow me to tell you about [Fig](http://www.fig.sh) ([soon to be Docker Compose](https://github.com/docker/fig/issues/861)). The `docker run` command above is a bit gnarly and only worsens as your app grows in complexity. Specifying the command line arguments in a configuration file makes life more pleasant, which is what Fig allows you to do. Sure, you can just chuck the command into a Bash script and call it a day, but as you start working with multiple containers (say, one for your app and another for a database), orchestration becomes painful. Fig makes this headache disappear.
+Before we wrap up, allow me to tell you about [Fig](http://www.fig.sh) ([soon to be Docker Compose](https://github.com/docker/fig/issues/861)). The `docker run` command above is gnarly and only worsens as your app grows in complexity. Specifying the command line arguments in a configuration file makes life more pleasant, which is what Fig allows you to do. Sure, you can just chuck the command into a Bash script and call it a day, but as you start working with multiple containers (say, one for your app and another for a database), orchestration becomes painful. Fig makes this headache disappear.
 
 Our configuration file looks like this.
 

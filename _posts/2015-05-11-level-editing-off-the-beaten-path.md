@@ -8,7 +8,7 @@ I continued thinking this until Global Game Jam 2010. Our six person team built 
 
 Part of Danny's success can be attributed to keeping the scope manageable, being intimately familiar with his tools, and having boatloads of prior experience. The real secret though was his focus on content first. Before building the run-and-jump mechanics, he hacked together a level editor. With this ready on the first night of the game jam, his partner spent two full days designing levels while Danny focused on core gameplay. On Sunday he took the levels, plugged them into his engine, and voilà: *I Hate Ice Levels* was a full game ready to play.
 
-So, level editors, the point of this post. When we developed *[Orbert](http://playorbert.com)*, a 2D physics puzzler for mobile, I took this lesson to heart and focused first on how we'd build levels. We had limited time and resources, but we knew that without much content it would be a hard sell. Our initial efforts to make level editing fast and enjoyable paid off. By the time we put the finishing touches on *Orbert* it offered 100 levels to justify the $2 price tag.
+So, level editors, the point of this post. When we developed *[Orbert](http://playorbert.com)*, a 2D physics puzzler for mobile, I took this lesson to heart and focused first on how we'd build levels. We had limited time and resources, but we knew that without much content it would be a hard sell. Our efforts to make level editing fast and enjoyable paid off. By the time we put the finishing touches on *Orbert* it offered 100 levels to justify the $2 price tag.
 
 Allow me to share the approach we took.
 
@@ -65,7 +65,7 @@ While this approach works superbly for *Orbert*, it admittedly only does so beca
 
 However, even if an editor like the one described is too simplistic for your game, there are almost certainly better options than placing prefabs manually. If your game is tile-based, consider using an application like the [Tiled](http://www.mapeditor.org/) map editor . It provides sophisticated tools for creating maps and exports the result to an XML or JSON file, easily read by Unity or Unreal. Indeed, the latter's Paper2D boasts built-in support for the JSON files that Tiled exports. Unity developers are in luck as well, with several third-party assets offering TMX support ([full list of integrations here](https://github.com/bjorn/tiled/wiki/Support-for-TMX-maps)).
 
-Not building a tile-based game? Modern game engines like Unity make building custom editor tools a breeze for the ultimate in level editor construction. It may seem like a chore when more exciting challenges await, but a bit of upfront investment pays huge dividends later in development.
+Not building a tile-based game? Modern game engines like Unity make building custom editor tools a breeze for the ultimate in level editor construction. It may seem like a chore when more exciting challenges await, but some upfront investment pays huge dividends later in development.
 
 Cool? Cool.
 
@@ -73,7 +73,7 @@ Cool? Cool.
 ---
 
 <ol class="footnotes">
-    <li id="fn1">This is a bit of a simplication. Small as they were, we wanted to avoid shipping 100 PNGs with the game and needlessly addding bloat, so we wrote an editor script which translates the images to ASCII files when they're added to the project.<a href="#r1" class="return"></a></li>
+    <li id="fn1">This is a simplication. Small as they were, we wanted to avoid shipping 100 PNGs with the game and needlessly addding bloat, so we wrote an editor script which translates the images to ASCII files when they're added to the project.<a href="#r1" class="return"></a></li>
 </ol>
 
 <small>

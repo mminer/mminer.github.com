@@ -18,7 +18,7 @@ Operating a bicycle with completely obscured vision is preposterous, but I also 
 
 <img alt="Man riding bicycle while wearing VR headset" srcset="/images/vr-bicyclist-2.jpg 1x, /images/vr-bicyclist-2@2x.jpg 2x" src="/images/vr-bicyclist-2.jpg">
 
-Look at the sheer *joy* on this man's face. I may have just called the bicycle + VR combo preposterous, but this guy kinda sells it. And it's not even the best one.
+Look at the sheer *joy* on this man's face. I may have just called the bicycle + VR combo preposterous, but this guy sells it. And it's not even the best one.
 
 <img alt="Man riding bicycle while wearing VR headset... in a living room" srcset="/images/vr-bicyclist-3.jpg 1x, /images/vr-bicyclist-3@2x.jpg 2x" src="/images/vr-bicyclist-3.jpg">
 

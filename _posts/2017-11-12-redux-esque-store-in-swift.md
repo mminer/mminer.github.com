@@ -4,7 +4,7 @@ title: "Redux-esque Store in Swift"
 
 If you're a web developer transitioning to iOS or macOS development, you may be familiar with [Redux](https://redux.js.org) and interested in adopting the same pattern of state management in your Swift app. Luckily you're not the first; look no further than [ReSwift](https://github.com/ReSwift/ReSwift) for your unidirectional data flow needs. It's also easy to whip together your own system if you're hip and already use a framework like [RxSwift](https://github.com/ReactiveX/RxSwift) that provides observable streams. Let me show you an approach using the latter and 25 lines of code.
 
-*This article assumes familiarity with both Redux and reactive programming and doesn't attempt to explain the mountain of jargon they employ. For an introduction to Redux you can do no better than leafing through its [official documentation](https://redux.js.org/docs/introduction/). Reactive programming takes more effort to grok. Fortunately there are a bazillion articles on the subject; this [intro to RxSwift](https://medium.com/ios-os-x-development/learn-and-master-%EF%B8%8F-the-basics-of-rxswift-in-10-minutes-818ea6e0a05b) is a fine start.*
+*This article assumes familiarity with both Redux and reactive programming and doesn't explain the mountain of jargon they employ. For an introduction to Redux you can do no better than leafing through its [official documentation](https://redux.js.org/docs/introduction/). Reactive programming takes more effort to grok. Fortunately there are a bazillion articles on the subject; this [intro to RxSwift](https://medium.com/ios-os-x-development/learn-and-master-%EF%B8%8F-the-basics-of-rxswift-in-10-minutes-818ea6e0a05b) is a fine start.*
 
 We'll start with the store.
 

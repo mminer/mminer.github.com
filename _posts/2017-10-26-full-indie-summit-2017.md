@@ -2,14 +2,14 @@
 title: "Full Indie Summit 2017"
 ---
 
-[Full Indie Summit](http://www.fullindiesummit.com) is a damn fine conference and this year was no exception. Presentations covered a variety of topics, from technical post-mortems to business advice. Even for those only tangentially involved in game development, there was something to interest everyone. The seats were also quite comfortable. Very important.
+[Full Indie Summit](http://www.fullindiesummit.com) is a damn fine conference and this year was no exception. Presentations covered a variety of topics, from technical post-mortems to business advice. Even for those only tangentially involved in game development, there was something to interest everyone. The seats were also comfortable. Very important.
 
 <img alt="Full Indie Summit 2017 wristband" srcset="/images/fullindie2017.jpg 1x, /images/fullindie2017@2x.jpg 2x" src="/images/fullindie2017.jpg">
 
 
 ## Em Halberstadt: How Sound Tells the Story of *Night in the Woods*
 
-Game audio has long been something I neglect until the very end, usually cobbling together a bunch of free sound effects and calling it a day. I've never won awards for sound design, and seeing a game like *[Night in the Woods](http://www.nightinthewoods.com)* that takes audio seriously highlights just how much a disservice I do to the experience by treating audio as a second-class citizen.
+Game audio has long been something I neglect until the end, usually cobbling together a bunch of free sound effects and calling it a day. I've never won awards for sound design, and seeing a game like *[Night in the Woods](http://www.nightinthewoods.com)* that takes audio seriously highlights just how much a disservice I do to the experience by treating audio as a second-class citizen.
 
 Em and the developers evidently put an enormous amount of effort and care into making the game's lush soundscape, with audio cues written into the script and the final product packing some 5,090 individual clips. Much of the ambience was created with the human voice alone, from the wind to traffic noises to eerie suspenseful tones as you walk through the dark forest. My favourite part was the probabilistic pigeon sounds --- only some percent of the time do they manage to crack a seed open. It's this attention to detail that I never consciously notice but which makes the game feel truly alive.
 
@@ -33,7 +33,7 @@ As such a prolific game developer, it was only appropriate that Jord built the p
 ## Joel Green: Second Gen VR
 
 The focus of Joel's talk was the 6DoF motion control in Cloudhead Games'
-*[Heart of the Emberstone](http://store.steampowered.com/app/526140/The_Gallery__Episode_2_Heart_of_the_Emberstone/)*. He explained how the current crop of VR controllers, amazing as they are, feel like you're wearing an oven mitt; sort of the uncanny valley of motion control. Not only that, but with VR you have to consider physical characteristics of the human body that were previously unimportant in game development. One particular challenge they faced was allowing players to rotate objects toward them, with the limited bend of the human wrist a hindrance. Suddenly kinesiology is relevant to game development.
+*[Heart of the Emberstone](http://store.steampowered.com/app/526140/The_Gallery__Episode_2_Heart_of_the_Emberstone/)*. He explained how the current crop of VR controllers, amazing as they are, feel like you're wearing an oven mitt; the uncanny valley of motion control. Not only that, but with VR you have to consider physical characteristics of the human body that were previously unimportant in game development. One particular challenge they faced was allowing players to rotate objects toward them, with the limited bend of the human wrist a hindrance. Suddenly kinesiology is relevant to game development.
 
 The highlight of the talk was hearing about what players first do when given the power of telekinesis. Overwhelmingly they pick up objects and stack them into towers, not unlike toddlers do with wooden blocks. Tossing around ragdoll zombies is also a hit. Many game developers I talk to are excited about the visual immersion aspect of VR, but Joel was most enthusiastic about the experiences that great motion control can provide. It sounds like the Vive's forthcoming Knuckles controller is especially swell.
 
@@ -47,7 +47,7 @@ I have yet to publish a game on Steam, but I get the impression that it can be a
 
 ## Matthew Marteinsson: Working With A Failure Based Workflow
 
-Matthew's talk covered a lot of the same ground as Em Halberstadt's earlier in the day, demonstrating the constant experimentation and failure inherent in sound design. Interestingly, he also favours the human voice where you might normally use a recording of the actual thing being represented, with there being something far more compelling about the quality of the human voice. In *[Don't Starve](https://www.klei.com/games/dont-starve)*, he initially used recorded clips of a turkey for a character but found that his own impression of one was far superior (and after a live demonstration, I have to agree).
+Matthew's talk covered a lot of the same ground as Em Halberstadt's earlier in the day, demonstrating the constant experimentation and failure inherent in sound design. Interestingly, he also favours the human voice where you might normally use a recording of the actual thing being represented, with there being something far more compelling about the quality of the human voice. In *[Don't Starve](https://www.klei.com/games/dont-starve)*, he first used recorded clips of a turkey for a character but found that his own impression of one was far superior (and after a live demonstration, I agree).
 
 Matthew also touched on voiceovers in games. His general advice is to avoid voiceover if possible, with bad V.O. worse than none at all. Your friends willing to do it free are free for a reason.
 
@@ -56,7 +56,7 @@ Matthew also touched on voiceovers in games. His general advice is to avoid voic
 
 As the founder of [Kitfox Games](http://www.kitfoxgames.com) which makes heavy use of procedural generation in their titles, Tanya had an interesting perspective on choosing and working with complex algorithms. She likened them to team members and argued that they should be chosen with the same care that you might a coworker. They can have the limited importance of an intern or they can take on much greater responsibility. Just as a crummy hire can drag down the whole team, so can employing an algorithm that hinders more than helps.
 
-Tanya also briefly discussed the problem of "sameness" that often plagues procedurally generated content. It's very much dependant on your game --- some experiences will benefit from procedural generation, but for others you might be better off crafting everything by hand.
+Tanya also briefly discussed the problem of "sameness" that often plagues procedurally generated content. It's very much dependent on your game --- some experiences will benefit from procedural generation, but for others you might be better off crafting everything by hand.
 
 
 ## Jerry Belich: Alternative Controllers
@@ -75,7 +75,7 @@ Making a *Super Meat Boy* game for mobile seems like an impossible task but that
 
 I expected a lighthearted and silly talk from the creator of *[Dream Daddy: A Dad Dating Simulator](http://store.steampowered.com/app/654880/Dream_Daddy_A_Dad_Dating_Simulator/)* but instead we got a serious trip through art history in perhaps the most informative twenty minutes of the day. Leighton defined her game as metamodernist, a cultural movement which can be summarized as "ironic detachment + sincere engagement." Whether that's the best way to describe our current meme-crazed Internet society is up for debate, but it sounds about right to me.
 
-At the core of *Dream Daddy* is a heartwarming story about a father's relationship with his daughter. Being so starved of positivity in the world at large, Leighton explained, players crave wholesome, uplifting material. Despite this, the game had to be steeped in a layer of cynicism to make it palatable. This seems like a bit of a shame --- what's wrong with wearing your heart on your sleeve? --- but if it gets players through the door then rock and roll.
+At the core of *Dream Daddy* is a heartwarming story about a father's relationship with his daughter. Being so starved of positivity in the world at large, Leighton explained, players crave wholesome, uplifting material. Despite this, the game had to be steeped in a layer of cynicism to make it palatable. This seems a shame --- what's wrong with wearing your heart on your sleeve? --- but if it gets players through the door then rock and roll.
 
 
 ## Kelly Wallick: Indie Around the World and Beyond
