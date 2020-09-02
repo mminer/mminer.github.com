@@ -1,5 +1,5 @@
 ---
-title: "Trajectory Wins Great Canadian Appathon's \"Wild Card\" Category"
+title: "<em>Trajectory</em> Wins Great Canadian Appathon's \"Wild Card\" Category"
 ---
 
 This is slightly old news, but recently a game I built for the [Great Canadian Appathon](http://www.greatcanadianappathon.com/) --- hastily named *Trajectory* at 5 a.m. on a Sunday morning --- took home the "Wild Card" prize. The criteria for this category was originality, creativity, fun and cool factor. Like the Global Game Jam and similar hackathons I've participated in, the game had to be built in under 48 hours. A key difference of the Appathon was that the game, like the event's title suggests, had to be targeted towards mobile deployment. This was my first time developing for a phone, but as I wasn't exactly pushing the boundaries of graphical realism this proved to be easier than I anticipated. As burnt out as I was by the end of the competition, I was pleased with the resulting app.

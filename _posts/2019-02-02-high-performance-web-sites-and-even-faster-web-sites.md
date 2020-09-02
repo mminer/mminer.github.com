@@ -1,5 +1,5 @@
 ---
-title: "High Performance Web Sites and Even Faster Web Sites"
+title: "<em>High Performance Web Sites</em> and <em>Even Faster Web Sites</em>"
 ---
 
 Recently I've been diving deeper into web app performance --- how *do* browsers handle DOM layout? --- so I picked up *[High Performance Web Sites](http://shop.oreilly.com/product/9780596529307.do)* and its sequel *[Even Faster Web Sites](http://shop.oreilly.com/product/9780596522315.do)*. I still only have a hazy idea of how Chrome decides where to stick all those boxes (that's not really what these books cover), but they neverthless impart some juicy knowledge about making web pages speedy.

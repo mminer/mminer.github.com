@@ -1,5 +1,5 @@
 ---
-title: "Quick Book Review: Designing Data-Intensive Applications"
+title: "Quick Book Review: <em>Designing Data-Intensive Applications</em>"
 ---
 
 *[Designing Data-Intensive Applications](https://dataintensive.net)* is the sort of book I wish I read years ago when I first started building web services and deciding which databases and processing systems to employ.<sup><a href="#fn1" id="r1">[1]</a></sup> It's a well-written overview of the distributed systems landscape, exploring the underlying ideas behind different offerings and the tradeoffs they make when ingesting and storing data.

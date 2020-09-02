@@ -1,5 +1,5 @@
 ---
-title: "Hexahedral"
+title: "<em>Hexahedral</em>"
 ---
 
 In the spirit of better-late-than-never, let me show you a game I built this past January during the Global Game Jam.
