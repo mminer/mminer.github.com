@@ -300,6 +300,12 @@ video {
   /* Add extra space to keep list numbers inside article width. */
   padding-left: 2rem;
 
+  blockquote {
+    font-size: inherit;
+    margin: 1rem 0;
+    padding-left: 1rem;
+  }
+
   code {
     font-size: 1.2rem;
   }
