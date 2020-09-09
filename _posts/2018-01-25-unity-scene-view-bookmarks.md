@@ -70,7 +70,6 @@ And that's it. After zooming and panning around, press <kbd>shift</kbd> <kbd>1</
 
 <video autoplay loop src="/videos/scene-view-bookmarks.mp4"></video>
 
-
 ## Refinements
 
 Let's add some polish to make this groovy new feature really shine. Ideally our scene view bookmarking system also boasts these niceties:

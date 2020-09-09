@@ -68,7 +68,6 @@ print(list(results))
 
 This technique makes `fetch_all_pages` much more reusable. Need to include custom authentication headers with your request? No problem. Want to send cookies to the API? Easy. No further modifications to our function are necessary. High fives for everybody.
 
-
 ---
 
 

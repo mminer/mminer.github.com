@@ -4,14 +4,12 @@ title: "Summer of Code: Week Two"
 
 A new requirement for the Summer of Code is to give weekly progress reports detailing what we've accomplished in the past week as well as what we intend to conjure up in the next one. I figure to give the old blog some love, I'd post my progress reports here.
 
-
 ## Week 1
 
 - Determined desired features
 - Fleshed out media metaphors presented to user (shots, actors, audio and subtitles)
 - Basic user interface setup
 - Researched animations and animation events
-
 
 ## Week 2
 
@@ -23,7 +21,6 @@ A new requirement for the Summer of Code is to give weekly progress reports deta
 - A scrubbable timeline
 - Drag and drop media from project Hierarchy and Assets view
 - Reviewed third-party code contribution
-
 
 ## Week 3
 

@@ -6,7 +6,6 @@ title: "FlatBuffers"
 
 [Streak](https://www.streak.com) (where I work) is a <abbr title="Customer Relationship Management">CRM</abbr> platform for Gmail, and as such deals with a lot of data. Like, way more than I expected. All this data --- much of which gets loaded into the browser all at once --- leads to slow network requests, slow deserialization, and high memory usage. In other words, a crummy user experience. To make matters worse, the hardest hit are our most valuable customers with the largest datasets.
 
-
 ## FlatBuffers To The Rescue
 
 One interesting technology we employ to combat this is [FlatBuffers](https://google.github.io/flatbuffers/), an "efficient cross platform serialization library". It was created at Google for game development, where you need to squeeze out every ounce of performance. It's not inherently limited to game engines though and can be used anywhere you need optimized data serialization.
@@ -15,12 +14,11 @@ How it works is right in the name. **Flat** = the ability to access hierarchical
 
 Libraries exist for all the major languages --- JavaScript, C#, Python, Go, etc. There's even one for a language called [Lobster](http://strlen.com/lobster/) which I had never heard of but which looks very cool.
 
-Of course, binary serialization is nothing new, and there are tons of alternatives: Protocol Buffers, MessagePack, Thrift, Avro.<sup><a href="#fn1" id="r1">[1]</a></sup> All of them beat the pants off plaintext formats like JSON when it comes to metrics like request payload size. Where FlatBuffers stands apart is that it requires virtually no deserialization step when reading data.
+Of course, binary serialization is nothing new, and there are tons of alternatives: Protocol Buffers, MessagePack, Thrift, Avro.[^1] All of them beat the pants off plaintext formats like JSON when it comes to metrics like request payload size. Where FlatBuffers stands apart is that it requires virtually no deserialization step when reading data.
 
 Rather than parsing the FlatBuffer-encoded file into an intermediate representation and loading that into memory, you simply use some fancy table lookups to determine where your property is located then read the bytes at the given offset. [This wiki entry](https://github.com/mzaks/FlatBuffersSwift/wiki/FlatBuffers-Explained) dishes out the nitty gritty details of how this works. No deserialization means your memory usage stays low and you waste no CPU cycles extracting your data.
 
 [Here's official benchmarks](https://google.github.io/flatbuffers/flatbuffers_benchmarks.html) to make the case that FlatBuffers are indeed fast. My own benchmarks are entirely unscientific and unrigorous, but for a ~1.3 MB JSON document the request size was halved and the deserialization time cut to a third (there is of course still *some* overhead when reading). In any case, definitely speedier than old tortoise JSON.
-
 
 ## Let's Use This Thing
 
@@ -50,7 +48,7 @@ Compile the schema file to use in the language of your choice using `flatc`.
 flatc --js item.fbs
 ```
 
-The result is nigh unreadable (and even gnarlier for other languages), but you should have no need to touch the generated code.<sup><a href="#fn2" id="r2">[2]</a></sup>
+The result is nigh unreadable (and even gnarlier for other languages), but you should have no need to touch the generated code.[^2]
 
 ```javascript
 // item_generated.js
@@ -86,7 +84,6 @@ async function readContacts() {
 
 Not too bad right? Only a few lines more than hitting an ordinary JSON API.
 
-
 ## Worthwhile?
 
 FlatBuffers work well for Streak. The performance gains vastly improve the user experience. But it's only one performance optimization, not the whole solution, and there are many downsides.
@@ -103,10 +100,8 @@ The usual advice for any optimization applies: measure first. Slowness that Flat
 
 For the right ailment though, FlatBuffers might just be the tonic you need.
 
-
 ---
 
-<ol class="footnotes">
-    <li id="fn1">Invent your own for a lifetime of job security.<a href="#r1" class="return"></a></li>
-    <li id="fn2">Though we <em>did</em> have to modify the FlatBuffers JavaScript library to play nicely with ES6 modules.<a href="#r2" class="return"></a></li>
-</ol>
+[^1]: Invent your own for a lifetime of job security.
+
+[^2]: Though we *did* have to modify the FlatBuffers JavaScript library to play nicely with ES6 modules.

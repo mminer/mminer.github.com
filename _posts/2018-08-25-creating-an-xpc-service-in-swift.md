@@ -2,7 +2,7 @@
 title: "Creating an XPC Service in Swift"
 ---
 
-Say you want to add an [XPC Service](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingXPCServices.html#//apple_ref/doc/uid/10000172i-SW6-SW1) to your Swift app. Fine idea, but notice that Xcode spits out Objective-C when you add an XPC Service target.<sup><a href="#fn1" id="r1">[1]</a></sup> Nobody has time for that. Fortunately converting Xcode's starter code to Swift is mostly straightforward. Let's twiddle some knobs and twist a few dials and get you rolling.
+Say you want to add an [XPC Service](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingXPCServices.html#//apple_ref/doc/uid/10000172i-SW6-SW1) to your Swift app. Fine idea, but notice that Xcode spits out Objective-C when you add an XPC Service target.[^1] Nobody has time for that. Fortunately converting Xcode's starter code to Swift is mostly straightforward. Let's twiddle some knobs and twist a few dials and get you rolling.
 
 After creating an XPC Service target, in our case named "MyService", we have four files: *main.m*, *MyService.h*, *MyService.m*, and *MyServiceProtocol.h*. Rename these to *main.swift*, *MyService.swift*, *MyServiceDelegate.swift*, and *MyServiceProtocol.swift*. Next, add them to the target's "Compile Sources" build phase.
 
@@ -89,9 +89,6 @@ That's it! For reference you can find the above code snippets in [this Gist](htt
 
 *Thanks to GitHub user <a href="https://github.com/adur1990">adur1990</a> for Swift 4 compatibility fixes.*
 
-
 ---
 
-<ol class="footnotes">
-    <li id="fn1">As of Xcode 9, at least. Hopefully Apple changes this in future versions and this bone dry article can be tossed into the World Wide Web's trash bin.<a href="#r1" class="return"></a></li>
-</ol>
+[^1]: As of Xcode 9, at least. Hopefully Apple changes this in future versions and this bone dry article can be tossed into the World Wide Web's trash bin.

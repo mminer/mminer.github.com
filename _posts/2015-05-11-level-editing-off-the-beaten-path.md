@@ -12,7 +12,6 @@ So, level editors, the point of this post. When we developed *[Orbert](http://pl
 
 Allow me to share the approach we took.
 
-
 ## Painting Levels
 
 In the past our level editing strategy (and, I suspect, that of many fellow developers) consisted of constructing some prefabs then dragging them to suitable positions in the editor. While simple, this approach is problematic in several ways, not least of which is that it's a slow process. What we really desired was a suite of tools like those found in Photoshop or Maya for *sculpting* a level. Rather than painstakingly placing individual tiles, we wanted to be able to "paint" terrain.
@@ -21,7 +20,7 @@ This lead us to think: why not use Photoshop itself? It already played an indisp
 
 <img alt="Orbert level" src="/images/orbert-level.png">
 
-In Unity, a C# script reads the colour values of the pixels and instantiats their corresponding prefabs at runtime.<sup><a href="#fn1" id="r1">[1]</a></sup> [`Texture2D.GetPixels`](http://docs.unity3d.com/ScriptReference/Texture2D.GetPixels.html) makes this step a cinch.
+In Unity, a C# script reads the colour values of the pixels and instantiats their corresponding prefabs at runtime.[^1] [`Texture2D.GetPixels`](http://docs.unity3d.com/ScriptReference/Texture2D.GetPixels.html) makes this step a cinch.
 
 ```csharp
 static Dictionary<Color, Tile> colorMap = new Dictionary<Color, Tile>()
@@ -69,13 +68,10 @@ Not building a tile-based game? Modern game engines like Unity make building cus
 
 Cool? Cool.
 
-
 ---
-
-<ol class="footnotes">
-    <li id="fn1">This is a simplication. Small as they were, we wanted to avoid shipping 100 PNGs with the game and needlessly addding bloat, so we wrote an editor script which translates the images to ASCII files when they're added to the project.<a href="#r1" class="return"></a></li>
-</ol>
 
 <small>
     Code snippets from this post [viewable on GitHub](https://github.com/mminer/blog-code/tree/master/level-editing-off-the-beaten-path).
 </small>
+
+[^1]: This is a simplication. Small as they were, we wanted to avoid shipping 100 PNGs with the game and needlessly addding bloat, so we wrote an editor script which translates the images to ASCII files when they're added to the project.

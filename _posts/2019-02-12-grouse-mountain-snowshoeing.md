@@ -2,7 +2,7 @@
 title: "Grouse Mountain Snowshoeing"
 ---
 
-One of my favourite winter day trips from Vancouver is to Grouse Mountain to snowshoe. Fresh air, breathtaking views, top notch trails. You can also snowboard and toboggan and ice skate, but "shoeing is what the hip kids are doing."<sup><a href="#fn1" id="r1">[1]</a></sup>
+One of my favourite winter day trips from Vancouver is to Grouse Mountain to snowshoe. Fresh air, breathtaking views, top notch trails. You can also snowboard and toboggan and ice skate, but "shoeing is what the hip kids are doing."[^1]
 
 <a class="image-link" href="https://s3.amazonaws.com/matthewminer/grouse-mountain/trail1.jpg" target="_blank">
     <img alt="Snowshoe trail" srcset="https://s3.amazonaws.com/matthewminer/grouse-mountain/trail1-thumbnail.jpg 1x, https://s3.amazonaws.com/matthewminer/grouse-mountain/trail1-thumbnail@2x.jpg 2x" src="https://s3.amazonaws.com/matthewminer/grouse-mountain/trail1-thumbnail.jpg">
@@ -88,9 +88,6 @@ Back at the chalet there's a sleigh ride. Think you're too old for sleigh rides?
     <img alt="Peak on a sunny day" srcset="https://s3.amazonaws.com/matthewminer/grouse-mountain/sunny-day.jpg 1x, https://s3.amazonaws.com/matthewminer/grouse-mountain/sunny-day-thumbnail@2x.jpg 2x" src="https://s3.amazonaws.com/matthewminer/grouse-mountain/sunny-day-thumbnail.jpg">
 </a>
 
-
 ---
 
-<ol class="footnotes">
-    <li id="fn1">And&hellip; mumble rap? Cryotherapy? Ripped jeans are still in, right? What <em>are</em> the hip kids doing?<a href="#r1" class="return"></a></li>
-</ol>
+[^1]: And... mumble rap? Cryotherapy? Ripped jeans are still in, right? What *are* the hip kids doing?

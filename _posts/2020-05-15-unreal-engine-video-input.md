@@ -4,10 +4,9 @@ title: "Unreal Engine Video Input"
 
 Lately I've been hacking together a virtual production / realtime filmmaking setup. Think the [mind-blowing work](https://www.youtube.com/watch?v=gUnxzVOs3rk) that Industrial Light & Magic did on *The Mandelorian*, but in my apartment and at a fraction of the quality and without the wonderfully deep pockets of Big Daddy Disney.
 
-In particular, I'm using Unreal Engine to composite a real-life subject into a CGI world in realtime. Camera tracking synchronizes the position of the physical camera with a virtual one. Instead of ILM's fancy video wall, a humble green screen. Sometimes this technique is called "mixed reality", though usually you hear that term in the context of capturing virtual reality experiences.<sup><a href="#fn1" id="r1">[1]</a></sup>
+In particular, I'm using Unreal Engine to composite a real-life subject into a CGI world in realtime. Camera tracking synchronizes the position of the physical camera with a virtual one. Instead of ILM's fancy video wall, a humble green screen. Sometimes this technique is called "mixed reality", though usually you hear that term in the context of capturing virtual reality experiences.[^1]
 
 The first step: get a live video feed into Unreal. Fortunately Epic Games has been going hard on the pro video I/O front and has made this straightforward with the right hardware.
-
 
 ## Capture Card
 
@@ -21,10 +20,9 @@ Recorder](https://www.blackmagicdesign.com/products/decklink/techspecs/W-DLK-06)
 
 <img alt="DeckLink Mini Recorder card" srcset="/images/decklink-mini-recorder-card.jpg 1x, /images/decklink-mini-recorder-card@2x.jpg 2x" src="/images/decklink-mini-recorder-card.jpg">
 
-Fortunately it works a treat. Install the PCIe card, download some software, configure Unreal, and Bob's your uncle.<sup><a href="#fn2" id="r2">[2]</a></sup>
+Fortunately it works a treat. Install the PCIe card, download some software, configure Unreal, and Bob's your uncle.[^2]
 
 <video controls src="/videos/unreal-video-input.mp4"></video>
-
 
 ## Alternatives
 
@@ -37,15 +35,12 @@ Another attractive option was the Elgato [Cam Link](https://www.elgato.com/en/ga
 Yet another Elgato doodad that looked promising was the [Game Capture HD60
 S](https://www.elgato.com/en/gaming/game-capture-hd60-s). Reports indicate that it too works with Unreal. Might be a good option, but alas, also nowhere to be found.
 
-
 ## HDMI Output Woes
 
 One unexpected obstacle was that my DLSR, a Canon 60D, lacks clean HDMI output. You can get a live feed, but with overlays. No bueno. For now my GoPro suffices, but it's hardly the ideal studio camera. Time to upgrade.
 
-
 ---
 
-<ol class="footnotes">
-    <li id="fn1">Need to capture a VR playthrough? Consider <a href="https://mixcast.me">MixCast</a>, which I helped develop when I worked at Blueprint Reality.<a href="#r1" class="return"></a></li>
-    <li id="fn2">Or in my case, Charles, Dave, Don, Jack, Lee, Sanford, and Tom.<a href="#r2" class="return"></a></li>
-</ol>
+[^1]: Need to capture a VR playthrough? Consider [MixCast](https://mixcast.me), which I helped develop when I worked at Blueprint Reality.
+
+[^2]: Or in my case, Charles, Dave, Don, Jack, Lee, Sanford, and Tom.

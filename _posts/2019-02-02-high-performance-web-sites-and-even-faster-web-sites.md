@@ -8,10 +8,9 @@ Recently I've been diving deeper into web app performance --- how *do* browsers 
 
 Like a fool I checked the publication date only after I started reading, which is dangerous for any tech book but especially for a topic as rapidly evolving as web development. *<abbr title="High Performance Web Sites">HPWS</abbr>* was published in 2007 while *<abbr title="Even Faster Web Sites">EFWS</abbr>* came out in 2009. That's like a century ago in the web dev world.
 
-Despite this, much of the advice they divulge remains relevant, while the stuff that doesn't makes for a pleasant jaunt down memory lane. I'd forgotten about the many stupid hacks we once employed to get sites working with reasonable performance across platforms.<sup><a href="#fn1" id="r1">[1]</a></sup> Stupid hacks are as necessary as ever with the advent of mobile browsers and the challenges of responsive design, but it's a reminder that web dev is a helluva lot easier than it used to be.
+Despite this, much of the advice they divulge remains relevant, while the stuff that doesn't makes for a pleasant jaunt down memory lane. I'd forgotten about the many stupid hacks we once employed to get sites working with reasonable performance across platforms.[^1] Stupid hacks are as necessary as ever with the advent of mobile browsers and the challenges of responsive design, but it's a reminder that web dev is a helluva lot easier than it used to be.
 
 You would think that after a decade of progress everything would be Speedy Gonzales, but as time marches forward, so do load times and processing requirements. In 2009, *<abbr title="High Performance Web Sites">HPWS</abbr>* reports that cnn.com requested 11 scripts; now it's up to 59, taking a full five seconds to load on a fast computer with a robust Internet connection. So this wisdom still deserves a read.
-
 
 ## High Performance Web Sites
 
@@ -20,7 +19,6 @@ This book is almost a teenager but it has aged surprisingly well. It's organized
 Some of the rules are obvious --- make fewer requests, minify your JavaScript, etc. --- but it's helpful to be reminded of just how effective these techniques can be to improve load times. In the same vein, many of the rules have become standard practice that I just take for granted. With bundling systems like Webpack now commonplace (at least in projects I've worked on), optimizations like minification and combining scripts are a given.
 
 Other rules like using the `Expires` header effectively are good reminders of tweaks that are easily overlooked. This one in particular is difficult to adhere to when you lack control over the server. This blog is hosted on GitHub Pages which provides no mechanism to specify custom headers. Returning visitors end up requesting my avatar every day despite my intent to never age. Larger sites are unlikely to use a host as restrictive as GitHub, but even when developers have full control over their environment I suspect this rule is given less thought than it deserves.
-
 
 ## Even Faster Websites
 
@@ -74,18 +72,16 @@ if (value < 6) {
 What a horror show. There might be legitimate scenarios where this craziness actually results in noticable speed improvements, but talk about a maintenance nightmare. Please don't write
 code like this unless you truly need to. Even more stressful is the description of unrolling loops and [Duff's Device](https://en.wikipedia.org/wiki/Duff's_device). My forays into game development ocassionally bring me into contact with convoluted performance hacks like this and they just make me want to nap.
 
-It's not all dusty old tricks for long-resolved difficulties like string concatenation and trimming though.<sup><a href="#fn2" id="r2">[2]</a></sup> Some chapters like the one explaining how CSS selectors affect render times will probably remain evergreen when you need to squeeze out every last drop of performance. Just keep in mind that browser developers haven't been sitting idle this past decade and some optimizations might be less impactful than they once were.
-
+It's not all dusty old tricks for long-resolved difficulties like string concatenation and trimming though.[^2] Some chapters like the one explaining how CSS selectors affect render times will probably remain evergreen when you need to squeeze out every last drop of performance. Just keep in mind that browser developers haven't been sitting idle this past decade and some optimizations might be less impactful than they once were.
 
 ## Worth The Read?
 
-Maybe. My advice: pick up *High Performance Web Sites*, especially if you're new to front end development. If you've been doing this for a while it might be mostly review, but it's a fast read. Just skim *Even Faster Web Sites*. Or read the whole thing cover-to-cover, see if I care.<sup><a href="#fn3" id="r3">[3]</a></sup>
-
+Maybe. My advice: pick up *High Performance Web Sites*, especially if you're new to front end development. If you've been doing this for a while it might be mostly review, but it's a fast read. Just skim *Even Faster Web Sites*. Or read the whole thing cover-to-cover, see if I care.[^3]
 
 ---
 
-<ol class="footnotes">
-    <li id="fn1">Remember fixing IE6's lack of support for transparent PNGs with <code>AlphaImageLoader</code>? Yeesh.<a href="#r1" class="return"></a></li>
-    <li id="fn2">I forgot that <code>String.trim()</code> didn't always exist. JavaScript could benefit from a richer standard library, but it sure has come a long way.<a href="#r2" class="return"></a></li>
-    <li id="fn3">I actually do care.<a href="#r3" class="return"></a></li>
-</ol>
+[^1]: Remember fixing IE6's lack of support for transparent PNGs with `AlphaImageLoader`? Yeesh.
+
+[^2]: I forgot that `String.trim()` didn't always exist. JavaScript could benefit from a richer standard library, but it sure has come a long way.
+
+[^3]: I actually do care.

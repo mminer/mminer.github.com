@@ -17,21 +17,17 @@ To keep the scope manageable while flying solo I self-imposed some limitations:
 
 At the same time I wanted an end result that I could demo without embarrassment or a "this was made in a weekend, be gentle, I'm only a tiny speck of dust in a vast universe" disclaimer. To that end I established four goals before starting.
 
-
 ## Quick Load
 
 Progress bars and slow load times are the pits. Originally I restricted myself to vanilla JavaScript and CSS with no dependencies to see that load time *blaze*, but eventually I included [Redux](http://redux.js.org) and [virtual-dom](https://github.com/Matt-Esch/virtual-dom) to maintain sanity. End result: 60 KB JavaScript, 83 KB audio. Greased lightnin'.
-
 
 ## Cross Platform
 
 At a previous jam I built [a game](https://github.com/mminer/bursting-with-colour) that you can only play using Xbox 360 controllers connected to a PC or a Mac with third-party drivers installed. *I'm* not even sure how to play it any more. This time I was determined to release something playable on any device, from the junkiest smartphone to the latest quad-SLI-magma-powered-quintillion-MHz beast of a machine. Web tech was a natural fit -- if you have a browser, you can play *Hexahedral*.
 
-
 ## Attractive
 
 I restricted myself to cubes, but those cubes had to look *nice*. Liberal use of CSS transitions and a pretty theme plucked from [Adobe Color](https://color.adobe.com) was just the ticket. Nothing is more disheartening than players dismissing a genuinely fun game just because it looks like a spreadsheet.
-
 
 ## Hours (or at least ten minutes) of Fun
 

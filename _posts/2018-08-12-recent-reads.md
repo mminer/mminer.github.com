@@ -4,20 +4,17 @@ title: "Recent Reads"
 
 Here's a few things I read recently.
 
-
 ## [Getting Things Done: The Art of Stress-Free Productivity](https://en.wikipedia.org/wiki/Getting_Things_Done)
 
 You don't often find me lurking in the productivity section of the book store, but I see GTD mentioned often enough that I figured it's worth a gander. The author proposes a system that emphasizes small discrete actions rather than vague nebulous goals, and writing down all the various TODOs cycling through your brain for easy retrieval and review later. The methodology is compelling in its simplicity and ease of implementation --- I feared Gantt charts and the Conjoined Triangles of Success, but it turns out to closely resemble the bare-bones action-and-project-lists-on-index-cards system that I already use.
 
 I'm unconvinced that 300 pages was necessary but it's not the slog I dreaded. I suspect that those with more management responsibilities get more out of it, but I picked up plenty of useful tips all the same. Worth the gander indeed.
 
-
 ## [Little Manual of API Design](https://github.com/papers-we-love/papers-we-love/blob/master/api_design/api-design.pdf)
 
 This one's a quick and pleasant read. It's a pragmatic reminder of best practices when developing libraries (or any software really) from one of the developers of Qt. Much of it reads like common sense --- avoid abbreviations, prefer specific names over general ones, choose sensible defaults --- but, you know, "common sense is not so common" and all that.
 
 I particularly like the advice to write use cases before implementing an API. Too often I find myself refactoring a function because I only partially thought through how it would be used in practice. Likewise, nothing beats early feedback from the poor saps who have to use your code.
-
 
 ## [The Rise of the Citizen Developer: Assessing the Security Impact of Online App Generators](https://saschafahl.de/papers/appgens2018.pdf)
 

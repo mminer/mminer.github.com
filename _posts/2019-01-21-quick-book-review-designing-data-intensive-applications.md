@@ -2,7 +2,7 @@
 title: "Quick Book Review: <em>Designing Data-Intensive Applications</em>"
 ---
 
-*[Designing Data-Intensive Applications](https://dataintensive.net)* is the sort of book I wish I read years ago when I first started building web services and deciding which databases and processing systems to employ.<sup><a href="#fn1" id="r1">[1]</a></sup> It's a well-written overview of the distributed systems landscape, exploring the underlying ideas behind different offerings and the tradeoffs they make when ingesting and storing data.
+*[Designing Data-Intensive Applications](https://dataintensive.net)* is the sort of book I wish I read years ago when I first started building web services and deciding which databases and processing systems to employ.[^1] It's a well-written overview of the distributed systems landscape, exploring the underlying ideas behind different offerings and the tradeoffs they make when ingesting and storing data.
 
 <img alt="Designing Data-Intensive Applications book cover" src="/images/designing-data-intensive-applications.png">
 
@@ -14,9 +14,6 @@ I found the last chapter in which the author proposes using an immutable event l
 
 If nothing else, *Designing Data-Intensive Applications* is an excellent springboard to further explore the topics it covers, with extensive links to relevant academic papers (which, let's be real, I probably won't read) and blog posts (some of which at least made it to my Instapaper queue). Two thumbs up, highly recommended.
 
-
 ---
 
-<ol class="footnotes">
-    <li id="fn1">One of my toughest architecture challenges was building Lumos, a game analytics startup I founded when this sort of business seemed like a good idea. Hoo boy did we made some poor choices early on that came back to bite us. Any time a game's popularity spiked our service's availability took a nosedive. We mitigated this problem after a major refactor, though the larger challenge of making money continued to elude us.<a href="#r1" class="return"></a></li>
-</ol>
+[^1]: One of my toughest architecture challenges was building Lumos, a game analytics startup I founded when this sort of business seemed like a good idea. Hoo boy did we made some poor choices early on that came back to bite us. Any time a game's popularity spiked our service's availability took a nosedive. We mitigated this problem after a major refactor, though the larger challenge of making money continued to elude us.

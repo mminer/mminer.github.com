@@ -34,7 +34,6 @@ Now in addition to our two services --- a web server and a background worker ---
 
 Let's demonstrate this pattern by creating a simple web app that does what we described above. We'll build our demo app using Python and Node.js because YOLO, but the technique transcends specific languages and frameworks.
 
-
 ## The Web Server
 
 We'll start with a minimal app using [Flask](http://flask.pocoo.org), a Python web framework. It has two endpoints. Visiting the root renders some HTML. Sending a POST request to `/runtask` triggers a computationally expensive task (which we'll define later).
@@ -96,7 +95,6 @@ pip install flask gunicorn
 gunicorn --bind=0.0.0.0:5000 server:app
 ```
 
-
 ## The Background Worker
 
 For our background worker we'll employ the excellent [Celery](http://www.celeryproject.org). It defines a single computationally expensive task, which we'll unimaginatively simulate using `time.sleep`.
@@ -128,7 +126,6 @@ Install Celery then start the background worker.
 pip install celery
 celery --app=worker:app worker
 ```
-
 
 ## The Notifier Service
 
@@ -251,7 +248,6 @@ node notifier.js
 
 If we put the pieces together correctly, our four services should now run in tandem and the client's browser should update to show the result after they trigger the task. Rock and roll.
 
-
 ## Dockerization
 
 Now that all these services run smoothly together, let's package them up for easy deployment to a production environment. This step is optional but it improves life when it's time to go live. This is where Docker shines. First we'll immortalize the project's dependencies in *requirements.txt* (for Python / pip) and *package.json* (for Node.js / npm) files.
@@ -345,13 +341,11 @@ Now a single `fig up` runs our four services in unison and we call it a day.
 fig up
 ```
 
-
 ## Wrapping Up
 
 Before *actually* deploying this app live, consider other factors like security and scalability more closely than we have here. For one thing, the client can send any client ID they want along with their POST request, possibly causing grief for other users. Also, keeping all information about connected clients in memory on a single Node.js app is hardly the definition of durability. With some extra attention though, we can take this pattern and use it to great effect in our app, reducing strain on our web server while delivering results asynchronously to our users.
 
 Task notifications. Asynchronous communication. All part of the American Dream.
-
 
 ---
 

@@ -131,7 +131,6 @@ Any time we need to access the state directly we're free to do so.
 print(store.state.name)
 ```
 
-
 ## Refinements
 
 One annoyance with our current store implementation is that subscribers receive an event every time *any* state property changes, not just the one `keyPath` specifies. This is where RxSwift shines. If all properties of our state structure conform to `Equatable`, we can use the `distinctUntilChanged` operator to ensure that we only notify subscribers when the observed property actually changes.
@@ -172,7 +171,6 @@ store.observe(\.isSignedIn).subscribe(onNext: { isSignedIn in
 ```
 
 Whenever we dispatch an action the computed property is recalculated, but `distinctUntilChanged` prevents the store from notifying subscribers if the result fails to change.
-
 
 ## Wrapping Up
 

@@ -5,17 +5,15 @@ title: "More Recent Reads"
 
 Here are some books I read recently. Mix of technical, non-fiction, and power-hungry loonies fighting with swords.
 
-
 ## The Soul of a New Machine
 
 <img alt="The Soul of a New Machine book cover" srcset="/images/soul-of-a-new-machine.jpg 1x, /images/soul-of-a-new-machine@2x.jpg 2x" src="/images/soul-of-a-new-machine.jpg">
 
-Love this one. I'm fascinated by stories about the dawn of computers --- before smartphones and tablets, before the World Wide Web and the ubiquity of the Internet. Applications like instant communication and immersive virtual reality and Google Maps are what excite me about computers,<sup><a href="#fn1" id="r1">[1]</a></sup> but here you have engineers waxing poetic about pure, raw *machines*. Did they see the potential in what they were building? Was that even possible? I dig computer science but I'm unsure I'd want to work in the industry if payroll software was the hot thing.
+Love this one. I'm fascinated by stories about the dawn of computers --- before smartphones and tablets, before the World Wide Web and the ubiquity of the Internet. Applications like instant communication and immersive virtual reality and Google Maps are what excite me about computers,[^1] but here you have engineers waxing poetic about pure, raw *machines*. Did they see the potential in what they were building? Was that even possible? I dig computer science but I'm unsure I'd want to work in the industry if payroll software was the hot thing.
 
 The book emphasizes the development of hardware rather than software; the author only mentions the operating system group in passing. Perhaps this is because he primarily had access to the hardware folks, but I get the impression that it was up to the customers buying the machines to make them useful. What a different landscape today.
 
 My biggest takeaway: debugging hardware sounds hellish. Wire-wrapped boards sound like the creation of Satan himself.
-
 
 ## The C Programming Language
 
@@ -25,7 +23,6 @@ I picked this up in my ongoing effort to consume some of the classics of compute
 
 The minimalism of C is refreshing compared to complex monstrosities like C++. No generics, no lambdas, not even classes. I never fell in love with the language like others have --- give me Python or Clojure any day of the week --- but I understand the appeal.
 
-
 ## A Tour of C++
 
 <img alt="A Tour of C++ book cover" src="/images/tour-of-cpp.png">
@@ -34,13 +31,11 @@ This one's a perfect balance between beginner-focused "this is a `for` loop" int
 
 I would love to see this sort of whirlwind tour for other languages.
 
-
 ## Thinking, Fast and Slow
 
 <img alt="Thinking, Fast and Slow book cover" srcset="/images/thinking-fast-and-slow.jpg 1x, /images/thinking-fast-and-slow@2x.jpg 2x" src="/images/thinking-fast-and-slow.jpg">
 
 I'm always a fan of pop psychology, and this one really scratches that itch. You don't need any particular background to enjoy it; all the thought experiments are easy to understand and perform on yourself. As the author predicts, I almost always choose the less rational option even when the math says I should do otherwise. I'm a work in progress.
-
 
 ## Working Effectively With Legacy Code
 
@@ -49,7 +44,6 @@ I'm always a fan of pop psychology, and this one really scratches that itch. You
 This book's format is wonderfully practical. Each chapter presents a particular roadblock to testing (e.g. "my application is all API calls") and offers a solution. Its catalog of dependency-breaking techniques to make your code more testable is particularly valuable. I already use many of the techniques, but it's nice to have a name for them.
 
 Unfortunately after finishing the book I have an uneasy feeling that I retained far less than I should have. Taking notes would have helped. At university I took copious notes during lectures that I would never read again, but the process helped me soak up the material. Time to reintroduce that practice.
-
 
 ## The Pragmatic Programmer
 
@@ -63,16 +57,12 @@ While reading I also listened to the [Coding Blocks episodes](https://www.coding
 
 I also took notes this time. Makes for slower reading but retention is off the charts.
 
-
 ## A Song of Ice and Fire
 
 <img alt="A Song of Ice and Fire book spines" srcset="/images/song-of-ice-and-fire.jpg 1x, /images/song-of-ice-and-fire@2x.jpg 2x" src="/images/song-of-ice-and-fire.jpg">
 
 Pure buttery popcorn.
 
-
 ---
 
-<ol class="footnotes">
-    <li id="fn1"><em>Especially</em> Google Maps. What a marvel. Let's all take a moment to recognize the brilliance that is Google Maps.</li>
-</ol>
+[^1]: *Especially* Google Maps. What a marvel. Let's all take a moment to recognize the brilliance that is Google Maps.

@@ -297,12 +297,12 @@ video {
 .footnotes {
   font-size: 1.4rem;
 
-  /* Add extra space to keep list numbers inside article width. */
-  padding-left: 2rem;
+  blockquote, p {
+    margin: 1rem 0;
+  }
 
   blockquote {
     font-size: inherit;
-    margin: 1rem 0;
     padding-left: 1rem;
   }
 
@@ -310,25 +310,15 @@ video {
     font-size: 1.2rem;
   }
 
-  li {
-    margin-bottom: 1rem;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
+  ol {
+    /* Add extra space to keep list numbers inside article width. */
+    padding-left: 2rem;
   }
 }
 
-.return {
+.reversefootnote {
   border-width: 0;
   font-size: 75%;
-  margin-left: 0.5em;
-
-  &::after {
-    /* Return arrow, plus the Unicode variation selector to force rendering as
-     * text instead of emoji (https://stackoverflow.com/a/38452396). */
-    content: "\21a9\fe0e";
-  }
 }
 
 /* Make videos scale to fit mobile.

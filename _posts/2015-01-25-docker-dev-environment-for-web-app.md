@@ -8,7 +8,6 @@ The good news is that with some initial setup, and not much at that, you can roc
 
 In this tutorial we build a [Flask](http://flask.pocoo.org) web app using [Gunicorn](http://gunicorn.org) as our HTTP server. This makes these instructions a tad Python-centric, but the main ideas (and there's only a few of them, no biggie) are applicable to other languages and frameworks.
 
-
 ## The Web App
 
 Our web app is comprised of five files.
@@ -72,7 +71,6 @@ There's surprisingly little happening in this file. The first line indicates the
 
 Several of the official Docker base images have a useful -onbuild variant. [The one we're using](https://github.com/docker-library/python/blob/e236058d5c3601af1d38ba27b4fe217c5d678c02/3.4/onbuild/Dockerfile), in addition to installing Python and Pip in the image, also copies our source code to the */usr/src/app/* directory and installs packages listed in *requirements.txt*. It's a minor convenience, but it saves some boilerplate from our *Dockerfile*. There's -onbuild variants for [Node.js](https://registry.hub.docker.com/_/node/), [Ruby](https://registry.hub.docker.com/_/ruby/), and [Go](https://registry.hub.docker.com/_/golang/) also. Highly recommended.
 
-
 ## Fire It Up
 
 All the pieces are in place. See the app in action by running the following commands then navigating to http://localhost:8080.
@@ -85,7 +83,6 @@ docker run -it --publish=8080:80 mminer/myserver
 If all goes well your browser displays "Hello World!" as expected. Brilliant.
 
 At this point we can push the image to the Docker Hub (or a private registry) and deploy it live. However, we have a problem: when we update our code, our changes aren't reflected by the running server without another build + run. Fast though the build process is thanks to Docker's caching, re-running these steps becomes tedious quickly.
-
 
 ## Autoreload
 
@@ -111,7 +108,6 @@ bind = '0.0.0.0:80'
 
 Now whenever a file changes, Gunicorn relaunches its workers and loads our new code.
 
-
 ## Synced Folders
 
 With one last piece of the puzzle we'll have everything working nicely. When we build the Docker image, our source files are copied to its */usr/src/app* directory. Luckily Docker offers a way to share directories between a host and a container. For those familiar with Vagrant, this is akin to their synced folders feature. If the directory that we're mapping already exists in the container, ours overwrites it. When we update a file the change is immediately reflected inside the container.
@@ -123,7 +119,6 @@ docker run -it --publish=8080:80 --env="MODE=dev" --volume=/path/to/app:/usr/src
 ```
 
 And voilà! Edit the source code on your host machine using your favourite editor and the server detects the changes and reloads itself. If you save syntax errors and the server shuts down when it can't decipher your typos, simply re-run the above command to be back in action lickety-split.
-
 
 ## Fig
 
@@ -145,11 +140,9 @@ myserver:
 
 Instead of `docker run`, use `fig up` to start your container ([full list of commands here](http://www.fig.sh/cli.html)). Nice.
 
-
 ## Wrapping Up
 
 There you have it, a lightweight, isolated, auto-reloading web server running inside a Docker container, the image of which can be deployed to production with no modification. Keep on rocking in the free world.
-
 
 ---
 

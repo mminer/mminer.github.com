@@ -14,7 +14,7 @@ Or how about this image a coworker recently shared of a woman biking through ser
 
 <img alt="Woman riding bicycle while wearing VR headset" srcset="/images/vr-bicyclist-1.jpg 1x, /images/vr-bicyclist-1@2x.jpg 2x" src="/images/vr-bicyclist-1.jpg">
 
-Operating a bicycle with completely obscured vision is preposterous, but I also marvel at the sheer difficulty of such a feat. Surprisingly, this isn't the only photo of somebody simultaneously riding a bike and experiencing VR.<sup><a href="#fn1" id="r1">[1]</a></sup>
+Operating a bicycle with completely obscured vision is preposterous, but I also marvel at the sheer difficulty of such a feat. Surprisingly, this isn't the only photo of somebody simultaneously riding a bike and experiencing VR.[^1]
 
 <img alt="Man riding bicycle while wearing VR headset" srcset="/images/vr-bicyclist-2.jpg 1x, /images/vr-bicyclist-2@2x.jpg 2x" src="/images/vr-bicyclist-2.jpg">
 
@@ -24,9 +24,6 @@ Look at the sheer *joy* on this man's face. I may have just called the bicycle +
 
 The bicycle in the living room. The enthusiastically supportive friends. The ecstatic woman with the bowl of popcorn. I love every detail of this stock photo. If this charming scene doesn't convince you that virtual reality is the most electrifying technological development since Microsoft Bob, nothing will.
 
-
 ---
 
-<ol class="footnotes">
-    <li id="fn1">Though two-wheeled cycles dominate. Try as I might, I failed to find a stock photo of somebody riding a unicycle while wearing a VR headset. I smell opportunity.<a href="#r1" class="return"></a></li>
-</ol>
+[^1]: Though two-wheeled cycles dominate. Try as I might, I failed to find a stock photo of somebody riding a unicycle while wearing a VR headset. I smell opportunity.

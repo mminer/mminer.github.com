@@ -6,13 +6,11 @@ title: "Full Indie Summit 2017"
 
 <img alt="Full Indie Summit 2017 wristband" srcset="/images/fullindie2017.jpg 1x, /images/fullindie2017@2x.jpg 2x" src="/images/fullindie2017.jpg">
 
-
 ## Em Halberstadt: How Sound Tells the Story of *Night in the Woods*
 
 Game audio has long been something I neglect until the end, usually cobbling together a bunch of free sound effects and calling it a day. I've never won awards for sound design, and seeing a game like *[Night in the Woods](http://www.nightinthewoods.com)* that takes audio seriously highlights just how much a disservice I do to the experience by treating audio as a second-class citizen.
 
 Em and the developers evidently put an enormous amount of effort and care into making the game's lush soundscape, with audio cues written into the script and the final product packing some 5,090 individual clips. Much of the ambience was created with the human voice alone, from the wind to traffic noises to eerie suspenseful tones as you walk through the dark forest. My favourite part was the probabilistic pigeon sounds --- only some percent of the time do they manage to crack a seed open. It's this attention to detail that I never consciously notice but which makes the game feel truly alive.
-
 
 ## Jesse Ringrose: Design Challenges in Splitter Critters
 
@@ -22,13 +20,11 @@ Jesse emphasized the importance of playtesting with real people and tweaking the
 
 Unsurprisingly for a game where you slice potentially hundreds of sprites on the fly, some of which move and need redrawing every frame, performance tuning in *Splitter Critters* was a challenge. I can only imagine. Jiminy. It plays buttery smooth now though so I guess they figured it out.
 
-
 ## Jord Farrell: Feeling the Vibrations
 
 Apparently Jord has created 250 (!) games. I doubt I've even played that many. He talked about his approach to development, often deciding on a theme (e.g. capitalism) then designing mechanics that allow the player to explore this theme. Sometimes he takes a well-known game like *Pong*, strips away some seemingly fundamental aspect of it, then lets new and fresh mechanics evolve from what remains. It's fascinating to see such an experimental, iterative approach to game design.
 
 As such a prolific game developer, it was only appropriate that Jord built the presentation itself in Unity. It and [many of his games](https://mrtedders.itch.io) employ a glitch aesthetic that brings to mind pixel art on a TV from the 50s. He claims to be terrible at art, and this approach --- with reusable custom shaders doing much of the heavy lifting --- gives his work a distinctive, memorable look while leaving him free to focus on core gameplay. My own artistic chops leave much to be desired so I'll be sure to adopt this technique myself.
-
 
 ## Joel Green: Second Gen VR
 
@@ -37,13 +33,11 @@ The focus of Joel's talk was the 6DoF motion control in Cloudhead Games'
 
 The highlight of the talk was hearing about what players first do when given the power of telekinesis. Overwhelmingly they pick up objects and stack them into towers, not unlike toddlers do with wooden blocks. Tossing around ragdoll zombies is also a hit. Many game developers I talk to are excited about the visual immersion aspect of VR, but Joel was most enthusiastic about the experiences that great motion control can provide. It sounds like the Vive's forthcoming Knuckles controller is especially swell.
 
-
 ## Jose Palacios Vives: Steam Overview + Chat
 
 This talk was mostly a Q&A session for developers to ask their burning Steam questions. Jose made the case that Steam remains a great place for indie devs to distribute their games and is only improving, despite the impression that the market has become too crowded for any of us poor saps to stand a chance.
 
 I have yet to publish a game on Steam, but I get the impression that it can be a maddening experience, with some audience members asking pointed questions about what Valve is doing to match itch.io's ease of distribution. For their part, it sounds like Valve is making a concerted effort to address these frustrations. A1.
-
 
 ## Matthew Marteinsson: Working With A Failure Based Workflow
 
@@ -51,13 +45,11 @@ Matthew's talk covered a lot of the same ground as Em Halberstadt's earlier in t
 
 Matthew also touched on voiceovers in games. His general advice is to avoid voiceover if possible, with bad V.O. worse than none at all. Your friends willing to do it free are free for a reason.
 
-
 ## Tanya X. Short: Collaborating with Algorithms
 
 As the founder of [Kitfox Games](http://www.kitfoxgames.com) which makes heavy use of procedural generation in their titles, Tanya had an interesting perspective on choosing and working with complex algorithms. She likened them to team members and argued that they should be chosen with the same care that you might a coworker. They can have the limited importance of an intern or they can take on much greater responsibility. Just as a crummy hire can drag down the whole team, so can employing an algorithm that hinders more than helps.
 
 Tanya also briefly discussed the problem of "sameness" that often plagues procedurally generated content. It's very much dependent on your game --- some experiences will benefit from procedural generation, but for others you might be better off crafting everything by hand.
-
 
 ## Jerry Belich: Alternative Controllers
 
@@ -65,11 +57,9 @@ I've always been drawn to microcontrollers and custom interfaces to computers. W
 
 Making the jump to hardware is intimidating if you've never dove into it before, but Jerry's [getting started guide](https://jerrytron.github.io/alt-ctrl/) looks like a fine place to start for beginners.
 
-
 ## Tommy Refenes: The Marriage of Controls and Level Design
 
 Making a *Super Meat Boy* game for mobile seems like an impossible task but that's exactly what Tommy and Team Meat are doing with *[Super Meat Boy: Forever](http://supermeatboy.com)*. In the original they first perfected the controls before designing any levels, essentially employing a waterfall model for the game's development. They're taking the same approach with the sequel, and from what Tommy previewed it looks like they successfully whittled the controls down to their bare essence without losing what made the original so fun. I look forward to losing badly at this game once it's release (seriously, I don't think I'm cut out for the likes of *Super Meat Boy*).
-
 
 ## Leighton Gray: How to Write Games for the Internet Without Embarrassing Yourself
 
@@ -77,11 +67,9 @@ I expected a lighthearted and silly talk from the creator of *[Dream Daddy: A Da
 
 At the core of *Dream Daddy* is a heartwarming story about a father's relationship with his daughter. Being so starved of positivity in the world at large, Leighton explained, players crave wholesome, uplifting material. Despite this, the game had to be steeped in a layer of cynicism to make it palatable. This seems a shame --- what's wrong with wearing your heart on your sleeve? --- but if it gets players through the door then rock and roll.
 
-
 ## Kelly Wallick: Indie Around the World and Beyond
 
 I've lived in both Toronto and Vancouver where game development companies large and small are plentiful, so it was interesting learning about cities like Johannesburg and Tokyo where the indie game scene is only now starting to flourish. The latter is especially surprising given that it's home to heavyweights like Nintendo and Square. With programs like the [Indie Megabooth](http://indiemegabooth.com) that Kelly helps run, it sounds like it's a good time to be an indie developer regardless of your location.
-
 
 ## Summary
 
