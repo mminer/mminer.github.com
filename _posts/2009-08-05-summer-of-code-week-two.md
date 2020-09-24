@@ -2,7 +2,7 @@
 title: "Summer of Code: Week Two"
 ---
 
-A new requirement for the Summer of Code is to give weekly progress reports detailing what we've accomplished in the past week as well as what we intend to conjure up in the next one. I figure to give the old blog some love, I'd post my progress reports here.
+A new requirement for the Summer of Code is to give weekly progress reports detailing what we've accomplished in the past week as well as what we intend to conjure up in the next one. I figure to give the blog some love, I'd post my progress reports here.
 
 ## Week 1
 

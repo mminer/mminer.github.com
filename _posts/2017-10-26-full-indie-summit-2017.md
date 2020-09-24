@@ -8,7 +8,7 @@ title: "Full Indie Summit 2017"
 
 ## Em Halberstadt: How Sound Tells the Story of *Night in the Woods*
 
-Game audio has long been something I neglect until the end, usually cobbling together a bunch of free sound effects and calling it a day. I've never won awards for sound design, and seeing a game like *[Night in the Woods](http://www.nightinthewoods.com)* that takes audio seriously highlights just how much a disservice I do to the experience by treating audio as a second-class citizen.
+Game audio has long been something I neglect until the end, usually cobbling together a bunch of free sound effects and calling it a day. I've never won awards for sound design, and seeing a game like *[Night in the Woods](http://www.nightinthewoods.com)* that takes audio seriously highlights how much a disservice I do to the experience by treating audio as a second-class citizen.
 
 Em and the developers evidently put an enormous amount of effort and care into making the game's lush soundscape, with audio cues written into the script and the final product packing some 5,090 individual clips. Much of the ambience was created with the human voice alone, from the wind to traffic noises to eerie suspenseful tones as you walk through the dark forest. My favourite part was the probabilistic pigeon sounds --- only some percent of the time do they manage to crack a seed open. It's this attention to detail that I never consciously notice but which makes the game feel truly alive.
 
@@ -16,28 +16,28 @@ Em and the developers evidently put an enormous amount of effort and care into m
 
 The primary mechanic of *[Splitter Critters](http://splittercritters.com)* is a mind bender (and difficult to explain; you really need to watch a video or play the game itself). It apparently started as a Ludem Dare submission then shipped after nine months of endlessly refining the controls.
 
-Jesse emphasized the importance of playtesting with real people and tweaking the UX to accommodate their expectations. One example was jumping over gaps --- the little aliens weren't initially programmed to jump, but you expect them to make the leap when the destination is only a short hop away. In the final game they do this, and though it's a small detail, the experience is much better because of the extra polish.
+Jesse emphasized the importance of playtesting with real people and tweaking the UX to accommodate their expectations. One example was jumping over gaps --- the little aliens weren't initially programmed to jump, but you expect them to make the leap when the destination is a short hop away. In the final game they do this, and though it's a small detail, the experience is much better because of the extra polish.
 
 Unsurprisingly for a game where you slice potentially hundreds of sprites on the fly, some of which move and need redrawing every frame, performance tuning in *Splitter Critters* was a challenge. I can only imagine. Jiminy. It plays buttery smooth now though so I guess they figured it out.
 
 ## Jord Farrell: Feeling the Vibrations
 
-Apparently Jord has created 250 (!) games. I doubt I've even played that many. He talked about his approach to development, often deciding on a theme (e.g. capitalism) then designing mechanics that allow the player to explore this theme. Sometimes he takes a well-known game like *Pong*, strips away some seemingly fundamental aspect of it, then lets new and fresh mechanics evolve from what remains. It's fascinating to see such an experimental, iterative approach to game design.
+Apparently Jord has created 250 (!) games. I doubt I've even played that many. He talked about his approach to development, often deciding on a theme (e.g. capitalism) then designing mechanics that allow the player to explore this theme. Sometimes he takes a well-known game like *Pong*, strips away a seemingly fundamental aspect of it, then lets new and fresh mechanics evolve from what remains. It's fascinating to see such an experimental, iterative approach to game design.
 
-As such a prolific game developer, it was only appropriate that Jord built the presentation itself in Unity. It and [many of his games](https://mrtedders.itch.io) employ a glitch aesthetic that brings to mind pixel art on a TV from the 50s. He claims to be terrible at art, and this approach --- with reusable custom shaders doing much of the heavy lifting --- gives his work a distinctive, memorable look while leaving him free to focus on core gameplay. My own artistic chops leave much to be desired so I'll be sure to adopt this technique myself.
+As such a prolific game developer, it was appropriate that Jord built the presentation itself in Unity. It and [many of his games](https://mrtedders.itch.io) employ a glitch aesthetic that brings to mind pixel art on a TV from the 50s. He claims to be terrible at art, and this approach --- with reusable custom shaders doing much of the heavy lifting --- gives his work a distinctive, memorable look while leaving him free to focus on core gameplay. My own artistic chops leave much to be desired so I'll be sure to adopt this technique myself.
 
 ## Joel Green: Second Gen VR
 
 The focus of Joel's talk was the 6DoF motion control in Cloudhead Games'
-*[Heart of the Emberstone](http://store.steampowered.com/app/526140/The_Gallery__Episode_2_Heart_of_the_Emberstone/)*. He explained how the current crop of VR controllers, amazing as they are, feel like you're wearing an oven mitt; the uncanny valley of motion control. Not only that, but with VR you have to consider physical characteristics of the human body that were previously unimportant in game development. One particular challenge they faced was allowing players to rotate objects toward them, with the limited bend of the human wrist a hindrance. Suddenly kinesiology is relevant to game development.
+*[Heart of the Emberstone](http://store.steampowered.com/app/526140/The_Gallery__Episode_2_Heart_of_the_Emberstone/)*. He explained how the current crop of VR controllers, amazing as they are, feel like you're wearing an oven mitt; the uncanny valley of motion control. Not only that, but with VR you have to consider physical characteristics of the human body that were previously unimportant in game development. One challenge they faced was allowing players to rotate objects toward them, with the limited bend of the human wrist a hindrance. Suddenly kinesiology is relevant to game development.
 
 The highlight of the talk was hearing about what players first do when given the power of telekinesis. Overwhelmingly they pick up objects and stack them into towers, not unlike toddlers do with wooden blocks. Tossing around ragdoll zombies is also a hit. Many game developers I talk to are excited about the visual immersion aspect of VR, but Joel was most enthusiastic about the experiences that great motion control can provide. It sounds like the Vive's forthcoming Knuckles controller is especially swell.
 
 ## Jose Palacios Vives: Steam Overview + Chat
 
-This talk was mostly a Q&A session for developers to ask their burning Steam questions. Jose made the case that Steam remains a great place for indie devs to distribute their games and is only improving, despite the impression that the market has become too crowded for any of us poor saps to stand a chance.
+This talk was mostly a Q&A session for developers to ask their burning Steam questions. Jose made the case that Steam remains a great place for indie devs to distribute their games and is improving, despite the impression that the market has become too crowded for any of us poor saps to stand a chance.
 
-I have yet to publish a game on Steam, but I get the impression that it can be a maddening experience, with some audience members asking pointed questions about what Valve is doing to match itch.io's ease of distribution. For their part, it sounds like Valve is making a concerted effort to address these frustrations. A1.
+I have yet to publish a game on Steam, but I get the impression that it can be a maddening experience, with audience members asking pointed questions about what Valve is doing to match itch.io's ease of distribution. For their part, it sounds like Valve is making a concerted effort to address these frustrations. A1.
 
 ## Matthew Marteinsson: Working With A Failure Based Workflow
 
@@ -63,9 +63,9 @@ Making a *Super Meat Boy* game for mobile seems like an impossible task but that
 
 ## Leighton Gray: How to Write Games for the Internet Without Embarrassing Yourself
 
-I expected a lighthearted and silly talk from the creator of *[Dream Daddy: A Dad Dating Simulator](http://store.steampowered.com/app/654880/Dream_Daddy_A_Dad_Dating_Simulator/)* but instead we got a serious trip through art history in perhaps the most informative twenty minutes of the day. Leighton defined her game as metamodernist, a cultural movement which can be summarized as "ironic detachment + sincere engagement." Whether that's the best way to describe our current meme-crazed Internet society is up for debate, but it sounds about right to me.
+I expected a lighthearted and silly talk from the creator of *[Dream Daddy: A Dad Dating Simulator](http://store.steampowered.com/app/654880/Dream_Daddy_A_Dad_Dating_Simulator/)* but instead we got a serious trip through art history in the most informative twenty minutes of the day. Leighton defined her game as metamodernist, a cultural movement which can be summarized as "ironic detachment + sincere engagement." Whether that's the best way to describe our current meme-crazed Internet society is up for debate, but it sounds about right to me.
 
-At the core of *Dream Daddy* is a heartwarming story about a father's relationship with his daughter. Being so starved of positivity in the world at large, Leighton explained, players crave wholesome, uplifting material. Despite this, the game had to be steeped in a layer of cynicism to make it palatable. This seems a shame --- what's wrong with wearing your heart on your sleeve? --- but if it gets players through the door then rock and roll.
+At the core of *Dream Daddy* is a heartwarming story about a father's relationship with his daughter. Being so starved of positivity in the world at large, Leighton explained, players crave wholesome, uplifting material. Despite this, the game had to be steeped in a layer of cynicism to make it palatable. This is a shame --- what's wrong with wearing your heart on your sleeve? --- but if it gets players through the door then rock and roll.
 
 ## Kelly Wallick: Indie Around the World and Beyond
 

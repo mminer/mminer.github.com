@@ -26,9 +26,9 @@ Fortunately it works a treat. Install the PCIe card, download Desktop Video from
 
 ## Alternatives
 
-The <abbr title="Blackmagic Design">BMD</abbr> [UltraStudio Mini Recorder](https://www.blackmagicdesign.com/products/ultrastudio/techspecs/W-DLUS-04) --- basically the Thunderbolt version of the DeckLink --- was tempting for its ability to plug into my laptop. Unfortunately my desktop lacks Thunderbolt so I skipped that option.
+The <abbr title="Blackmagic Design">BMD</abbr> [UltraStudio Mini Recorder](https://www.blackmagicdesign.com/products/ultrastudio/techspecs/W-DLUS-04) --- the Thunderbolt version of the DeckLink --- was tempting for its ability to plug into my laptop. Unfortunately my desktop lacks Thunderbolt so I skipped that option.
 
-The <abbr title="Blackmagic Design">BMD</abbr> [Intensity](https://www.blackmagicdesign.com/products/intensitypro4k/techspecs/W-INT-05) seems to be a popular option for capturing HDMI and has the bonus of HDMI output. Recording and monitoring in one card, what's not to love? Alas, [forum](https://forums.unrealengine.com/unreal-engine/feedback-for-epic/1655497-hdmi-video-capture-card-support-for-virtual-production) [posts](https://forums.unrealengine.com/community/general-discussion/1646571-video-capture-cards-not-working-supported-help) indicate that Unreal refuses to recognize it. So that's not to love.
+The <abbr title="Blackmagic Design">BMD</abbr> [Intensity](https://www.blackmagicdesign.com/products/intensitypro4k/techspecs/W-INT-05) is a popular option for capturing HDMI and has the bonus of HDMI output. Recording and monitoring in one card, what's not to love? Alas, [forum](https://forums.unrealengine.com/unreal-engine/feedback-for-epic/1655497-hdmi-video-capture-card-support-for-virtual-production) [posts](https://forums.unrealengine.com/community/general-discussion/1646571-video-capture-cards-not-working-supported-help) indicate that Unreal refuses to recognize it. So that's not to love.
 
 Another attractive option was the Elgato [Cam Link](https://www.elgato.com/en/gaming/cam-link-4k), which converts any HDMI source to a webcam feed. It's relatively cheap and the Internet tells me it works well with Unreal. I might have went this route if it didn't prove impossible to find. I'll chalk this up to COVID-19 and the sudden surge of people decking out their work-from-home setups.
 

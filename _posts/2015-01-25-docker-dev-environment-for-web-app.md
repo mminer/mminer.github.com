@@ -4,7 +4,7 @@ title: "Docker Dev Environment for Web App"
 
 The scenario: you're building a web app and want to hop on the Docker train (mixing metaphors like a champ), but fitting this hot new container tech into your development workflow has you flummoxed. Your dev environment should mirror production's as closely as possible, so running your app from a Docker container in both is a smart choice. Unfortunately, at least at first glance, this sacrifices the convenience of running the app from your local file system.
 
-The good news is that with some initial setup, and not much at that, you can rock a dev environment almost identical to production without losing niceties like auto-reload and isolation from your host system.
+The good news is that with some initial setup, and not much at that, you can rock a dev environment identical to production without losing niceties like auto-reload and isolation from your host system.
 
 In this tutorial we build a [Flask](http://flask.pocoo.org) web app using [Gunicorn](http://gunicorn.org) as our HTTP server. This makes these instructions a tad Python-centric, but the main ideas (and there's only a few of them, no biggie) are applicable to other languages and frameworks.
 
@@ -23,7 +23,7 @@ Our web app is comprised of five files.
 
 ### requirements.txt
 
-This file specifies the Python packages to install. We only need two: Flask and Gunicorn.
+This file specifies the Python packages to install. We need two: Flask and Gunicorn.
 
 ```
 # requirements.txt
@@ -69,7 +69,7 @@ There's surprisingly little happening in this file. The first line indicates the
 
 #### -onbuild
 
-Several of the official Docker base images have a useful -onbuild variant. [The one we're using](https://github.com/docker-library/python/blob/e236058d5c3601af1d38ba27b4fe217c5d678c02/3.4/onbuild/Dockerfile), in addition to installing Python and Pip in the image, also copies our source code to the */usr/src/app/* directory and installs packages listed in *requirements.txt*. It's a minor convenience, but it saves some boilerplate from our *Dockerfile*. There's -onbuild variants for [Node.js](https://registry.hub.docker.com/_/node/), [Ruby](https://registry.hub.docker.com/_/ruby/), and [Go](https://registry.hub.docker.com/_/golang/) also. Highly recommended.
+Several of the official Docker base images have a useful -onbuild variant. [The one we're using](https://github.com/docker-library/python/blob/e236058d5c3601af1d38ba27b4fe217c5d678c02/3.4/onbuild/Dockerfile), in addition to installing Python and Pip in the image, also copies our source code to the */usr/src/app/* directory and installs packages listed in *requirements.txt*. It's a minor convenience, but it saves boilerplate from our *Dockerfile*. There's -onbuild variants for [Node.js](https://registry.hub.docker.com/_/node/), [Ruby](https://registry.hub.docker.com/_/ruby/), and [Go](https://registry.hub.docker.com/_/golang/) also. Highly recommended.
 
 ## Fire It Up
 
@@ -88,7 +88,7 @@ At this point we can push the image to the Docker Hub (or a private registry) an
 
 Whenever we modify a file, the server should detect this and restart itself, showing our changes immediately. Flask's development server in debug mode (`app.run(debug=True)`) does this, as can many production-ready servers like Gunicorn.
 
-So we need to tell Gunicorn whether we're in development or production mode. Perhaps the easiest method is by using environment variables. Docker allows us to specify environment variables both in our *Dockerfile* or at runtime as arguments to `docker run`. The latter option is what we want.
+So we need to tell Gunicorn whether we're in development or production mode. The easiest method is by using environment variables. Docker allows us to specify environment variables both in our *Dockerfile* or at runtime as arguments to `docker run`. The latter option is what we want.
 
 ```bash
 docker run -it --publish=8080:80 --env="MODE=dev" mminer/myserver
@@ -118,11 +118,11 @@ Specify the directory to share by providing `docker run` with a `--volume` argum
 docker run -it --publish=8080:80 --env="MODE=dev" --volume=/path/to/app:/usr/src/app:ro mminer/myserver
 ```
 
-And voilà! Edit the source code on your host machine using your favourite editor and the server detects the changes and reloads itself. If you save syntax errors and the server shuts down when it can't decipher your typos, simply re-run the above command to be back in action lickety-split.
+And voilà! Edit the source code on your host machine using your favourite editor and the server detects the changes and reloads itself. If you save syntax errors and the server shuts down when it can't decipher your typos, re-run the above command to be back in action lickety-split.
 
 ## Fig
 
-Before we wrap up, allow me to tell you about [Fig](http://www.fig.sh) ([soon to be Docker Compose](https://github.com/docker/fig/issues/861)). The `docker run` command above is gnarly and only worsens as your app grows in complexity. Specifying the command line arguments in a configuration file makes life more pleasant, which is what Fig allows you to do. Sure, you can just chuck the command into a Bash script and call it a day, but as you start working with multiple containers (say, one for your app and another for a database), orchestration becomes painful. Fig makes this headache disappear.
+Before we wrap up, allow me to tell you about [Fig](http://www.fig.sh) ([soon to be Docker Compose](https://github.com/docker/fig/issues/861)). The `docker run` command above is gnarly and worsens as your app grows in complexity. Specifying the command line arguments in a configuration file makes life more pleasant, which is what Fig allows you to do. Sure, you can chuck the command into a Bash script and call it a day, but as you start working with multiple containers (say, one for your app and another for a database), orchestration becomes painful. Fig makes this headache disappear.
 
 Our configuration file looks like this.
 

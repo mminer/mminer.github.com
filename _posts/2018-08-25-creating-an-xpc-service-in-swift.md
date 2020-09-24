@@ -56,7 +56,7 @@ import Foundation
 }
 ```
 
-Before compiling this code we need to tweak some build settings. In particular:
+Before compiling this code we need to tweak build settings:
 
 - **Install Objective-C Compatibility Header**: NO
 - **Objective-C Generated Interface Header Name**: ""

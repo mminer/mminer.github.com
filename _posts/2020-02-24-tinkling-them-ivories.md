@@ -2,7 +2,7 @@
 title: "Tinkling Them Ivories"
 ---
 
-Last summer I took up piano. When I was 10 I went to piano lessons for a year and hated them. I can't pinpoint why. Probably some combo of the dusty old church songs we had to learn and being forced to practice when *The Simpsons* was on.
+Last summer I took up piano. When I was 10 I went to piano lessons for a year and hated them. I can't pinpoint why. Probably a combo of the dusty old church songs we had to learn and being forced to practice when *The Simpsons* was on.
 
 I love music though and regret never learning an instrument. I own a guitar and occasionally futz around with GarageBand, but the result is more noise than music. As luck would have it a friend was moving to Australia for six months and needed a temporary home for his keyboard; the timing was right.
 

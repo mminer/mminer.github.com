@@ -10,13 +10,13 @@ title: "FlatBuffers"
 
 One interesting technology we employ to combat this is [FlatBuffers](https://google.github.io/flatbuffers/), an "efficient cross platform serialization library". It was created at Google for game development, where you need to squeeze out every ounce of performance. It's not inherently limited to game engines though and can be used anywhere you need optimized data serialization.
 
-How it works is right in the name. **Flat** = the ability to access hierarchical data without parsing; **Buffer** = binary representation. Basically you store your data in a binary blob and you get random access to any part of the underlying data structures.
+How it works is right in the name. **Flat** = the ability to access hierarchical data without parsing; **Buffer** = binary representation. You store your data in a binary blob and you get random access to any part of the underlying data structures.
 
 Libraries exist for all the major languages --- JavaScript, C#, Python, Go, etc. There's even one for a language called [Lobster](http://strlen.com/lobster/) which I had never heard of but which looks very cool.
 
 Of course, binary serialization is nothing new, and there are tons of alternatives: Protocol Buffers, MessagePack, Thrift, Avro.[^1] All of them beat the pants off plaintext formats like JSON when it comes to metrics like request payload size. Where FlatBuffers stands apart is that it requires virtually no deserialization step when reading data.
 
-Rather than parsing the FlatBuffer-encoded file into an intermediate representation and loading that into memory, you simply use some fancy table lookups to determine where your property is located then read the bytes at the given offset. [This wiki entry](https://github.com/mzaks/FlatBuffersSwift/wiki/FlatBuffers-Explained) dishes out the nitty gritty details of how this works. No deserialization means your memory usage stays low and you waste no CPU cycles extracting your data.
+Rather than parsing the FlatBuffer-encoded file into an intermediate representation and loading that into memory, you use fancy table lookups to determine where your property is located then read the bytes at the given offset. [This wiki entry](https://github.com/mzaks/FlatBuffersSwift/wiki/FlatBuffers-Explained) dishes out the nitty gritty details of how this works. No deserialization means your memory usage stays low and you waste no CPU cycles extracting your data.
 
 [Here's official benchmarks](https://google.github.io/flatbuffers/flatbuffers_benchmarks.html) to make the case that FlatBuffers are indeed fast. My own benchmarks are entirely unscientific and unrigorous, but for a ~1.3 MB JSON document the request size was halved and the deserialization time cut to a third (there is of course still *some* overhead when reading). In any case, definitely speedier than old tortoise JSON.
 
@@ -62,7 +62,7 @@ Item.prototype.isStarred = function() {
 ...
 ```
 
-Here's what ingesting a serialized binary blob might look like using the FlatBuffers JavaScript library and the module we just generated.
+Here's what ingesting a serialized binary blob might look like using the FlatBuffers JavaScript library and the module we generated.
 
 ```javascript
 import flatbuffers from './flatbuffers.js';
@@ -96,9 +96,9 @@ There are workarounds --- you can serve JSON in your development environment and
 
 Whether *you* should use FlatBuffers depends on your app. Are request size and deserialization bottlenecks? For many web apps this won't be the case, e.g. a TODO app where you might expect a few hundred or thousand items at most.
 
-The usual advice for any optimization applies: measure first. Slowness that FlatBuffers could partially alleviate might point to a deeper issue that you're papering over. Perhaps you simply load too much data at once that could instead be delivered in small chunks as needed. If you have a mobile app, halving your request size might still blow through your user's monthly limits. It might be time to rethink your architecture.
+The usual advice for any optimization applies: measure first. Slowness that FlatBuffers could partially alleviate might point to a deeper issue that you're papering over. Perhaps you load too much data at once that could instead be delivered in small chunks as needed. If you have a mobile app, halving your request size might still blow through your user's monthly limits. It might be time to rethink your architecture.
 
-For the right ailment though, FlatBuffers might just be the tonic you need.
+For the right ailment though, FlatBuffers might be the tonic you need.
 
 ---
 

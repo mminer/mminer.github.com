@@ -20,4 +20,4 @@ Nature, you so crazy.
 
 ---
 
-[^1]: Back when off-sites were a thing you could do instead of cowering in your bedroom begging for the coronavirus to just give it up already.
+[^1]: Back when off-sites were a thing you could do instead of cowering in your bedroom begging for the coronavirus to give it up already.

@@ -2,13 +2,13 @@
 title: "A Pattern for Async Task Queue Results"
 ---
 
-Suppose we have a web app in which the user triggers some slow, expensive task, like transcoding a video or generating a report. We've wisely chosen to offload the job to a background worker, leaving the web server free to handle other requests (and if not, get started with [this helpful overview of the pattern](https://devcenter.heroku.com/articles/background-jobs-queueing) by our comrades at Heroku). Our app scales effortlessly but now we have a new problem: how do we notify the user when the task finishes?
+Suppose we have a web app in which the user triggers a slow, expensive task, like transcoding a video or generating a report. We've wisely chosen to offload the job to a background worker, leaving the web server free to handle other requests (and if not, get started with [this helpful overview of the pattern](https://devcenter.heroku.com/articles/background-jobs-queueing) by our comrades at Heroku). Our app scales effortlessly but now we have a new problem: how do we notify the user when the task finishes?
 
-There's a few solutions available. One is to use a non-blocking server like [Tornado](http://www.tornadoweb.org/) or [Node.js](http://nodejs.org) that can keep a connection to the client alive until the task completes while concurrently serving other requests. If we're already using one of these (and some like Tornado are excellent web frameworks regardless of their async aptitude), then this is a perfectly valid approach. An alternative solution is required though if we're rolling with Django or Ruby on Rails or some other blocking web framework.
+There's a few solutions available. One is to use a non-blocking server like [Tornado](http://www.tornadoweb.org/) or [Node.js](http://nodejs.org) that can keep a connection to the client alive until the task completes while concurrently serving other requests. If we're already using one of these (and some like Tornado are excellent web frameworks regardless of their async aptitude), then this is a perfectly valid approach. An alternative solution is required though if we're rolling with Django or Ruby on Rails or another blocking web framework.
 
 Another idea is to have the client periodically ask the server if the task is finished. When done poorly this results in wasted requests and fails to provide results as immediately as they're available, but it leads us in the right direction. Instead of polling, the back end can efficiently push results to the client via WebSockets. In true [microservices fashion](http://martinfowler.com/articles/microservices.html), this component --- a service which exists for the sole purpose of pushing messages to the client --- can be independent from the rest of our stack using whatever technology is most suitable for the job.
 
-Now in addition to our two services --- a web server and a background worker --- we'll run a third "notifier" service tasked with maintaining a connection to the client and telling them when a task completes. When the web server receives a request to run a task, it offloads it to the background worker, which upon completing the task passes the result to the notifier service, which sends the result back to the client.
+In addition to our two services --- a web server and a background worker --- we'll run a third "notifier" service tasked with maintaining a connection to the client and telling them when a task completes. When the web server receives a request to run a task, it offloads it to the background worker, which upon completing the task passes the result to the notifier service, which sends the result back to the client.
 
 ```
                        +-------------------+
@@ -36,7 +36,7 @@ Let's demonstrate this pattern by creating a simple web app that does what we de
 
 ## The Web Server
 
-We'll start with a minimal app using [Flask](http://flask.pocoo.org), a Python web framework. It has two endpoints. Visiting the root renders some HTML. Sending a POST request to `/runtask` triggers a computationally expensive task (which we'll define later).
+We'll start with a minimal app using [Flask](http://flask.pocoo.org), a Python web framework. It has two endpoints. Visiting the root renders HTML. Sending a POST request to `/runtask` triggers a computationally expensive task (which we'll define later).
 
 ```python
 # server.py
@@ -109,12 +109,12 @@ app = Celery(__name__, broker=broker)
 
 @app.task
 def mytask():
-    """Simulates some slow computation."""
+    """Simulates a slow computation."""
     time.sleep(5)
     return 42
 ```
 
-I said that we'd have three separate services running, but really we need four. We require a message broker to transport jobs between our web server and our background worker. [RabbitMQ](http://www.rabbitmq.com) fits the bill nicely. We'll use Docker to fire it up on its default port.
+I said that we'd have three separate services running, but we need four. We require a message broker to transport jobs between our web server and our background worker. [RabbitMQ](http://www.rabbitmq.com) fits the bill nicely. We'll use Docker to fire it up on its default port.
 
 ```bash
 docker run --publish=5672:5672 --detach rabbitmq:3.4
@@ -129,7 +129,7 @@ celery --app=worker:app worker
 
 ## The Notifier Service
 
-At this point we have a barebones web server that offloads some task to a background worker, freeing itself up as soon as possible to handle the next request. View our handiwork by visiting http://localhost:5000. Now onto the juicy assignment of communicating the result to the client.
+At this point we have a barebones web server that offloads a task to a background worker, freeing itself up as soon as possible to handle the next request. View our handiwork by visiting http://localhost:5000. Now onto the juicy assignment of communicating the result to the client.
 
 As mentioned earlier, WebSockets is well suited for maintaining the long-lived connection between client and server that we need. Support among modern browsers is [respectable](http://caniuse.com/#feat=websockets), with packages like [Socket.IO](http://socket.io/) providing fallback for antiques like Internet Explorer 9. Indeed, let's use Socket.IO for this demo. In addition to ensuring our app works in ancient clients, it provides convenient features like automatic reconnection and libraries that make setup a breeze.
 
@@ -234,7 +234,7 @@ app = Celery(__name__, broker=broker)
 
 @app.task(base=NotifierTask)
 def mytask(clientid=None):
-    """Simulates some slow computation."""
+    """Simulates a slow computation."""
     time.sleep(5)
     return 42
 ```
@@ -298,7 +298,7 @@ EXPOSE 3000
 CMD ["node", "notifier.js"]
 ```
 
-We also need to tweak our code so that the services talk to each other using [Docker linking](https://docs.docker.com/userguide/dockerlinks/), which provide the IP addresses and ports of the other services via environment variables (currently the host is always `localhost` and the ports are hardcoded). Instead of describing the necessary tweaks here, peruse the final code in the [GitHub repo](https://github.com/mminer/blog-code/tree/master/pattern-for-async-task-queue-results).
+We also need to tweak our code so that the services talk to each other using [Docker linking](https://docs.docker.com/userguide/dockerlinks/), which provide the IP addresses and ports of the other services via environment variables (right now the host is always `localhost` and the ports are hardcoded). Instead of describing the necessary tweaks here, peruse the final code in the [GitHub repo](https://github.com/mminer/blog-code/tree/master/pattern-for-async-task-queue-results).
 
 Now build the Docker containers.
 
@@ -343,7 +343,7 @@ fig up
 
 ## Wrapping Up
 
-Before *actually* deploying this app live, consider other factors like security and scalability more closely than we have here. For one thing, the client can send any client ID they want along with their POST request, possibly causing grief for other users. Also, keeping all information about connected clients in memory on a single Node.js app is hardly the definition of durability. With some extra attention though, we can take this pattern and use it to great effect in our app, reducing strain on our web server while delivering results asynchronously to our users.
+Before deploying this app live, consider other factors like security and scalability more closely than we have here. For one thing, the client can send any client ID they want along with their POST request, causing grief for other users. Also, keeping all information about connected clients in memory on a single Node.js app is hardly the definition of durability. With extra attention though, we can take this pattern and use it to great effect in our app, reducing strain on our web server while delivering results asynchronously to our users.
 
 Task notifications. Asynchronous communication. All part of the American Dream.
 

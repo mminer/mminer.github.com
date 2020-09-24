@@ -20,7 +20,7 @@ class Brick : MonoBehaviour
 }
 ```
 
-Nice job. Now let's test your handiwork. There are plenty of ways to run the function, but Methodic provides the easiest. Click the brick game object, open *Window > Methodic*, hit "Invoke", and voilà: your brick detonates in a fiery blast.
+Nice job. Let's test your handiwork. There are plenty of ways to run the function, but Methodic provides the easiest. Click the brick game object, open *Window > Methodic*, hit "Invoke", and voilà: your brick detonates in a fiery blast.
 
 <img alt="Methodic Window" srcset="/images/methodic.png 1x, /images/methodic@2x.png 2x" src="/images/methodic.png">
 
@@ -28,7 +28,7 @@ No extra code necessary. Even groovier, if your function takes arguments, you ca
 
 <img alt="Methodic Window With Arguments" src="/images/methodic-arguments.png">
 
-Public, private, static, or instance function, Methodic runs them all. You can even execute functions while Unity's in edit mode.[^1] Still yawning? Perhaps a video sells it better.
+Public, private, static, or instance function, Methodic runs them all. You can even execute functions while Unity's in edit mode.[^1] Still yawning? A video sells it better.
 
 <div class="video">
     <iframe allow="fullscreen" src="https://www.youtube-nocookie.com/embed/x9x80XV-8G8?color=white&modestbranding=1">
@@ -38,7 +38,7 @@ Public, private, static, or instance function, Methodic runs them all. You can e
     </iframe>
 </div>
 
-If this looks like something your game development environment pines for (or if you simply want to make me a wealthy man), you can [purchase Methodic](https://assetstore.unity.com/packages/tools/utilities/methodic-954) for $10 on the Unity Asset Store. I can't promise that you'll make better games with it, but you *might*, and is that an opportunity you can ignore? Not in this economy.
+If this looks like something your game development environment pines for (or if you want to make me a wealthy man), you can [purchase Methodic](https://assetstore.unity.com/packages/tools/utilities/methodic-954) for $10 on the Unity Asset Store. I can't promise that you'll make better games with it, but you *might*, and is that an opportunity you can ignore? Not in this economy.
 
 ---
 

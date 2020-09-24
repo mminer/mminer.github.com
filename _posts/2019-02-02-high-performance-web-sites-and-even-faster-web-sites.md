@@ -2,7 +2,7 @@
 title: "<em>High Performance Web Sites</em> and <em>Even Faster Web Sites</em>"
 ---
 
-Recently I've been diving deeper into web app performance --- how *do* browsers handle DOM layout? --- so I picked up *[High Performance Web Sites](http://shop.oreilly.com/product/9780596529307.do)* and its sequel *[Even Faster Web Sites](http://shop.oreilly.com/product/9780596522315.do)*. I still only have a hazy idea of how Chrome decides where to stick all those boxes (that's not really what these books cover), but they neverthless impart some juicy knowledge about making web pages speedy.
+Recently I've been diving deeper into web app performance --- how *do* browsers handle DOM layout? --- so I picked up *[High Performance Web Sites](http://shop.oreilly.com/product/9780596529307.do)* and its sequel *[Even Faster Web Sites](http://shop.oreilly.com/product/9780596522315.do)*. I still only have a hazy idea of how Chrome decides where to stick all those boxes (that's not what these books cover), but they neverthless impart juicy knowledge about making web pages speedy.
 
 <img alt="High Performance Web Sites and Even Faster Web Sites book covers" src="/images/hpws-and-efws.png">
 
@@ -16,13 +16,13 @@ You would think that after a decade of progress everything would be Speedy Gonza
 
 This book is almost a teenager but it has aged surprisingly well. It's organized into fourteen concrete rules to follow with performance tests to convince you of their validity. Quick read, straight to the point, no unnecessary fluff.
 
-Some of the rules are obvious --- make fewer requests, minify your JavaScript, etc. --- but it's helpful to be reminded of just how effective these techniques can be to improve load times. In the same vein, many of the rules have become standard practice that I just take for granted. With bundling systems like Webpack now commonplace (at least in projects I've worked on), optimizations like minification and combining scripts are a given.
+Some of the rules are obvious --- make fewer requests, minify your JavaScript, etc. --- but it's helpful to be reminded of how effective these techniques can be to improve load times. In the same vein, many of the rules have become standard practice that I take for granted. With bundling systems like Webpack now commonplace (at least in projects I've worked on), optimizations like minification and combining scripts are a given.
 
 Other rules like using the `Expires` header effectively are good reminders of tweaks that are easily overlooked. This one in particular is difficult to adhere to when you lack control over the server. This blog is hosted on GitHub Pages which provides no mechanism to specify custom headers. Returning visitors end up requesting my avatar every day despite my intent to never age. Larger sites are unlikely to use a host as restrictive as GitHub, but even when developers have full control over their environment I suspect this rule is given less thought than it deserves.
 
 ## Even Faster Websites
 
-This one has aged less well than *<abbr title="High Performance Web Sites">HPWS</abbr>*. Several chapters delve into hacks to work around browser quirks, many of which (the quirks) have long since been remedied. You can safely skip a few chapters entirely unless you're some poor schmuck still supporting Internet Explorer 6 (my condolences if that's you).
+This one has aged less well than *<abbr title="High Performance Web Sites">HPWS</abbr>*. Several chapters delve into hacks to work around browser quirks, many of which (the quirks) have long since been remedied. You can safely skip a few chapters entirely unless you're a poor schmuck still supporting Internet Explorer 6 (my condolences if that's you).
 
 The overview of different Comet approaches, for example, isn't terribly useful unless WebSockets are off the table for some reason. Likewise, the chapter about domain sharding is less relevant now that browsers have raised their connections-per-domain limit. Other techniques like flushing the document head early so that scripts can load while the server computes the body will (soon, I hope) be made obsolete by widespread support for HTTP/2 and its fancy schmancy server push functionality.
 
@@ -69,10 +69,9 @@ if (value < 6) {
 }
 ```
 
-What a horror show. There might be legitimate scenarios where this craziness actually results in noticable speed improvements, but talk about a maintenance nightmare. Please don't write
-code like this unless you truly need to. Even more stressful is the description of unrolling loops and [Duff's Device](https://en.wikipedia.org/wiki/Duff's_device). My forays into game development ocassionally bring me into contact with convoluted performance hacks like this and they just make me want to nap.
+What a horror show. There might be legitimate scenarios where this craziness results in noticable speed improvements, but talk about a maintenance nightmare. Please don't write code like this unless you truly need to. Even more stressful is the description of unrolling loops and [Duff's Device](https://en.wikipedia.org/wiki/Duff's_device). My forays into game development ocassionally bring me into contact with convoluted performance hacks like this and they make me want to nap.
 
-It's not all dusty old tricks for long-resolved difficulties like string concatenation and trimming though.[^2] Some chapters like the one explaining how CSS selectors affect render times will probably remain evergreen when you need to squeeze out every last drop of performance. Just keep in mind that browser developers haven't been sitting idle this past decade and some optimizations might be less impactful than they once were.
+It's not all dusty old tricks for long-resolved difficulties like string concatenation and trimming though.[^2] Some chapters like the one explaining how CSS selectors affect render times will probably remain evergreen when you need to squeeze out every last drop of performance. Keep in mind that browser developers haven't been sitting idle this past decade and some optimizations might be less impactful than they once were.
 
 ## Worth The Read?
 

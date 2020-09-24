@@ -20,7 +20,7 @@ For reasons unknown, the SeaBus is the most reliable way to put me to sleep. Fiv
     <img alt="View from the SeaBus" srcset="https://s3.amazonaws.com/matthewminer/grouse-mountain/seabus-view-thumbnail.jpg 1x, https://s3.amazonaws.com/matthewminer/grouse-mountain/seabus-view-thumbnail@2x.jpg 2x" src="https://s3.amazonaws.com/matthewminer/grouse-mountain/seabus-view-thumbnail.jpg">
 </a>
 
-After groggily disembarking, hop a bus (the land kind) to get to the Grouse Mountain gondola. The view as you rise 1,100 meters above sea level is magnificent. Unless you're scared of heights, in which case this whole trip maybe isn't for you.
+After groggily disembarking, hop a bus (the land kind) to get to the Grouse Mountain gondola. The view as you rise 1,100 meters above sea level is magnificent. Unless you're scared of heights, in which case this whole trip isn't for you.
 
 <a class="image-link" href="https://s3.amazonaws.com/matthewminer/grouse-mountain/skyride.jpg" target="_blank">
     <img alt="SkyRide gondola" srcset="https://s3.amazonaws.com/matthewminer/grouse-mountain/skyride-thumbnail.jpg 1x, https://s3.amazonaws.com/matthewminer/grouse-mountain/skyride-thumbnail@2x.jpg 2x" src="https://s3.amazonaws.com/matthewminer/grouse-mountain/skyride-thumbnail.jpg">
@@ -66,11 +66,11 @@ Even when you're in a cloud though the scenery is spectacular. The best part is 
     <img alt="Peak panorama" srcset="https://s3.amazonaws.com/matthewminer/grouse-mountain/peak-panorama-thumbnail.jpg 1x, https://s3.amazonaws.com/matthewminer/grouse-mountain/peak-panorama-thumbnail@2x.jpg 2x" src="https://s3.amazonaws.com/matthewminer/grouse-mountain/peak-panorama-thumbnail.jpg">
 </a>
 
-I mentioned that summitting the peak is a workout. Fortunately the way down is 10x easier and takes a fraction of the time. On the really steep sections you can simply sit down and let gravity do the hard work.
+I mentioned that summitting the peak is a workout. Fortunately the way down is 10x easier and takes a fraction of the time. On the steep sections you can simply sit down and let gravity do the hard work.
 
 <video controls src="https://s3.amazonaws.com/matthewminer/grouse-mountain/sliding.mp4"></video>
 
-Snow pants recommended. I see some people use plastic bags as makeshift sleds which is a fine alternative. Just don't attempt it in yoga pants.
+Snow pants recommended. I see people use plastic bags as makeshift sleds which is a fine alternative. Just don't attempt it in yoga pants.
 
 <a class="image-link" href="https://s3.amazonaws.com/matthewminer/grouse-mountain/sleigh-ride.jpg" target="_blank">
     <img alt="Sleigh ride" srcset="https://s3.amazonaws.com/matthewminer/grouse-mountain/sleigh-ride-thumbnail.jpg 1x, https://s3.amazonaws.com/matthewminer/grouse-mountain/sleigh-ride-thumbnail@2x.jpg 2x" src="https://s3.amazonaws.com/matthewminer/grouse-mountain/sleigh-ride-thumbnail.jpg">

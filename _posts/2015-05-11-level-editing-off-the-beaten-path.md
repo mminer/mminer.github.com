@@ -14,7 +14,7 @@ Allow me to share the approach we took.
 
 ## Painting Levels
 
-In the past our level editing strategy (and, I suspect, that of many fellow developers) consisted of constructing some prefabs then dragging them to suitable positions in the editor. While simple, this approach is problematic in several ways, not least of which is that it's a slow process. What we really desired was a suite of tools like those found in Photoshop or Maya for *sculpting* a level. Rather than painstakingly placing individual tiles, we wanted to be able to "paint" terrain.
+In the past our level editing strategy (and, I suspect, that of many fellow developers) consisted of constructing prefabs then dragging them to suitable positions in the editor. While simple, this approach is problematic in several ways, not least of which is that it's a slow process. What we really desired was a suite of tools like those found in Photoshop or Maya for *sculpting* a level. Rather than painstakingly placing individual tiles, we wanted to be able to "paint" terrain.
 
 This lead us to think: why not use Photoshop itself? It already played an indispensible role in our workflow and its painting tools are top notch; a natural fit. We planned to use a tile-based level system, so each pixel could represent a square and we could use the colour of the pixel to identify which tile / prefab it represents. Black pixels for terrain, green for planets, blue for spawn points, and so forth. As long as all the developers knew which colours represented which tiles (an easy task since there were only two of us), constructing levels would be straightforward.
 
@@ -60,11 +60,11 @@ To stitch the terrain tiles together in a visually pleasing way, we use several 
 
 <img alt="Orbert in Unity" src="/images/orbert-unity.png">
 
-While this approach works superbly for *Orbert*, it admittedly only does so because the game has particular limitations that lend themselves well to such a simplified editor. It employs only a handful of tile types, making remembering which colours represent each effortless. It also lacks any "moving parts" apart from the player. If we want RPCs that shuffle around the level on a pre-defined path, for example, we would require something more sophisticated than a 2D grid.
+While this approach works superbly for *Orbert*, it admittedly only does so because the game has limitations that lend themselves well to such a simplified editor. It employs a handful of tile types, making remembering which colours represent each effortless. It also lacks any "moving parts" apart from the player. If we want RPCs that shuffle around the level on a pre-defined path, for example, we would require something more sophisticated than a 2D grid.
 
-However, even if an editor like the one described is too simplistic for your game, there are almost certainly better options than placing prefabs manually. If your game is tile-based, consider using an application like the [Tiled](http://www.mapeditor.org/) map editor . It provides sophisticated tools for creating maps and exports the result to an XML or JSON file, easily read by Unity or Unreal. Indeed, the latter's Paper2D boasts built-in support for the JSON files that Tiled exports. Unity developers are in luck as well, with several third-party assets offering TMX support ([full list of integrations here](https://github.com/bjorn/tiled/wiki/Support-for-TMX-maps)).
+However, even if an editor like the one described is too simplistic for your game, there are certainly better options than placing prefabs manually. If your game is tile-based, consider using an application like the [Tiled](http://www.mapeditor.org/) map editor . It provides sophisticated tools for creating maps and exports the result to an XML or JSON file, easily read by Unity or Unreal. Indeed, the latter's Paper2D boasts built-in support for the JSON files that Tiled exports. Unity developers are in luck as well, with several third-party assets offering TMX support ([full list of integrations here](https://github.com/bjorn/tiled/wiki/Support-for-TMX-maps)).
 
-Not building a tile-based game? Modern game engines like Unity make building custom editor tools a breeze for the ultimate in level editor construction. It may seem like a chore when more exciting challenges await, but some upfront investment pays huge dividends later in development.
+Not building a tile-based game? Modern game engines like Unity make building custom editor tools a breeze for the ultimate in level editor construction. It may seem like a chore when more exciting challenges await, but upfront investment pays huge dividends later in development.
 
 Cool? Cool.
 

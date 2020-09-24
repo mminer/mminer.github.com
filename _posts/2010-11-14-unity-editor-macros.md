@@ -2,7 +2,7 @@
 title: "Unity Editor Macros"
 ---
 
-A feature that appeared briefly in a beta release of Unity 3.0, but which has since disappeared, is editor macros. The reason for the feature's withdrawal is unclear. Presumably it's simply unready for primetime, and will appear in a future version of Unity. Fortunately the ability to evaluate arbitrary code snippets in the editor is still available in the `UnityEditor.Macros` namespace, and taking advantage of it is easier than racing a sloth.
+A feature that appeared briefly in a beta release of Unity 3.0, but which has since disappeared, is editor macros. The reason for the feature's withdrawal is unclear. Presumably it's unready for primetime, and will appear in a future version of Unity. Fortunately the ability to evaluate arbitrary code snippets in the editor is still available in the `UnityEditor.Macros` namespace, and taking advantage of it is easier than racing a sloth.
 
 Macros are little snippets of code that help speed up repetitive tasks in the editor. The same functionality can be achieved by writing an editor script, but for simple tasks --- particularly ones that you only intend to run once --- doing so can be a chore greater than the action itself. Perhaps you want to duplicate the selected game object a thousand times, or you want to perform a batch rename. For such tasks, and even for more complex ones, a few lines of code will often suffice.
 

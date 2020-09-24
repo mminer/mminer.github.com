@@ -72,12 +72,12 @@ And that's it. After zooming and panning around, press <kbd>shift</kbd> <kbd>1</
 
 ## Refinements
 
-Let's add some polish to make this groovy new feature really shine. Ideally our scene view bookmarking system also boasts these niceties:
+Let's add polish to make this groovy new feature shine. Ideally our scene view bookmarking system also boasts these niceties:
 
 - Supports more than one bookmark
 - Offers ability to return to scene view prior to recalling bookmark (i.e. an undo of sorts)
 - Validates menu item to prevent recalling bookmark that doesn't exist
 
-Actually let's take the easy route and just [download the finished script](https://github.com/mminer/scene-view-bookmarks/blob/master/SceneViewBookmarker.cs) instead. Drop it into your Unity project and you're set. Press <kbd>option / alt</kbd> and a number from 1 to 9 to bookmark the current scene view. When you want to return to the scene view that you bookmarked, press <kbd>shift</kbd> and the number you chose. After recalling a bookmark, return to the former scene view by pressing <kbd>shift</kbd> <kbd>0</kbd>.
+Actually let's take the easy route and [download the finished script](https://github.com/mminer/scene-view-bookmarks/blob/master/SceneViewBookmarker.cs) instead. Drop it into your Unity project and you're set. Press <kbd>option / alt</kbd> and a number from 1 to 9 to bookmark the current scene view. When you want to return to the scene view that you bookmarked, press <kbd>shift</kbd> and the number you chose. After recalling a bookmark, return to the former scene view by pressing <kbd>shift</kbd> <kbd>0</kbd>.
 
 Then get back to working on that MMORPG. It's not going to release itself.

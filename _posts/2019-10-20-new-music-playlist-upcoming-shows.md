@@ -2,11 +2,11 @@
 title: "New Music Playlist: Upcoming Shows"
 ---
 
-I'm constantly on the hunt for new music. My usual gotos are radio stations on Apple Music --- Elton John's *[Rocket Hour](https://music.apple.com/us/curator/rocket-hour/993269779)* for its eclectic selection, *[The Alligator Hour](https://music.apple.com/us/curator/the-alligator-hour/993270307)* for a weirder mix --- and free stations like [Radio Paradise](https://radioparadise.com). Tim Bray's *[Song of the Day](https://www.tbray.org/ongoing/What/Song%20of%20the%20Day/)* blog posts were a particularly fertile source of recommendations while they lasted.[^1]
+I'm always on the hunt for new music. My usual gotos are radio stations on Apple Music --- Elton John's *[Rocket Hour](https://music.apple.com/us/curator/rocket-hour/993269779)* for its eclectic selection, *[The Alligator Hour](https://music.apple.com/us/curator/the-alligator-hour/993270307)* for a weirder mix --- and free stations like [Radio Paradise](https://radioparadise.com). Tim Bray's *[Song of the Day](https://www.tbray.org/ongoing/What/Song%20of%20the%20Day/)* blog posts were a fertile source of recommendations while they lasted.[^1]
 
-I recently went to a Godspeed You! Black Emperor concert and wondered how I would stumble on them if they weren't already in my library.[^2] Countless other great bands are almost certainly playing blocks away but just never cross my radar. So my newest music-discovery-goto is compiling a playlist of bands visiting Vancouver in the near future and chucking it on at work.
+I recently went to a Godspeed You! Black Emperor concert and wondered how I would stumble on them if they weren't already in my library.[^2] Countless other great bands play mere blocks away but never cross my radar. So my newest music-discovery-goto is compiling a playlist of bands visiting Vancouver in the near future and chucking it on at work.
 
-The [Just Shows](http://justshows.com) RSS feed provides a solid directory of upcoming acts (though only for Canadian cities it seems). Once a week I look up the newly listed bands and enqueue their top hits. I really ought to automate this process. I'm told Apple Music has an API. Could happen.
+The [Just Shows](http://justshows.com) RSS feed provides a solid directory of upcoming acts (though only for Canadian cities it seems). Once a week I look up the newly listed bands and enqueue their top hits. I ought to automate this process. I'm told Apple Music has an API. Could happen.
 
 <img alt="Upcoming shows playlist in iTunes" srcset="/images/upcoming-shows-playlist.png 1x, /images/upcoming-shows-playlist@2x.png 2x" src="/images/upcoming-shows-playlist.png">
 

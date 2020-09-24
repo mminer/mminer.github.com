@@ -16,4 +16,4 @@ If nothing else, *Designing Data-Intensive Applications* is an excellent springb
 
 ---
 
-[^1]: One of my toughest architecture challenges was building Lumos, a game analytics startup I founded when this sort of business seemed like a good idea. Hoo boy did we made some poor choices early on that came back to bite us. Any time a game's popularity spiked our service's availability took a nosedive. We mitigated this problem after a major refactor, though the larger challenge of making money continued to elude us.
+[^1]: One of my toughest architecture challenges was building Lumos, a game analytics startup I founded when this sort of business seemed like a good idea. Hoo boy did we made poor choices early on that came back to bite us. Any time a game's popularity spiked our service's availability took a nosedive. We mitigated this problem after a major refactor, though the larger challenge of making money continued to elude us.

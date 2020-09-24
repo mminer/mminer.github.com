@@ -2,7 +2,7 @@
 title: "Event.Use() and Scroll Views"
 ---
 
-Today's Unity discovery: calling `Event.Use()` every time the `OnGUI()` function runs will cause scroll views to not work. At least, they won't respect any dimensions you set and will simply stretch to accommodate the elements contained within it.
+Today's Unity discovery: calling `Event.Use()` every time the `OnGUI()` function runs will cause scroll views to not work. At least, they won't respect any dimensions you set and will stretch to accommodate the elements contained within it.
 
 In code form, I had something like this:
 

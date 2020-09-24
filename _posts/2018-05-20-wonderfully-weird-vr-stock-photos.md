@@ -4,7 +4,7 @@ title: "Wonderfully Weird VR Stock Photos"
 
 That stock photos are often ridiculous is nothing new --- look no further than [Women Laughing Alone With Salad](https://www.thehairpin.com/2011/01/women-laughing-alone-with-salad/) to convince yourself --- but those that depict people experiencing virtual reality can be especially absurd.
 
-There's a plethora of models waving their hands around like Tom Cruise in *Minority Report*, naturally, and countless shots where the subject's mouth [hangs wide open](https://www.reddit.com/r/oculus/comments/20bqyw/mouths_close_them/) as VR blows their mind all the way to Halifax, but there are also scores of photos that are just... well, *bonkers* describes them best.
+There's a plethora of models waving their hands around like Tom Cruise in *Minority Report*, naturally, and countless shots where the subject's mouth [hangs wide open](https://www.reddit.com/r/oculus/comments/20bqyw/mouths_close_them/) as VR blows their mind all the way to Halifax, but there are also scores of photos that are... well, *bonkers* describes them best.
 
 Take, for instance, this man inexplicably hanging wallpaper while wearing a VR headset:
 

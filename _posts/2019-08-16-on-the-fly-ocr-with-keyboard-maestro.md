@@ -10,4 +10,4 @@ Version 9 of automation Swiss army knife Keyboard Maestro [just dropped](https:/
 
 <video autoplay loop src="/videos/keyboard-maestro-ocr.mp4"></video>
 
-The initial results are promising. It occasionally returns gibberish --- it has particular difficulty processing small UI elements on non-Retina screens --- but for the mostpart it works a treat.
+The initial results are promising. It occasionally returns gibberish --- it has difficulty processing small UI elements on non-Retina screens --- but for the mostpart it works a treat.

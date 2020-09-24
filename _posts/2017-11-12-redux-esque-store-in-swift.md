@@ -27,7 +27,7 @@ struct State {
 }
 ```
 
-We need a way to change the state, with a reducer being the pattern of choice. A reducer is a pure function that takes the current state and an action and returns some modified state.
+We need a way to change the state, with a reducer being the pattern of choice. A reducer is a pure function that takes the current state and an action and returns modified state.
 
 ```swift
 typealias Reducer<StateType, ActionType> = (_ state: StateType, _ action: ActionType) -> StateType
@@ -89,7 +89,7 @@ To trigger a state change, for example when the user signs out of their account,
 store.dispatch(.signOut)
 ```
 
-We're halfway there. What we're missing is a mechanism to notify interested parties when the state changes. This is where RxSwift and its `BehaviorSubject` (or some alternative, e.g. [ReactiveSwift](https://github.com/ReactiveCocoa/ReactiveSwift)) comes in handy.
+We're halfway there. What we're missing is a mechanism to notify interested parties when the state changes. This is where RxSwift and its `BehaviorSubject` (or an alternative, e.g. [ReactiveSwift](https://github.com/ReactiveCocoa/ReactiveSwift)) comes in handy.
 
 ```swift
 import RxSwift
@@ -133,7 +133,7 @@ print(store.state.name)
 
 ## Refinements
 
-One annoyance with our current store implementation is that subscribers receive an event every time *any* state property changes, not just the one `keyPath` specifies. This is where RxSwift shines. If all properties of our state structure conform to `Equatable`, we can use the `distinctUntilChanged` operator to ensure that we only notify subscribers when the observed property actually changes.
+One annoyance with our current store implementation is that subscribers receive an event every time *any* state property changes, not just the one `keyPath` specifies. This is where RxSwift shines. If all properties of our state structure conform to `Equatable`, we can use the `distinctUntilChanged` operator to ensure that we only notify subscribers when the observed property changes.
 
 ```swift
 func observe<T: Equatable>(_ keyPath: KeyPath<StateType, T>) -> Observable<T> {
@@ -176,4 +176,4 @@ Whenever we dispatch an action the computed property is recalculated, but `disti
 
 This architecture works well in practice. Unidirectional data flow makes debugging a joy (or as close to joy as debugging gets) and reactive programming is a powerful paradigm to have in your toolbox. Use both in concert and you're unstoppable.
 
-The code above is just a sketch --- I omitted features you may want in larger projects, e.g. middleware --- but I hope it provides an idea of how you can manage your app's state and propagate changes to observers. For a more fleshed out `Store` class that handles array properties plus a more realistic reducer composed of sub-reducers, see [this gist](https://gist.github.com/mminer/410e9c57918cee0b191511ed3d5e8343). And don't forget to floss.
+The code above is a sketch --- I omitted features you may want in larger projects, e.g. middleware --- but I hope it provides an idea of how you can manage your app's state and propagate changes to observers. For a more fleshed out `Store` class that handles array properties plus a more realistic reducer composed of sub-reducers, see [this gist](https://gist.github.com/mminer/410e9c57918cee0b191511ed3d5e8343). And don't forget to floss.

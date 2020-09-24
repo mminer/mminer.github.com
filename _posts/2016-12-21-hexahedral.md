@@ -8,14 +8,14 @@ In the spirit of better-late-than-never, let me show you a game I built this pas
     <a href="https://matthewminer.com/hexahedral/">Play Hexahedral</a>
 </iframe>
 
-To keep the scope manageable while flying solo I self-imposed some limitations:
+To keep the scope manageable while flying solo I self-imposed limitations:
 
 1. Graphics no fancier than primitive shapes.
 2. Use tech I'm already familiar with. Hold the Haskell.
 3. Core mechanics complete by Friday night. Sunday reserved for polish and additional levels.
 4. No skimping on nutrition and sleep. Game jams should be fun.
 
-At the same time I wanted an end result that I could demo without embarrassment or a "this was made in a weekend, be gentle, I'm only a tiny speck of dust in a vast universe" disclaimer. To that end I established four goals before starting.
+At the same time I wanted an end result that I could demo without embarrassment or a "this was made in a weekend, be gentle, I'm a tiny speck of dust in a vast universe" disclaimer. To that end I established four goals before starting.
 
 ## Quick Load
 
@@ -27,7 +27,7 @@ At a previous jam I built [a game](https://github.com/mminer/bursting-with-colou
 
 ## Attractive
 
-I restricted myself to cubes, but those cubes had to look *nice*. Liberal use of CSS transitions and a pretty theme plucked from [Adobe Color](https://color.adobe.com) was just the ticket. Nothing is more disheartening than players dismissing a genuinely fun game just because it looks like a spreadsheet.
+I restricted myself to cubes, but those cubes had to look *nice*. Liberal use of CSS transitions and a pretty theme plucked from [Adobe Color](https://color.adobe.com) was just the ticket. Nothing is more disheartening than players dismissing a genuinely fun game because it looks like a spreadsheet.
 
 ## Hours (or at least ten minutes) of Fun
 

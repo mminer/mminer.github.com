@@ -10,6 +10,6 @@ After navigating backward, you can also navigate forward using <kbd>command</kbd
 
 <img alt="Selection History Navigator menu" srcset="/images/selection-history-navigator.png 1x, /images/selection-history-navigator@2x.png 2x" src="/images/selection-history-navigator.png">
 
-Sidebar: if you're unfamiliar with the Load / Save Selection options also under *Edit > Selection*, you owe it to yourself to become acquainted with them. Damn useful. Hunting around for the deeply nested game object you had selected only moments ago can be a thing of the past and if that's not worth celebrating then nothing is.
+Sidebar: if you're unfamiliar with the Load / Save Selection options also under *Edit > Selection*, you owe it to yourself to become acquainted with them. Damn useful. Hunting around for the deeply nested game object you had selected moments ago can be a thing of the past and if that's not worth celebrating then nothing is.
 
 To get rolling, grab the *SelectionHistoryNavigator.cs* file [from here](https://github.com/mminer/selection-history-navigator) and drop it into your project. That's it. Go bananas.
