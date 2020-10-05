@@ -131,7 +131,7 @@ celery --app=worker:app worker
 
 At this point we have a barebones web server that offloads a task to a background worker, freeing itself up as soon as possible to handle the next request. View our handiwork by visiting http://localhost:5000. Now onto the juicy assignment of communicating the result to the client.
 
-As mentioned earlier, WebSockets is well suited for maintaining the long-lived connection between client and server that we need. Support among modern browsers is [respectable](http://caniuse.com/#feat=websockets), with packages like [Socket.IO](http://socket.io/) providing fallback for antiques like Internet Explorer 9. Indeed, let's use Socket.IO for this demo. In addition to ensuring our app works in ancient clients, it provides convenient features like automatic reconnection and libraries that make setup a breeze.
+As mentioned earlier, WebSockets is well suited for maintaining the long-lived connection between client and server that we need. Support among modern browsers is [respectable](http://caniuse.com/#feat=websockets), with packages like [Socket.IO](http://socket.io/) providing fallback for antiques like Internet Explorer 9. Let's use Socket.IO for this demo. In addition to ensuring our app works in ancient clients, it provides convenient features like automatic reconnection and libraries that make setup a breeze.
 
 Create a file named *notifier.js*. This is a minimal Node.js + [Express](http://expressjs.com) + Socket.IO app with a single POST endpoint `/notify`.
 
