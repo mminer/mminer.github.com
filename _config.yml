@@ -1,6 +1,7 @@
 author: Matthew Miner
 baseurl: "" # Subpath, e.g. /blog/
 description: Software Engineer and Game Developer
+permalink: /:year/:month/:day/:title
 title: Matthew Miner
 url: "https://matthewminer.com" # Base hostname and protocol
 

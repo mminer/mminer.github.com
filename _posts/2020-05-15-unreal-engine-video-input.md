@@ -30,7 +30,7 @@ The <abbr title="Blackmagic Design">BMD</abbr> [UltraStudio Mini Recorder](https
 
 The <abbr title="Blackmagic Design">BMD</abbr> [Intensity](https://www.blackmagicdesign.com/products/intensitypro4k/techspecs/W-INT-05) is a popular option for capturing HDMI and has the bonus of HDMI output. Recording and monitoring in one card, what's not to love? Alas, [forum](https://forums.unrealengine.com/unreal-engine/feedback-for-epic/1655497-hdmi-video-capture-card-support-for-virtual-production) [posts](https://forums.unrealengine.com/community/general-discussion/1646571-video-capture-cards-not-working-supported-help) indicate that Unreal refuses to recognize it. So that's not to love.
 
-Another attractive option was the Elgato [Cam Link](https://www.elgato.com/en/gaming/cam-link-4k), which converts any HDMI source to a webcam feed. It's relatively cheap and the Internet tells me it works well with Unreal. I might have went this route if it didn't prove impossible to find. I'll chalk this up to COVID-19 and the sudden surge of people decking out their work-from-home setups.
+Another attractive option was the Elgato [Cam Link](https://www.elgato.com/en/gaming/cam-link-4k), which converts any HDMI source to a webcam feed. It's relatively cheap and the Internet tells me it works well with Unreal. I might have went this route if it wasn't impossible to find. I chalk this up to COVID-19 and the surge of people decking out their work-from-home setups.
 
 Yet another Elgato doodad that looked promising was the [Game Capture HD60
 S](https://www.elgato.com/en/gaming/game-capture-hd60-s). Reports indicate that it too works with Unreal. Might be a good option, but alas, also nowhere to be found.
