@@ -97,7 +97,7 @@ gunicorn --bind=0.0.0.0:5000 server:app
 
 ## The Background Worker
 
-For our background worker we'll employ the excellent [Celery](http://www.celeryproject.org). It defines a single computationally expensive task, which we'll unimaginatively simulate using `time.sleep`.
+For our background worker we'll use the excellent [Celery](http://www.celeryproject.org). It defines a single computationally expensive task, which we'll unimaginatively simulate using `time.sleep`.
 
 ```python
 # worker.py
@@ -114,7 +114,7 @@ def mytask():
     return 42
 ```
 
-I said that we'd have three separate services running, but we need four. We require a message broker to transport jobs between our web server and our background worker. [RabbitMQ](http://www.rabbitmq.com) fits the bill nicely. We'll use Docker to fire it up on its default port.
+I said that we'd have three separate services running, but we need four. We require a message broker to transport jobs between our web server and our background worker. [RabbitMQ](http://www.rabbitmq.com) fits the bill. We'll use Docker to fire it up on its default port.
 
 ```bash
 docker run --publish=5672:5672 --detach rabbitmq:3.4
@@ -308,7 +308,7 @@ docker build --tag=mminer/myworker --file=dockerfiles/Dockerfile.worker .
 docker build --tag=mminer/mynotifier --file=dockerfiles/Dockerfile.notifier .
 ```
 
-And finally let's employ [Fig / Docker Compose](https://github.com/docker/fig) to save us from manually running `docker up`.
+And finally let's use [Fig / Docker Compose](https://github.com/docker/fig) to save us from manually running `docker up`.
 
 ```yaml
 # fig.yml
@@ -343,7 +343,7 @@ fig up
 
 ## Wrapping Up
 
-Before deploying this app live, consider other factors like security and scalability more closely than we have here. For one thing, the client can send any client ID they want along with their POST request, causing grief for other users. Also, keeping all information about connected clients in memory on a single Node.js app is hardly the definition of durability. With extra attention though, we can take this pattern and use it to great effect in our app, reducing strain on our web server while delivering results asynchronously to our users.
+Before deploying this app live, consider security and scalability. For one thing, the client can send any client ID they want along with their POST request, causing grief for other users. Also, keeping all information about connected clients in memory on a single Node.js app is hardly the definition of durability. With extra attention though, we can take this pattern and use it to great effect in our app, reducing strain on our web server while delivering results asynchronously to our users.
 
 Task notifications. Asynchronous communication. All part of the American Dream.
 

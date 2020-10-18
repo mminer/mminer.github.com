@@ -20,6 +20,6 @@ The turnaround was quick and the designer was responsive when I requested tweaks
 
 ---
 
-[^1]: The isometric aesthetic is definitely in right now. It'll probably look dated come the new year, but hey that's fashion baby.
+[^1]: The isometric aesthetic is definitely in right now. It'll look dated come the new year, but hey that's fashion baby.
 
-[^2]: There are pages and pages of talented designers on Fiverr producing isometric graphics. A nice perk of jumping on a bandwagon is that you have plenty of options.
+[^2]: There are pages and pages of talented designers on Fiverr producing isometric graphics. A perk of jumping on a bandwagon is that you have plenty of options.

@@ -8,7 +8,7 @@ Other than enormous site maps and special characters appearing as hexadecimal gi
 
 <img alt="WorldWideWeb emulator showing this blog post" src="/images/worldwideweb-emulator.png">
 
-No images though, and definitely no JavaScript (it wouldn't be invented for another five years), so don't build your guide for 90s time travellers in React.
+No images though, and definitely no JavaScript (it wasn't invented for another five years), so don't build your guide for 90s time travellers in React.
 
 Something you *can* do is immediately edit a page after loading it, right there in the browser. I suppose this made sense in the days when every page was a static HTML file. Simpler times.
 

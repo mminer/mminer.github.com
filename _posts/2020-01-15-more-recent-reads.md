@@ -21,13 +21,13 @@ My biggest takeaway: debugging hardware sounds hellish. Wire-wrapped boards soun
 
 I picked this up in my ongoing effort to consume the classics of computer science. It's well-written, lean and to the point, but I didn't get a lot out of it. I've used C-inspired languages for years so none of the constructs were new. If you're starting out though and will use C professionally it might be a decent first resource. The exercises make for fun challenges.
 
-The minimalism of C is refreshing compared to complex monstrosities like C++. No generics, no lambdas, not even classes. I never fell in love with the language like others have --- give me Python or Clojure any day of the week --- but I understand the appeal.
+The minimalism of C is refreshing compared with complex monstrosities like C++. No generics, no lambdas, not even classes. I never fell in love with the language like others have --- give me Python or Clojure any day of the week --- but I understand the appeal.
 
 ## A Tour of C++
 
 <img alt="A Tour of C++ book cover" src="/images/tour-of-cpp.png">
 
-This one's a perfect balance between beginner-focused "this is a `for` loop" introductions and the giant tomes that explain every facet of a language. The author (also the author of C++ itself) makes a convincing case that modern C++ is different than and far superior to its earlier incarnations. Some of the new C++20 features like modules and concepts promise to make writing certain kinds of software a helluva lot easier. It's going to be a long time before codebases rock the latest and greatest --- most C++ I’ve touched recently has yet to adopt C++11 --- but the language's future looks bright.
+This one's a perfect balance between beginner-focused "this is a `for` loop" introductions and the giant tomes that explain every facet of a language. The author (also the author of C++ itself) makes a convincing case that modern C++ is different from and far superior to its earlier incarnations. Some of the new C++20 features like modules and concepts promise to make writing certain kinds of software a helluva lot easier. It's going to be a long time before codebases rock the latest and greatest --- most C++ I’ve touched recently has yet to adopt C++11 --- but the language's future looks bright.
 
 I would love to see this sort of whirlwind tour for other languages.
 
@@ -43,7 +43,7 @@ I'm a fan of pop psychology, and this one scratches that itch. You don't need an
 
 This book's format is wonderfully practical. Each chapter presents a roadblock to testing (e.g. "my application is all API calls") and offers a solution. Its catalog of dependency-breaking techniques to make your code more testable is particularly valuable. I already use many of the techniques, but it's nice to have a name for them.
 
-Unfortunately after finishing the book I have an uneasy feeling that I retained far less than I should have. Taking notes would have helped. At university I took copious notes during lectures that I would never read again, but the process helped me soak up the material. Time to reintroduce that practice.
+Unfortunately I have an uneasy feeling that I retained less than I should have. Taking notes would have helped. At university I took copious notes during lectures that I never read again, but the process helped me soak up the material. Time to reintroduce that practice.
 
 ## The Pragmatic Programmer
 

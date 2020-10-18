@@ -28,7 +28,7 @@ No extra code necessary. Even groovier, if your function takes arguments, you ca
 
 <img alt="Methodic Window With Arguments" src="/images/methodic-arguments.png">
 
-Public, private, static, or instance function, Methodic runs them all. You can even execute functions while Unity's in edit mode.[^1] Still yawning? A video sells it better.
+Public, private, static, or instance function, Methodic runs them all. You can even execute functions when Unity is in edit mode.[^1] Still yawning? A video sells it better.
 
 <div class="video">
     <iframe allow="fullscreen" src="https://www.youtube-nocookie.com/embed/x9x80XV-8G8?color=white&modestbranding=1">

@@ -6,9 +6,9 @@ Recently I've been diving deeper into web app performance --- how *do* browsers 
 
 <img alt="High Performance Web Sites and Even Faster Web Sites book covers" src="/images/hpws-and-efws.png">
 
-Like a fool I checked the publication date only after I started reading, which is dangerous for any tech book but especially for a topic as rapidly evolving as web development. *HPWS* was published in 2007 while *EFWS* came out in 2009. That's like a century ago in the web dev world.
+Like a fool I checked the publication date only after I started reading, which is dangerous for any tech book but especially for a topic as rapidly evolving as web development. *HPWS* was published in 2007; *EFWS* in 2009. That's like a century ago in the web dev world.
 
-Despite this, much of the advice they divulge remains relevant, while the stuff that doesn't makes for a pleasant jaunt down memory lane. I'd forgotten about the many stupid hacks we once employed to get sites working with reasonable performance across platforms.[^1] Stupid hacks are as necessary as ever with the advent of mobile browsers and the challenges of responsive design, but it's a reminder that web dev is a helluva lot easier than it used to be.
+Despite this, much of the advice they divulge remains relevant, and the stuff that doesn't is a pleasant jaunt down memory lane. I'd forgotten about the many stupid hacks we once used to get sites working with reasonable performance across platforms.[^1] Stupid hacks are as necessary as ever with the advent of mobile browsers and the challenges of responsive design, but it's a reminder that web dev is a helluva lot easier than it used to be.
 
 You would think that after a decade of progress everything would be Speedy Gonzales, but as time marches forward, so do load times and processing requirements. In 2009, *HPWS* reports that cnn.com requested 11 scripts; now it's up to 59, taking a full five seconds to load on a fast computer with a robust Internet connection. So this wisdom still deserves a read.
 
@@ -71,7 +71,7 @@ if (value < 6) {
 
 What a horror show. There might be legitimate scenarios where this craziness results in noticable speed improvements, but talk about a maintenance nightmare. Please don't write code like this unless you truly need to. Even more stressful is the description of unrolling loops and [Duff's Device](https://en.wikipedia.org/wiki/Duff's_device). My forays into game development ocassionally bring me into contact with convoluted performance hacks like this and they make me want to nap.
 
-It's not all dusty old tricks for long-resolved difficulties like string concatenation and trimming though.[^2] Some chapters like the one explaining how CSS selectors affect render times will probably remain evergreen when you need to squeeze out every last drop of performance. Keep in mind that browser developers haven't been sitting idle this past decade and some optimizations might be less impactful than they once were.
+It's not all dusty old tricks for long-resolved difficulties like string concatenation and trimming though.[^2] Some chapters like the one explaining how CSS selectors affect render times will remain evergreen when you need to squeeze out every last drop of performance. Keep in mind that browser developers haven't been sitting idle this past decade and some optimizations might be less impactful than they once were.
 
 ## Worth The Read?
 

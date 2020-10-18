@@ -2,9 +2,9 @@
 title: "A Practical Example of Using Python Partials"
 ---
 
-Python's [partials](https://docs.python.org/3/library/functools.html#partial-objects) are one of those features you're unlikely to encounter during everyday development but which are tremendously useful in the right scenario. Here's one of them.
+You're unlikely to encounter Python [partials](https://docs.python.org/3/library/functools.html#partial-objects) during everyday development, but they're tremendously useful in the right scenario. Here's one of them.
 
-*(While this post demonstrates a use case for partials, it's light on details. For an informative overview of these suckers read [Cleaner Code Through Partial Function Application](http://chriskiehl.com/article/Cleaner-coding-through-partially-applied-functions/).)*
+*(This post demonstrates a use for partials, but it's light on details. For an informative overview of these suckers read [Cleaner Code Through Partial Function Application](http://chriskiehl.com/article/Cleaner-coding-through-partially-applied-functions/).)*
 
 Some REST APIs page results, only returning a limited number of entries at a time. Fine. Sometimes though we want to retrieve the entire dataset. Not an inherently difficult task --- simply make requests until no pages remain. Here's a reusable function that does exactly this.
 

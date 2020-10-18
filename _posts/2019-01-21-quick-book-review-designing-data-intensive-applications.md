@@ -2,7 +2,7 @@
 title: "Quick Book Review: <em>Designing Data-Intensive Applications</em>"
 ---
 
-*[Designing Data-Intensive Applications](https://dataintensive.net)* is the sort of book I wish I read years ago when I first started building web services and deciding which databases and processing systems to employ.[^1] It's a well-written overview of the distributed systems landscape, exploring the underlying ideas behind different offerings and the tradeoffs they make when ingesting and storing data.
+I wish I read *[Designing Data-Intensive Applications](https://dataintensive.net)* years ago when I first started building web services and deciding which databases and processing systems to use.[^1] It's a well-written overview of the distributed systems landscape, exploring the underlying ideas behind different offerings and the tradeoffs they make when ingesting and storing data.
 
 <img alt="Designing Data-Intensive Applications book cover" src="/images/designing-data-intensive-applications.png">
 
@@ -12,7 +12,7 @@ After learning about a new technology it's always tempting to use it even when i
 
 I found the last chapter in which the author proposes using an immutable event log as the single source of truth, with other databases and caches effectively materialized views derived from it, particularly compelling. It's that loose coupling from programming that we all love but applied to entire systems. Tasty food for thought.
 
-If nothing else, *Designing Data-Intensive Applications* is an excellent springboard to further explore the topics it covers, with extensive links to relevant academic papers (which, let's be real, I probably won't read) and blog posts (some of which at least made it to my Instapaper queue). Two thumbs up, highly recommended.
+If nothing else, *Designing Data-Intensive Applications* is an excellent springboard to further explore the topics it covers, with extensive links to relevant academic papers (which, let's be real, I won't read) and blog posts (some of which at least made it to my Instapaper queue). Two thumbs up, highly recommended.
 
 ---
 

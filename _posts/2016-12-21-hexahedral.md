@@ -33,5 +33,4 @@ I restricted myself to cubes, but those cubes had to look *nice*. Liberal use of
 
 Quick demos are often the most one can expect from a weekend hackathon, but I wanted a game that a player could spend a half hour on. This meant lots of levels. I kept the level format simple, with ASCII characters representing the state of each square. Adding levels was as easy as chucking a new object into the `levels` array. In the end I had 30 levels with difficulty ramping up from stupid easy to moderately puzzling.
 
-
-I think it turned out well. It's fun, a decent challenge, and it loads lickety-split on iPhones and desktops alike. As a nice bonus it got picked up by [Red Bull Mind Gamers](http://www.redbullmindgamers.com/game/15) where you can play it along with other solid noodle-scratchers. The source code is also [available on GitHub](https://github.com/mminer/hexahedral) for perusing / critiquing / stealing and claiming as your own.
+It turned out well. It's fun, a decent challenge, and it loads lickety-split on iPhones and desktops alike. As a bonus it got picked up by [Red Bull Mind Gamers](http://www.redbullmindgamers.com/game/15) where you can play it along with other solid noodle-scratchers. The source code is also [available on GitHub](https://github.com/mminer/hexahedral) for perusing / critiquing / stealing and claiming as your own.

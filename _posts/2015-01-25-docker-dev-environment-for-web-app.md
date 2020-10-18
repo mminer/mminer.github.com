@@ -10,7 +10,7 @@ In this tutorial we build a [Flask](http://flask.pocoo.org) web app using [Gunic
 
 ## The Web App
 
-Our web app is comprised of five files.
+Our web app comprises five files.
 
 ```
 .
@@ -65,7 +65,7 @@ EXPOSE 80
 CMD ["gunicorn", "--config=gunicorn.py", "app:app"]
 ```
 
-There's surprisingly little happening in this file. The first line indicates the base image to use, in this case one from the official repositories available at the [Docker Hub Registry](https://registry.hub.docker.com). The next line tells Docker to expose port 80, i.e. the port that Gunicorn runs the server on. The final line specifies the command to run when the container starts.
+There's surprisingly little in this file. The first line indicates the base image to use. `python:3.4-onbuild` is an official repository from the [Docker Hub Registry](https://registry.hub.docker.com). The next line tells Docker to expose port 80, i.e. the port that Gunicorn runs the server on. The final line specifies the command to run when the container starts.
 
 #### -onbuild
 
@@ -82,7 +82,7 @@ docker run -it --publish=8080:80 mminer/myserver
 
 If all goes well your browser displays "Hello World!" as expected. Brilliant.
 
-At this point we can push the image to the Docker Hub (or a private registry) and deploy it live. However, we have a problem: when we update our code, our changes aren't reflected by the running server without another build + run. Fast though the build process is thanks to Docker's caching, re-running these steps becomes tedious quickly.
+At this point we can push the image to the Docker Hub (or a private registry) and deploy it live. But we have a problem: when we update our code, our changes aren't reflected by the running server without another build + run. Fast though the build process is thanks to Docker's caching, re-running these steps becomes tedious quickly.
 
 ## Autoreload
 

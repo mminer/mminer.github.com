@@ -2,7 +2,7 @@
 title: "Web Page Click Prevention"
 ---
 
-I'm working on a project where momentarily preventing the user from following links is desirable. There are form controls on the page that trigger AJAX requests, after which a notification appears displaying the response from the server. The contents of the page change after every call; buttons that were previously disabled may become enabled, and vice versa. While this happens fairly quickly, there's a short amount of time during which the user can click a button and trigger another call to the server before the last one has returned and modified the page accordingly.
+I'm working on a project where momentarily preventing the user from following links is desirable. There are form controls on the page that trigger AJAX requests, after which a notification appears displaying the response from the server. The contents of the page change after every call; buttons that were previously disabled may become enabled, and vice versa. Though this happens fairly quickly, there's a short amount of time during which the user can click a button and trigger another call to the server before the last one has returned and modified the page accordingly.
 
 One way to prevent eager users from clicking too fast is to set a JavaScript variable to false when the AJAX request is being made, and only allow new calls to be executed if that variable is true. The problem with doing this is that the user still sees visual confirmation of their click and expects something to happen as a result. Another solution is to disable all the buttons on the page while the request is being processed. The issue here is that the user sees a flash of disabled buttons, which isn't exactly aesthetically pleasing.
 
