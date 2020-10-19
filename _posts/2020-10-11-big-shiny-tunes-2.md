@@ -37,3 +37,5 @@ Today the options for discovering new music are endless, but I'll always be fond
 [^4]: You know what's even more fun than *Song 2*? [*Song 2*, but every "woohoo" is done by Mario](https://www.youtube.com/watch?v=66yH8RZSwUc).
 
 [^5]: Though nobody told *NOW!* that CDs are out of vogue. The UK edition of the series is at [107 releases](https://en.wikipedia.org/wiki/Now_That%27s_What_I_Call_Music!_discography) and going strong.
+
+*[BST2]: Big Shiny Tunes 2

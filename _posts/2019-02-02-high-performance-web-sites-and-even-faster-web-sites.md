@@ -6,11 +6,11 @@ Recently I've been diving deeper into web app performance --- how *do* browsers 
 
 <img alt="High Performance Web Sites and Even Faster Web Sites book covers" src="/images/hpws-and-efws.png">
 
-Like a fool I checked the publication date only after I started reading, which is dangerous for any tech book but especially for a topic as rapidly evolving as web development. *<abbr title="High Performance Web Sites">HPWS</abbr>* was published in 2007 while *<abbr title="Even Faster Web Sites">EFWS</abbr>* came out in 2009. That's like a century ago in the web dev world.
+Like a fool I checked the publication date only after I started reading, which is dangerous for any tech book but especially for a topic as rapidly evolving as web development. *HPWS* was published in 2007 while *EFWS* came out in 2009. That's like a century ago in the web dev world.
 
 Despite this, much of the advice they divulge remains relevant, while the stuff that doesn't makes for a pleasant jaunt down memory lane. I'd forgotten about the many stupid hacks we once employed to get sites working with reasonable performance across platforms.[^1] Stupid hacks are as necessary as ever with the advent of mobile browsers and the challenges of responsive design, but it's a reminder that web dev is a helluva lot easier than it used to be.
 
-You would think that after a decade of progress everything would be Speedy Gonzales, but as time marches forward, so do load times and processing requirements. In 2009, *<abbr title="High Performance Web Sites">HPWS</abbr>* reports that cnn.com requested 11 scripts; now it's up to 59, taking a full five seconds to load on a fast computer with a robust Internet connection. So this wisdom still deserves a read.
+You would think that after a decade of progress everything would be Speedy Gonzales, but as time marches forward, so do load times and processing requirements. In 2009, *HPWS* reports that cnn.com requested 11 scripts; now it's up to 59, taking a full five seconds to load on a fast computer with a robust Internet connection. So this wisdom still deserves a read.
 
 ## High Performance Web Sites
 
@@ -22,7 +22,7 @@ Other rules like using the `Expires` header effectively are good reminders of tw
 
 ## Even Faster Websites
 
-This one has aged less well than *<abbr title="High Performance Web Sites">HPWS</abbr>*. Several chapters delve into hacks to work around browser quirks, many of which (the quirks) have long since been remedied. You can safely skip a few chapters entirely unless you're a poor schmuck still supporting Internet Explorer 6 (my condolences if that's you).
+This one has aged less well than *HPWS*. Several chapters delve into hacks to work around browser quirks, many of which (the quirks) have long since been remedied. You can safely skip a few chapters entirely unless you're a poor schmuck still supporting Internet Explorer 6 (my condolences if that's you).
 
 The overview of different Comet approaches, for example, isn't terribly useful unless WebSockets are off the table for some reason. Likewise, the chapter about domain sharding is less relevant now that browsers have raised their connections-per-domain limit. Other techniques like flushing the document head early so that scripts can load while the server computes the body will (soon, I hope) be made obsolete by widespread support for HTTP/2 and its fancy schmancy server push functionality.
 
@@ -84,3 +84,6 @@ Maybe. My advice: pick up *High Performance Web Sites*, especially if you're new
 [^2]: I forgot that `String.trim()` didn't always exist. JavaScript could benefit from a richer standard library, but it sure has come a long way.
 
 [^3]: I actually do care.
+
+*[EFWS]: Even Faster Web Sites
+*[HPWS]: High Performance Web Sites
