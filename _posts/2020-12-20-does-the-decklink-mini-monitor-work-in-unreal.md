@@ -8,4 +8,4 @@ As of Unreal Engine 4.26.0 at least. This isn't unexpected; Epic's [list of supp
 
 <img alt="DeckLink Mini Mini" src="/images/blackmagicmediaoutput-no-configuration-found.png">
 
-After my [post about using the Mini Recorder in Unreal](/2020/05/15/unreal-engine-video-input), several people asked about my experience before buying the card themselves. You same folks will want to know to avoid the Mini Monitor for your virtual production setup (though it works flawlessly for video editing and in OBS, so I still recommend it in general).
+After my [post about using the Mini Recorder in Unreal](/2020/05/15/unreal-engine-video-input), several people asked about my experience before buying the card themselves. You same folks will want to avoid the Mini Monitor for your virtual production setup (though it works flawlessly for video editing and in OBS, so I still recommend it in general).
