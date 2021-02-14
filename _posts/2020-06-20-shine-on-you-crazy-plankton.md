@@ -9,7 +9,7 @@ We were able to glimpse the algae by swishing a stick around in the water at nig
 I tried but failed to capture it on camera. For a video that'll really knock your socks off though, check out these dolphins swimming through the stuff:
 
 <div class="video">
-    <iframe allow="fullscreen" src="https://www.youtube-nocookie.com/embed/bJcTWr8-mFo?color=white&modestbranding=1">
+    <iframe allow="fullscreen" src="https://www.youtube-nocookie.com/embed/bJcTWr8-mFo?modestbranding=1">
         <a href="https://www.youtube.com/watch?v=bJcTWr8-mFo">
             Dolphins Swimming in Bioluminescence
         </a>

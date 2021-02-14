@@ -31,7 +31,7 @@ No extra code necessary. Even groovier, if your function takes arguments, you ca
 Public, private, static, or instance function, Methodic runs them all. You can even execute functions when Unity is in edit mode.[^1] Still yawning? A video sells it better.
 
 <div class="video">
-    <iframe allow="fullscreen" src="https://www.youtube-nocookie.com/embed/x9x80XV-8G8?color=white&modestbranding=1">
+    <iframe allow="fullscreen" src="https://www.youtube-nocookie.com/embed/x9x80XV-8G8?modestbranding=1">
         <a href="https://www.youtube.com/watch?v=x9x80XV-8G8">
             Methodic: Run Functions by Clicking a Button
         </a>
