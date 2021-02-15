@@ -12,4 +12,4 @@ I signed up for weekly lessons at Long & McQuade. The book we use is *[Alfred's 
 
 Before Christmas I participated in a recital. Most of my fellow pianists were preteens clearly forced to be there by their parents. I had a ball though playing on the auditorium's big old grand piano. Here's my rendition of *Standing in the Need of Prayer*. I also played a sea shanty called *Blow the Man Down* --- a real banger, 10x cooler than *SitNoP* --- but my performance went off the rails halfway through so it's just the church jam today.
 
-<video controls src="https://s3.amazonaws.com/matthewminer/piano-recital.mp4"></video>
+<video controls src="/videos/piano-recital.mp4"></video>
