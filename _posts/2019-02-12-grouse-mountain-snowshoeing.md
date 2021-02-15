@@ -68,7 +68,13 @@ Even when you're in a cloud though the scenery is spectacular. The best part is 
 
 I mentioned that summitting the peak is a workout. Fortunately the way down is 10x easier and takes a fraction of the time. On the steep sections you can simply sit down and let gravity do the hard work.
 
-<video controls src="/videos/grouse-mountain-sliding.mp4"></video>
+<div class="video">
+    <iframe allow="fullscreen" src="https://www.youtube-nocookie.com/embed/1qKdm0gBIyo?modestbranding=1">
+        <a href="https://www.youtube.com/watch?v=1qKdm0gBIyo">
+            Sliding Down Grouse Mountain
+        </a>
+    </iframe>
+</div>
 
 Snow pants recommended. I see people use plastic bags as makeshift sleds which is a fine alternative. Just don't attempt it in yoga pants.
 
